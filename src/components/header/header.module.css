@@ -1,0 +1,39 @@
+.header {
+    background-color: darkgreen;
+}
+
+    .menuWrap {
+        display: flex;
+        justify-content: flex-end;
+        width: var(--main_blocks_wrapper_width);
+        margin: 0px auto;
+        padding: var(--main_blocks_wrapper_padding);
+    }
+
+        .menuLinkWrap {
+            border: 1px solid black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .menuLinkWrap > a {
+            color: whitesmoke;
+            margin: 0px 30px;
+            text-decoration: none;
+        }
+
+@media (max-width: 769px) {
+    .menuLinkWrap > a {
+        margin: 0px 15px;
+    }
+}
+
+@media (max-width: 481px) {
+    .menuWrap {
+        justify-content: center;
+    }
+
+    .menuLinkWrap > a {
+        margin: 0px 5px;
+    }
+}

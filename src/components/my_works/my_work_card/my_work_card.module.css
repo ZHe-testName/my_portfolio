@@ -1,0 +1,43 @@
+.myWorkCardWrap{
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+    .myWorkCardWrap > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myWorkCardWrap > div:first-of-type {
+        height: 240px;
+    }
+
+    .myWorkCardWrap > div:last-of-type {
+        border-top: 1px solid black;
+        padding-left: 5px;
+    }
+
+        .myWorkCardWrap button{
+            margin: auto auto;
+        }
+
+        .myWorkCardDescription {
+            height: 60px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            background-color: chocolate;
+        }
+
+
+@media (max-width: 481px) {
+    .myWorkCardWrap{
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}

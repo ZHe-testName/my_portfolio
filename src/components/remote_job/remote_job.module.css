@@ -1,0 +1,24 @@
+.remoteJob {
+    background-color: darkgoldenrod;
+    padding: var(--main_blocks_wrapper_padding) 0px;
+}
+
+    .remoteJobWrap {
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        width: var(--main_blocks_wrapper_width);
+        margin: 0px auto;
+        border: 1px solid black;
+    }
+
+        .remoteJobWrap > button {
+            margin: auto auto;
+            margin-bottom: 0px;
+        }
+
+@media(max-width: 481px) {
+    .remoteJobWrap {
+        height: 160px;
+    }
+}

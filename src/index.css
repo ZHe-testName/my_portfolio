@@ -1,8 +1,19 @@
+:root {
+  --main_blocks_wrapper_width: 80%;
+  --main_blocks_wrapper_padding: 30px;
+  --main_blocks_wrapper_small_padding: 10px
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  font-family: 'Fira Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +21,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h3 {
+    text-align: center;
+    padding: 0px 15px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    background-color: cornsilk;
 }
