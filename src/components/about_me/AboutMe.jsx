@@ -13,7 +13,7 @@ function AboutMe() {
                 </div>
 
                 <div className={c.aboutMeImage}>
-                    
+                    Я бла-бла-бла...
                 </div>
             </div>
         </section>
