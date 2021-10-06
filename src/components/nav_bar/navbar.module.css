@@ -46,7 +46,7 @@
                 background-image: url(../../icons/iconmonstr-sitemap-8.svg);
             }
 
-            .menuLinkWrap a {
+            /* .menuLinkWrap a {
                 position: relative;
                 display: flex;
                 transition: all 0.3s;
@@ -58,7 +58,7 @@
                 width: 55px;
                 height: 55px;
                 border-radius: 50px;
-            }  
+            }   */
 
             .menuLinkWrap > li:hover a{
                 transition: all 0.3s;
@@ -70,12 +70,6 @@
             .menuLinkWrap > li > a:focus{
                 background-color: var(--active_yellow);
             }
-           
-                .navMain a > h3{
-                    opacity: 0;
-                    background-color: transparent;
-                    margin: auto 0px;
-                }
 
                 .menuLinkWrap > li:hover h3{
                     transition: all 0.7s;

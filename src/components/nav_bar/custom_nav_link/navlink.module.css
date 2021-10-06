@@ -1,3 +1,19 @@
-.home{
-    background-image: url(../../../icons/iconmonstr-home-6.svg);
-}
+a {
+    position: relative;
+    display: flex;
+    transition: all 0.3s;
+    background-color: var(--noactive_dark);
+    color: whitesmoke;
+    background-position: right 17px top 50%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}  
+
+    a > h3{
+        opacity: 0;
+        background-color: transparent;
+        margin: auto 0px;
+    }
