@@ -7,24 +7,24 @@ function NavBar() {
     return (
         <nav className={c.navMain} >
                 <ul className={c.menuLinkWrap}>
-                    <li>
+                    <li className={c.home}>
                         <CustomNavLink href="home" description="Домашняя"/>
                     </li>
 
-                    <li>
-                        <CustomNavLink href="about_me" description="Про меня"/>
+                    <li className={c.about}>
+                        <CustomNavLink href="about_me" description="ПроMеня"/>
                     </li>
 
-                    <li>
-                        <CustomNavLink href="skills" description="Скилы"/>
-                    </li>
-
-                    <li>
+                    <li className={c.works}>
                         <CustomNavLink href="works" description="Работы"/>
                     </li>
                     
-                    <li>
+                    <li className={c.contacts}>
                         <CustomNavLink href="contacts" description="Контакты"/>
+                    </li>
+
+                    <li className={c.remote}>
+                        <CustomNavLink href="remote_job" description="Удалёнка"/>
                     </li>
                 </ul>
         </nav>

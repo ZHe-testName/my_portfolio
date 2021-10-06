@@ -5,8 +5,12 @@
     top: 0px;
     right: 0px;
     height: 100vh;
-    width: 150px;
-    background-color: darkgreen;
+    width: 60px;
+}
+
+.navMain h3{
+    background-color: transparent;
+    margin: 0px;
 }
 
     /* .sticky {
@@ -16,21 +20,52 @@
         .menuLinkWrap {
             display: flex;
             flex-direction: column;
-            border: 1px solid black;
             padding-top: 10px;
             padding-bottom: 10px;
             padding-left: 0px;
             margin: auto 0px;
+            margin-right: 30px;
             height: 50%;
             list-style-type: none;
             justify-content: space-between;
         }
 
-        .menuLinkWrap a {
-            color: whitesmoke;
-            margin: 0px 30px;
-            text-decoration: none;
-        }
+            .menuLinkWrap > li {
+                width: 50px;
+                height: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: var(--active_yellow);
+                border-radius: 50%;
+            }
+
+                .home{
+                    background-image: url(../../icons/home.svg);
+                }
+
+                .about{
+                    background-image: url(../../icons/user.svg);
+                }
+
+                .works{
+                    background-image: url(../../icons/portfolio.svg);
+                }
+
+                .contacts{
+                    background-image: url(../../icons/mail-open-file.svg);
+                }
+
+                .remote{
+                    background-image: url(../../icons/network.svg);
+                }
+
+            .menuLinkWrap a {
+                position: relative;
+                left: -105px;
+                color: whitesmoke;
+                margin: 0px 30px;
+                text-decoration: none;
+            }
 
 @media (max-width: 769px) {
     .menuLinkWrap > a {

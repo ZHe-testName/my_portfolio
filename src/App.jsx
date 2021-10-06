@@ -9,6 +9,7 @@ import MyWorks from './components/my_works/MyWorks';
 import Skills from './components/skills/Skills';
 import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
+import RemoteJob from './components/remote_job/RemoteJob';
 
 function App() {
   return (
@@ -22,11 +23,11 @@ function App() {
 
           <Route path="/about_me" render={() => <AboutMe/>}/>
 
-          <Route path="/skills" render={() => <Skills/>}/>
+          <Route path="/works" render={() => <MyWorks/>}/>
 
-          <Route path="/skills" render={() => <MyWorks/>}/>
+          <Route path="/contacts" render={() => <Contacts/>}/>
 
-          <Route path="/skills" render={() => <Contacts/>}/>
+          <Route path="/remote_job" render={() => <RemoteJob/>} />
         </div>
     </main>
   );
