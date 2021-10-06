@@ -1,27 +1,33 @@
 import React from 'react';
+import {Route, Redirect} from 'react-router-dom';
 
 import c from './app.module.css';
 
-import AboutMe from './components/about_me/AboutMe';
+import Home from './components/home/Home';
 import Contacts from './components/contacts/Contacts';
-import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
+import Header from './components/nav_bar/NavBar';
 import MyWorks from './components/my_works/MyWorks';
-import RemoteJob from './components/remote_job/RemoteJob';
-import ScrollUpButton from './components/scroll_up_button/ScrollUpButton';
 import Skills from './components/skills/Skills';
+import AboutMe from './components/about_me/AboutMe';
 
 function App() {
   return (
     <main className={c.app}>
         <Header />
-        <AboutMe />
-        <Skills />
-        <MyWorks />
-        <RemoteJob />
-        <Contacts />
-        <Footer />
-        <ScrollUpButton />
+
+        <div className="mainContent">
+          <Route path={'/'} exact render={() => <Redirect to="/home"/>}/>
+
+          <Route path="/home" render={() => <Home/>}/>
+
+          <Route path="/about_me" render={() => <AboutMe/>}/>
+
+          <Route path="/skills" render={() => <Skills/>}/>
+
+          <Route path="/works" render={() => <MyWorks/>}/>
+
+          <Route path="/contacts" render={() => <Contacts/>}/>
+        </div>
     </main>
   );
 }

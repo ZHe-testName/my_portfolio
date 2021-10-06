@@ -1,0 +1,38 @@
+.aboutMe {
+    background-color: blueviolet;
+    padding-top: var(--main_blocks_wrapper_padding);
+    padding-bottom: var(--main_blocks_wrapper_padding);
+}
+
+    .aboutMeWrap {
+        width: var(--main_blocks_wrapper_width);
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+        .aboutMeDescription{
+            background-color: blanchedalmond;
+        }
+
+        .aboutMeImage {
+            width: 250px;
+            height: 300px;
+            background-color: darkslategrey;
+        }
+
+@media (max-width: 481px) {
+    .aboutMeWrap {
+        align-items: stretch;
+        flex-direction: column;
+        padding: var(--main_blocks_wrapper_small_padding);
+    }
+
+        .aboutMeImage {
+            width: auto;
+            margin-top: 20px;
+            align-self: stretch;
+        }
+}
