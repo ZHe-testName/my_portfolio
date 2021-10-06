@@ -31,16 +31,17 @@
         }
 
             .menuLinkWrap > li {
-                width: 50px;
-                height: 50px;
+                width: 55px;
+                height: 55px;
                 background-position: center;
                 background-repeat: no-repeat;
-                background-color: var(--active_yellow);
+                /* background-color: var(--active_yellow); */
+                background-color: #2b2a2a;
                 border-radius: 50%;
             }
 
                 .home{
-                    background-image: url(../../icons/home.svg);
+                    background-image: url(../../icons/iconmonstr-home-6.svg);
                 }
 
                 .about{
