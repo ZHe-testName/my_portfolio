@@ -7,12 +7,12 @@ function NavBar() {
     return (
         <nav className={c.navMain} >
                 <ul className={c.menuLinkWrap}>
-                    <li>
-                        <CustomNavLink href="home" description="Домашняя" bgImageURL={'../../icons/iconmonstr-home-6.svg'}/>
+                    <li className={c.home}>
+                        <CustomNavLink href="home" description="Домашняя" />
                     </li>
 
                     <li className={c.about}>
-                        <CustomNavLink href="about_me" description="ПроMеня"/>
+                        <CustomNavLink href="about_me" description="ПроMеня" />
                     </li>
 
                     <li className={c.works}>

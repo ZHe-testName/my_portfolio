@@ -24,6 +24,27 @@
             align-items: flex-end;
         }
 
+        
+            .home > a{
+                background-image: url(../../icons/iconmonstr-home-6.svg);
+            }
+            
+            .about > a{
+                background-image: url(../../icons/iconmonstr-user-14.svg);
+            }
+            
+            .works > a{
+                background-image: url(../../icons/iconmonstr-briefcase-9.svg);
+            }
+            
+            .contacts > a{
+                background-image: url(../../icons/iconmonstr-email-7.svg);
+            }
+            
+            .remote > a{
+                background-image: url(../../icons/iconmonstr-sitemap-8.svg);
+            }
+
             .menuLinkWrap a {
                 position: relative;
                 display: flex;
@@ -31,7 +52,6 @@
                 color: whitesmoke;
                 background-position: right 17px top 50%;
                 background-repeat: no-repeat;
-                background-image: url(../../icons/iconmonstr-home-6.svg);
                 text-decoration: none;
                 width: 55px;
                 height: 55px;
@@ -39,15 +59,20 @@
             }  
 
             .menuLinkWrap > li:hover a{
-                background-color: tomato;
                 transition: all 0.3s;
                 width: 160px;
+                /* box-shadow: 0px 0px 7px 1px rgb(180 180 180); */
             }
-
+           
                 .navMain a > h3{
                     opacity: 0;
                     background-color: transparent;
                     margin: auto 0px;
+                }
+
+                .menuLinkWrap > li:hover h3{
+                    transition: all 0.7s;
+                    opacity: 1;
                 }
 
 @media (max-width: 769px) {
