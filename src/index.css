@@ -1,7 +1,16 @@
 :root {
   --main_blocks_wrapper_width: 80%;
   --main_blocks_wrapper_padding: 30px;
-  --main_blocks_wrapper_small_padding: 10px
+  --main_blocks_wrapper_small_padding: 10px;
+
+  --light: #f8f9fa;
+  --line_color: #252525;
+  --light_line_color: #777;
+  --dark_text: #fff;
+  --icon_grey: #ddd;
+  --active_yellow: #ffb400;
+  --noactive_dark: #2b2a2a;
+  --main_black: #111;
 }
 
 html {

@@ -1,22 +1,32 @@
-.header {
+.navMain {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    width: 150px;
     background-color: darkgreen;
 }
 
-    .menuWrap {
-        display: flex;
-        justify-content: flex-end;
-        width: var(--main_blocks_wrapper_width);
-        margin: 0px auto;
-        padding: var(--main_blocks_wrapper_padding);
-    }
+    /* .sticky {
+        position: sticky;
+    } */
 
         .menuLinkWrap {
+            display: flex;
+            flex-direction: column;
             border: 1px solid black;
             padding-top: 10px;
             padding-bottom: 10px;
+            padding-left: 0px;
+            margin: auto 0px;
+            height: 50%;
+            list-style-type: none;
+            justify-content: space-between;
         }
 
-        .menuLinkWrap > a {
+        .menuLinkWrap a {
             color: whitesmoke;
             margin: 0px 30px;
             text-decoration: none;
@@ -29,9 +39,9 @@
 }
 
 @media (max-width: 481px) {
-    .menuWrap {
+    /* .menuWrap {
         justify-content: center;
-    }
+    } */
 
     .menuLinkWrap > a {
         margin: 0px 5px;
