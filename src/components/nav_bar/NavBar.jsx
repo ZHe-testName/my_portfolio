@@ -7,8 +7,8 @@ function NavBar() {
     return (
         <nav className={c.navMain} >
                 <ul className={c.menuLinkWrap}>
-                    <li className={c.home}>
-                        <CustomNavLink href="home" description="Домашняя"/>
+                    <li>
+                        <CustomNavLink href="home" description="Домашняя" bgImageURL={'../../icons/iconmonstr-home-6.svg'}/>
                     </li>
 
                     <li className={c.about}>

@@ -8,16 +8,9 @@
     width: 60px;
 }
 
-.navMain h3{
-    background-color: transparent;
-    margin: 0px;
-}
-
-    /* .sticky {
-        position: sticky;
-    } */
 
         .menuLinkWrap {
+            position: relative;
             display: flex;
             flex-direction: column;
             padding-top: 10px;
@@ -28,48 +21,34 @@
             height: 50%;
             list-style-type: none;
             justify-content: space-between;
+            align-items: flex-end;
         }
-
-            .menuLinkWrap > li {
-                width: 55px;
-                height: 55px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-color: var(--noactive_dark);
-                border-radius: 50%;
-            }
-
-            .menuLinkWrap > li:hover{
-                background-color: var(--active_yellow);
-            }
-
-                .home{
-                    background-image: url(../../icons/iconmonstr-home-6.svg);
-                }
-
-                .about{
-                    background-image: url(../../icons/iconmonstr-user-14.svg);
-                }
-
-                .works{
-                    background-image: url(../../icons/iconmonstr-briefcase-9.svg);
-                }
-
-                .contacts{
-                    background-image: url(../../icons/iconmonstr-email-7.svg);
-                }
-
-                .remote{
-                    background-image: url(../../icons/iconmonstr-sitemap-8.svg);
-                }
 
             .menuLinkWrap a {
                 position: relative;
-                left: -105px;
+                display: flex;
+                background-color: var(--active_yellow);
                 color: whitesmoke;
-                margin: 0px 30px;
+                background-position: right 17px top 50%;
+                background-repeat: no-repeat;
+                background-image: url(../../icons/iconmonstr-home-6.svg);
                 text-decoration: none;
+                width: 55px;
+                height: 55px;
+                border-radius: 50px;
+            }  
+
+            .menuLinkWrap > li:hover a{
+                background-color: tomato;
+                transition: all 0.3s;
+                width: 160px;
             }
+
+                .navMain a > h3{
+                    opacity: 0;
+                    background-color: transparent;
+                    margin: auto 0px;
+                }
 
 @media (max-width: 769px) {
     .menuLinkWrap > a {
