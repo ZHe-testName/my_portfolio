@@ -5,7 +5,9 @@ function CustomNavLink(props) {
     const {href, description} = props;
 
     return (
-        <NavLink to={href} >
+        <NavLink to={href} activeStyle={{
+            backgroundColor: '#ffb400',
+        }}>
             <h3>
                 {description}
             </h3>
