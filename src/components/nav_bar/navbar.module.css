@@ -35,9 +35,12 @@
                 height: 55px;
                 background-position: center;
                 background-repeat: no-repeat;
-                /* background-color: var(--active_yellow); */
-                background-color: #2b2a2a;
+                background-color: var(--noactive_dark);
                 border-radius: 50%;
+            }
+
+            .menuLinkWrap > li:hover{
+                background-color: var(--active_yellow);
             }
 
                 .home{
@@ -45,19 +48,19 @@
                 }
 
                 .about{
-                    background-image: url(../../icons/user.svg);
+                    background-image: url(../../icons/iconmonstr-user-14.svg);
                 }
 
                 .works{
-                    background-image: url(../../icons/portfolio.svg);
+                    background-image: url(../../icons/iconmonstr-briefcase-9.svg);
                 }
 
                 .contacts{
-                    background-image: url(../../icons/mail-open-file.svg);
+                    background-image: url(../../icons/iconmonstr-email-7.svg);
                 }
 
                 .remote{
-                    background-image: url(../../icons/network.svg);
+                    background-image: url(../../icons/iconmonstr-sitemap-8.svg);
                 }
 
             .menuLinkWrap a {
