@@ -1,0 +1,117 @@
+.aboutMeTitle{
+    margin: 40px 0px;
+}
+
+    .aboutMeTitle > h1{
+        font-size: 56px;
+        font-weight: 900;
+        text-align: center;
+        color: var(--dark_text);
+        text-transform: uppercase;
+        margin: 0 auto;
+        font-family: 'Fira Mono', monospace;
+    }
+
+        .aboutMeTitle > h1 > span{
+            color: var(--active_yellow);
+            margin-left: 10px;
+        }
+
+    .aboutMeTitle > span{
+        display: block;
+        text-align: center;
+        font-size: 110px;
+        left: 0;
+        letter-spacing: 10px;
+        line-height: 0.7;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.07);
+    }
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+    .personalInfo{
+        display: flex;
+        flex-direction: column;
+    }
+
+        .personalInfo > h3{
+            line-height: 1.2;
+            font-size: 26px;
+            margin-bottom: 0px;
+        }
+
+        .personalInfo > ul{
+            display: flex;
+            height: 170px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            list-style-type: none;
+            line-height: 40px;
+            padding: 0px;
+            font-size: 17px;
+        }
+
+            .personalInfo > ul > li{
+                margin-right: 30px;
+                word-spacing: -7px;
+            }
+
+                .personalInfo > ul > li > span:first-of-type{
+                    text-transform: capitalize;
+                    color: var(--light_line_color);
+                }
+
+            .buttonwrap{
+                position: relative;
+                width: 210px;
+                height: 53px;
+                display: flex;
+                border-radius: 50px;
+                justify-content: flex-end;
+                border: 2px solid var(--active_yellow) ;
+            }
+    
+            .buttonwrap:hover > button{
+                transition: all 0.3s;
+                width: 214px;
+            }
+    
+            .buttonwrap > button > h3{
+                position: absolute;
+                color: var(--light);
+                width: 120px;
+                opacity: 1;
+                z-index: 2;
+                top: 1px;
+                right: 80px;
+                font-size: 17px;
+            }
+    
+            .buttonwrap > button{
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                width: 55px;
+                height: 55px;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                background-color: var(--active_yellow);
+                background-repeat: no-repeat;
+                background-image: url(../../icons/iconmonstr-download-19.svg);
+                background-position: right 15px top 50%;
+            }
+    
+            /* .buttonwrap > a:hover{
+                transition: all 0.3s;
+                width: 214px;
+            } */

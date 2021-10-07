@@ -10,8 +10,8 @@ function AboutMe(props) {
     return (
         <section className={c.aboutMe}>
             <div className={c.aboutMeTitle}>
-                <h1>ПРО
-                    <span>Меня</span>
+                <h1>ОБО
+                    <span>Мне</span>
                 </h1>
 
                 <span>
@@ -25,13 +25,13 @@ function AboutMe(props) {
                         ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ
                     </h3>
 
-                    <div>
-                        <ul>
-                            {personalInfoArr}
-                        </ul>
+                    <ul>
+                        {personalInfoArr}
+                    </ul>
 
+                    <div className={c.buttonwrap}>
                         <button>
-                            Загрузить CV
+                            <h3>Загрузить CV</h3>
                         </button>
                     </div>
                 </div>
