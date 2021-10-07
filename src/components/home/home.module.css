@@ -20,7 +20,7 @@
         width: 450px;
         height: 100vh;
         background-color: var(--active_yellow);
-        clip-path: polygon(0 0, 30% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
         z-index: 1;
     }
 
@@ -47,7 +47,6 @@
             text-align: center;
             font-size: 51px;
             line-height: 62px;
-            font-weight: 700;
             margin-bottom: 0px;
             color: var(--active_yellow);
         }
@@ -59,7 +58,6 @@
             line-height: 62px;
             font-weight: 700;
             margin-left: 65px;
-            margin-bottom: 30px;
         }
 
         .homeMeDescription > p{
@@ -124,16 +122,6 @@
             background-color: var(--active_yellow);
         }
 
-@media (max-width: 481px) {
-    .homeMeWrap {
-        align-items: stretch;
-        flex-direction: column;
-        padding: var(--main_blocks_wrapper_small_padding);
-    }
+@media (max-width: 1180px) {
 
-        .homeMeDescription {
-            width: auto;
-            margin-top: 20px;
-            align-self: stretch;
-        }
 }

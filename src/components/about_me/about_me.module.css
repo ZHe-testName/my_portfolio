@@ -10,13 +10,12 @@
 }
 
     .aboutMeTitle > h1{
-        font-size: 56px;
-        font-weight: 900;
+        font-size: 54px;
         text-align: center;
         color: var(--dark_text);
         text-transform: uppercase;
         margin: 0 auto;
-        font-family: 'Fira Mono', monospace;
+        font-family: 'Rubik Mono One', sans-serif;
     }
 
         .aboutMeTitle > h1 > span{
@@ -26,8 +25,9 @@
 
     .aboutMeTitle > span{
         display: block;
+        font-family: 'Rubik Mono One', sans-serif;
         text-align: center;
-        font-size: 110px;
+        font-size: 100px;
         left: 0;
         letter-spacing: 10px;
         line-height: 0.7;
@@ -35,7 +35,6 @@
         right: 0;
         top: 75px;
         text-transform: uppercase;
-        font-weight: 800;
         color: rgba(255, 255, 255, 0.07);
     }
 
