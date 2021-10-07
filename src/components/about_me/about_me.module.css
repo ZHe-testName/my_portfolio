@@ -1,3 +1,10 @@
+.separator{
+    border: none;
+    border-top: 1px solid var(--line_color);
+    margin: 70px auto 55px;
+    max-width: 40%;
+}
+
 .aboutMeTitle{
     margin: 40px 0px;
 }
@@ -57,7 +64,7 @@
             list-style-type: none;
             line-height: 40px;
             padding: 0px;
-            font-size: 17px;
+            font-size: 18px;
         }
 
             .personalInfo > ul > li{
@@ -78,6 +85,7 @@
                 border-radius: 50px;
                 justify-content: flex-end;
                 border: 2px solid var(--active_yellow) ;
+                margin-top: 25px;
             }
     
             .buttonwrap:hover > button{
@@ -111,7 +119,52 @@
                 background-position: right 15px top 50%;
             }
     
-            /* .buttonwrap > a:hover{
-                transition: all 0.3s;
-                width: 214px;
-            } */
+.expirience{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-top: 25px;
+}
+
+    .expirience > div{
+        border: 1px solid var(--line_color);
+        height: 150px;
+        margin-bottom: 30px;
+        width: 210px;
+    }
+
+        .expirience > div > h3{
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            margin-left: 30px;
+            font-size: 60px;
+            color: var(--active_yellow);
+        }
+
+        .expirience > div > p{
+            position: relative;
+            padding-left: 70px;
+            width: 50px;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-top: 0px;
+        }
+
+        .expirience > div > p::before{
+            content: "";
+            position: absolute;
+            left: 32px;
+            top: 16px;
+            width: 30px;
+            height: 1px;
+            background: var(--light_line_color);
+        }
+
+        .expirience > div > h3::after{
+            content: '+';
+            position: absolute;
+            right: -25px;
+            font-size: 40px;
+            font-weight: 300;
+        }

@@ -56,6 +56,8 @@ function AboutMe(props) {
                 </div>
             </div>
 
+            <hr className={c.separator}/>
+
             <Skills/>
         </section>
     );
