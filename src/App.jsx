@@ -11,6 +11,17 @@ import NavBar from './components/nav_bar/NavBar';
 import RemoteJob from './components/remote_job/RemoteJob';
 
 function App() {
+  const personalInfo = {
+    name: 'Евгений',
+    surname: 'Хорунжий',
+    age: '31',
+    nationality: 'Украинец',
+    country: 'Украина',
+    phone: '+380638828081',
+    email: 'horunzhy.wgen@gmail.com',
+    languages: 'Русский, Украинский, English',
+  };
+
   return (
     <main className={c.app}>
         <NavBar />
@@ -20,7 +31,7 @@ function App() {
 
           <Route path="/home" render={() => <Home/>}/>
 
-          <Route path="/about_me" render={() => <AboutMe/>}/>
+          <Route path="/about_me" render={() => <AboutMe info={personalInfo}/>}/>
 
           <Route path="/works" render={() => <MyWorks/>}/>
 

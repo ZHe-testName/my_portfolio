@@ -25,10 +25,6 @@ function Home() {
                     </p>
 
                     <div className={c.buttonwrap}>
-                        {/* <span>
-                            Подробнее...
-                        </span> */}
-
                         <CustomNavLink href="about_me" description="Подробнее..."/>
                     </div>
                 </div>
