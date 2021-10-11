@@ -5,7 +5,7 @@ import c from './about_me.module.css';
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
-                                .map(item => <li><span>{item[0]}: </span><span>{item[1]}</span></li>);
+                                .map((item, i) => <li key={i}><span>{item[0]}: </span><span>{item[1]}</span></li>);
 
     return (
         <section className={c.aboutMe}>
@@ -45,14 +45,6 @@ function AboutMe(props) {
                         <h3>20</h3>
                         <p>ГОТОВЫХ ПРОЕКТОВ</p>
                     </div>
-                    {/* <div>
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                    </div> */}
                 </div>
             </div>
 

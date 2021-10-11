@@ -1,0 +1,40 @@
+.progressBarWrap{
+    position: relative;
+}
+
+.back{
+    position: absolute;
+    width: 132px;
+    top: 6px;
+    left: 4px;
+    height: 132px;
+    background-color: var(--noactive_dark);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.scale{
+    position: absolute;
+    text-align: center;
+    line-height: 106px;
+    text-shadow: 0px -5px 15px white;
+    font-size: 30px;
+    top: 18px;
+    left: 17px;
+    width: 107px;
+    height: 108px;
+    border-radius: 50%;
+    background-color: var(--main_black);
+    box-shadow: #ffde8f 0px 0px 14px -9px;
+    z-index: 2;
+}
+
+ .progressBarWrap svg{
+    position: absolute;
+    z-index: 4;
+ }
+
+    .circle{
+        transform-origin: center;
+        transform: rotateZ(-90deg);
+    }
