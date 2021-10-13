@@ -25,9 +25,9 @@ function App() {
   const skillsArr = [
     [65, 'javascript'],
     [30, 'typescript'],
-    [45, 'css'],
+    [55, 'css'],
     [40, 'html'],
-    [55, 'react'],
+    [45, 'react'],
   ];
 
   return (

@@ -1,0 +1,10 @@
+.cardWrap{
+    background-color: silver;
+}
+
+.cardWrap picture{
+    background-image: url(../../../../icons/iconmonstr-education-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import Skills from "../skills/Skills";
+import Skills from "./skills/Skills";
 
 import c from './about_me.module.css';
+import Education from "./education/Education";
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
@@ -51,6 +52,10 @@ function AboutMe(props) {
             <hr className={c.separator}/>
 
             <Skills skillsCollection={props.skillsCollection}/>
+
+            <hr className={c.separator}/>
+
+            <Education/>
         </section>
     );
 };
