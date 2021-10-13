@@ -50,7 +50,7 @@ function AboutMe(props) {
 
             <hr className={c.separator}/>
 
-            <Skills/>
+            <Skills skillsCollection={props.skillsCollection}/>
         </section>
     );
 };

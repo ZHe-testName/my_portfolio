@@ -22,6 +22,14 @@ function App() {
     languages: 'Русский, Украинский, English',
   };
 
+  const skillsArr = [
+    [65, 'javascript'],
+    [30, 'typescript'],
+    [45, 'css'],
+    [40, 'html'],
+    [55, 'react'],
+  ];
+
   return (
     <main className={c.app}>
         <NavBar />
@@ -31,7 +39,7 @@ function App() {
 
           <Route path="/home" render={() => <Home/>}/>
 
-          <Route path="/about_me" render={() => <AboutMe info={personalInfo}/>}/>
+          <Route path="/about_me" render={() => <AboutMe info={personalInfo} skillsCollection={skillsArr}/>}/>
 
           <Route path="/works" render={() => <MyWorks/>}/>
 

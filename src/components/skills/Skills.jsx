@@ -1,17 +1,22 @@
 import React from "react";
-import SkillsCard from "./skills_card/SkillsCard";
 
 import c from './skills.module.css';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
-function Skills() {
-    const settings = {
-        progressPercent: 45,
-        description: 'JAVASCRIPT',
-        cx: '50%',
-        cy: '50%',
-        r: '59',
-    };
+function Skills(props) {
+    const r = '59';
+
+    const skillsList = props.skillsCollection.map((el, i) => {
+        const settings = {
+            progressPercent: el[0], 
+            description: el[1],
+            r: r,
+        };
+
+        return (
+            <SkillProgrssBar key={props.skillsCollection[i][1]} {...settings}/>
+        );
+    });
 
     return (
         <section className={c.skills} id='skills'>
@@ -22,16 +27,9 @@ function Skills() {
                     </h3>
                 </div>
 
-                <div className={c.skillsCollection}>
-                    {/* <SkillsCard />
-                    <SkillsCard />
-                    <SkillsCard /> */}
-                    <SkillProgrssBar {...settings}/>
-                    <SkillProgrssBar {...settings}/>
-                    <SkillProgrssBar {...settings}/>
-                    <SkillProgrssBar {...settings}/>
-                    <SkillProgrssBar {...settings}/>
-                </div>
+                <ul className={c.skillsCollection}>
+                    {skillsList}
+                </ul>
             </div>
         </section>
     );

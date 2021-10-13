@@ -3,15 +3,17 @@ import React from "react";
 import c from './skill_prores_barr.module.css';
 
 function SkillProgrssBar(props) {
-    const {width, height, stroke, strokeWidth, progressPercent, description, cx, cy, r} = props;
+    const {progressPercent, description, r} = props;
 
     const circumfrence = 2 * Math.PI * r;
 
     const strokeDasharray = `${circumfrence} ${circumfrence}`,
         strokeDashOffset = circumfrence - progressPercent / 100 * circumfrence;
 
+    
+
     return (
-       <div className={c.progressBarBlock}>
+       <li className={c.progressBarBlock} >
             <div 
                 className={c.progressBarWrap}>
                     <div className={c.back}>
@@ -23,16 +25,11 @@ function SkillProgrssBar(props) {
                             {progressPercent + '%'}
                     </span>
 
-                    <svg 
-                        width={width}
-                        height={height}>
+                    <svg>
                             <circle
                                 className={c.circle}
-                                stroke={stroke}
-                                strokeWidth={strokeWidth}
-                                strokeLinecap="round"
-                                cx={cx}
-                                cy={cy}
+                                cx='50%'
+                                cy='50%'
                                 r={r}
                                 fill="transparent"
                                 style={{
@@ -44,7 +41,7 @@ function SkillProgrssBar(props) {
             </div>
 
            <h5>{description}</h5>
-        </div>
+        </li>
     );
 };
 
