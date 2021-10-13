@@ -31,7 +31,6 @@ function Skills() {
                     <SkillProgrssBar {...settings}/>
                     <SkillProgrssBar {...settings}/>
                     <SkillProgrssBar {...settings}/>
-                    <SkillProgrssBar {...settings}/>
                 </div>
             </div>
         </section>
