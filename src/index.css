@@ -13,6 +13,8 @@
   --active_yellow: #ffb400;
   --noactive_dark: #2b2a2a;
   --main_black: #111;
+  --left_line_ediq_block: #333;
+  --dark_background: #eee;
 }
 
 html {

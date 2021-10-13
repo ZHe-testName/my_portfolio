@@ -1,9 +1,19 @@
+.aboutMe h3{
+    line-height: 1.2;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px auto;
+}
+
 .separator{
     border: none;
     border-top: 1px solid var(--line_color);
     margin: 40px auto 40px;
     max-width: 40%;
 }
+
+
 
 .aboutMeTitle{
     margin: 40px 0px;
@@ -42,19 +52,13 @@
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
-    width: 1100px;
+    max-width: 1100px;
 }
 
     .personalInfo{
         display: flex;
         flex-direction: column;
     }
-
-        .personalInfo > h3{
-            line-height: 1.2;
-            font-size: 26px;
-            margin-bottom: 0px;
-        }
 
         .personalInfo > ul{
             display: flex;
@@ -99,7 +103,7 @@
                 width: 120px;
                 opacity: 1;
                 z-index: 2;
-                top: 1px;
+                top: 9px;
                 right: 80px;
                 font-size: 17px;
             }

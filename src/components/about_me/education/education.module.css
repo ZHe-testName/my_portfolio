@@ -1,0 +1,10 @@
+.educationBlock{
+    display: block;
+    margin: 0px auto;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+    .educationBlock > ul{
+        list-style-type: none;
+    }
