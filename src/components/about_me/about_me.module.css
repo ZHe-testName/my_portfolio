@@ -1,7 +1,7 @@
 .separator{
     border: none;
     border-top: 1px solid var(--line_color);
-    margin: 70px auto 55px;
+    margin: 40px auto 40px;
     max-width: 40%;
 }
 

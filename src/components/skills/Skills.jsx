@@ -6,14 +6,10 @@ import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
 function Skills() {
     const settings = {
-        width: '140',
-        height: '140',
-        stroke: '#ffb400',
-        strokeWidth: '12',
-        progressPercent: 18,
-        percentNum: '18%',
-        cx: '70',
-        cy: '70',
+        progressPercent: 45,
+        description: 'JAVASCRIPT',
+        cx: '50%',
+        cy: '50%',
         r: '59',
     };
 
@@ -27,12 +23,14 @@ function Skills() {
                 </div>
 
                 <div className={c.skillsCollection}>
+                    {/* <SkillsCard />
                     <SkillsCard />
-                    <SkillsCard />
-                    <SkillsCard />
-                </div>
-
-                <div>
+                    <SkillsCard /> */}
+                    <SkillProgrssBar {...settings}/>
+                    <SkillProgrssBar {...settings}/>
+                    <SkillProgrssBar {...settings}/>
+                    <SkillProgrssBar {...settings}/>
+                    <SkillProgrssBar {...settings}/>
                     <SkillProgrssBar {...settings}/>
                 </div>
             </div>
