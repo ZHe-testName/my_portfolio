@@ -10,6 +10,11 @@ function Education() {
 
             <ul>
                 <EducationCard/>
+                <EducationCard/>
+                <EducationCard/>
+                <EducationCard/>
+                <EducationCard/>
+                <EducationCard/>
             </ul>
         </div>
     );

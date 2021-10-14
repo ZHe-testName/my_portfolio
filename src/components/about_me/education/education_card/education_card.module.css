@@ -1,5 +1,6 @@
 .cardWrap{
     position: relative;
+    display: block;
     max-width: 40%;
     display: block;
     padding-left: 45px;
@@ -23,15 +24,14 @@
     }
 
     .description{
-        max-height: 130px;
+        height: 130px;
         overflow-y: hidden;
     }
 
-    .description:hover{
+    /* .description:hover{
         transition: all 0.5s;
-        height: 100%;
-        overflow-y: visible;
-    }
+        height: 200px;
+    } */
 
         .description > p{
             color: var(--dark_background);
