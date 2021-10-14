@@ -1,13 +1,20 @@
 .myWorkCardWrap{
-    background-color: cornsilk;
-    display: flex;
-    flex-direction: column;
     width: 320px;
-    border: 1px solid black;
-    margin: 5px;
+    margin: 15px;
 }
 
-    .myWorkCardWrap > div {
+    .imgLink{
+        height: 165px;
+        width: 100%;
+        background-image: url(../../../imgs/aviasales.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+
+    /* .myWorkCardWrap > div {
         display: flex;
         flex-direction: column;
     }
@@ -30,7 +37,7 @@
             margin-bottom: 5px;
             margin-right: 5px;
             background-color: chocolate;
-        }
+        } */
 
 
 @media (max-width: 481px) {

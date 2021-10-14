@@ -1,5 +1,4 @@
 .myWorks {
-    background-color: rgb(202, 122, 233);
     padding: var(--main_blocks_wrapper_padding) 0px;
 }
 
@@ -8,23 +7,43 @@
         flex-direction: column;
         width: var(--main_blocks_wrapper_width);
         margin: 0px auto;
-    }
+    } 
 
-        .myWorksWrap > div {
-            border: 1px solid black;
+        .header > h1{
+            font-size: 54px;
+            text-align: center;
+            color: var(--dark_text);
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-family: 'Rubik Mono One', sans-serif;
         }
 
-        .myWorksWrap > div:last-of-type{
-             border-top: none;
+        .header > h1 > span{
+            color: var(--active_yellow);
+            margin-left: 10px;
         }
 
-            .myWorksWrap h3 {
-                width: 175px;
-            }
+        .header > span{
+            display: block;
+            font-family: 'Rubik Mono One', sans-serif;
+            text-align: center;
+            font-size: 100px;
+            left: 0;
+            line-height: 0.7;
+            position: absolute;
+            right: 0;
+            top: 75px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.07);
+        }
 
             .myWorksCollection {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
+                max-width: 1100px;
+                margin: 0px auto;
+                margin-top: 40px;
             }
 
 @media (max-width: 481px) {

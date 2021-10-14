@@ -1,29 +1,112 @@
 .contacts {
-    background-color: brown;
     padding: var(--main_blocks_wrapper_padding) 0px;
 }
 
     .contactsWrap {
         height: 400px;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        width: var(--main_blocks_wrapper_width);
+        max-width: 1100px;
         margin: 0px auto;
-        border: 1px solid black;
+        margin-top: 70px;
     }
+
+        .inputWrap{
+            display: flex;
+        }
+
+        .header > h1{
+            font-size: 54px;
+            text-align: center;
+            color: var(--dark_text);
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-family: 'Rubik Mono One', sans-serif;
+        }
+
+        .header > h1 > span{
+            color: var(--active_yellow);
+            margin-left: 10px;
+        }
+
+        .header > span{
+            display: block;
+            font-family: 'Rubik Mono One', sans-serif;
+            text-align: center;
+            font-size: 100px;
+            left: 0;
+            line-height: 0.7;
+            position: absolute;
+            right: 0;
+            top: 75px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.07);
+        }
 
         .contactsWrap > h3 {
             margin-top: 0px;
             text-align: center;
         }
 
+        .contactsShield{
+            width: 70%;
+            margin-right: 40px;
+        }
+
+            .contactsShield > h3{
+                line-height: 1.2;
+                font-size: 26px;
+                text-transform: uppercase;
+                margin: 0px auto;
+            }
+
+            .contactCard{
+                display: flex;
+                align-items: center;
+                margin: 15px;
+                margin-left: 0px;
+            }
+
+            .contactCard > div:first-of-type{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 35px;
+                height: 35px;
+            }
+
+                .contact{
+                    margin-left: 25px;
+                }
+
+                .contact > h6{
+                    margin: 0px;
+                    text-transform: uppercase;
+                    opacity: 0.8;
+                    font-size: 22px;
+                }
+
+                .contact > span{
+                    font-size: 18px;    
+                }
+
+                .email{
+                    background-image: url(../../icons/iconmonstr-email-1.svg);
+                }
+
+                .contactsWrap .contactCard > .phone{
+                    background-size: 80% 80%;
+                    border-radius: 7px;
+                    background-color: var(--active_yellow);
+                    background-image: url(../../icons/iconmonstr-phone-3.svg);
+                }
+
         .contactsWrap > form {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             margin: 0px auto;
-            width: 500px;
+            width: 190%;
             min-height: 200px;
             border: 1px solid black;
         }

@@ -60,6 +60,10 @@
         flex-direction: column;
     }
 
+        .personalInfo > h3{
+            margin-left: 0px;
+        }
+
         .personalInfo > ul{
             display: flex;
             height: 170px;

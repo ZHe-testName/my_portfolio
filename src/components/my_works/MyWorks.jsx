@@ -5,15 +5,20 @@ import MyWorkCard from "./my_work_card/MyWorkCard";
 
 function MyWorks() {
     return (
-        <section className={c.myWorks} id='my_works'>
+        <section className={c.myWorks}>
             <div className={c.myWorksWrap}>
-                <div>
-                    <h3>
-                        Мои работы
-                    </h3>
+                <div className={c.header}>
+                    <h1>МОИ
+                        <span>Работы</span>
+                    </h1>
+
+                    <span>
+                        Поптфолио
+                    </span>
                 </div>
 
                 <div className={c.myWorksCollection}>
+                    <MyWorkCard />
                     <MyWorkCard />
                     <MyWorkCard />
                 </div>

@@ -4,21 +4,16 @@ import Button from "../../button/Button";
 import c from './my_work_card.module.css';
 
 function MyWorkCard() {
+    const onMouseEnterHandler = (e) => {
+        // console.log(e);
+    }; 
+
     return (
         <article className={c.myWorkCardWrap}>
-            <div>
-                <Button title='Смотреть' />
-            </div>
-
-            <div>
-                <p>
-                    Название проекта
-                </p>
-
-                <div className={c.myWorkCardDescription}>
-                    Краткое описание
-                </div>
-            </div>
+            <div 
+                className={c.imgLink} 
+                href="#"
+                onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
         </article>
     );
 };
