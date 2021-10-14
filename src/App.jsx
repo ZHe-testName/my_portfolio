@@ -30,6 +30,33 @@ function App() {
     [45, 'react'],
   ];
 
+  const educationArr = [
+    {
+      year: 2014,
+      institution: 'внту инээм',
+      specialize: 'бакалавр',
+      textDesc: 'Степень бакалавра в Винницком Политехничном Национальном Университете, Институт Электропривода и Электромеханики',
+    },
+    {
+      year: 2018,
+      institution: 'itvdn',
+      specialize: 'front-end developer',
+      textDesc: '6-ти месечный курс Front-End Developer',
+    },
+    {
+      year: 2019,
+      institution: 'glo-academy',
+      specialize: 'js-developer',
+      textDesc: '4-ёх месечный курс JS-Developer. Первое место по итогам обучения. Третье место на конкурсе проектов',
+    },
+    {
+      year: 2020,
+      institution: 'it-incubator',
+      specialize: 'js(react)-developer',
+      textDesc: '8-ми месячный курс JS(React)-Developer',
+    },
+  ];
+
   return (
     <main className={c.app}>
         <NavBar />
@@ -39,7 +66,10 @@ function App() {
 
           <Route path="/home" render={() => <Home/>}/>
 
-          <Route path="/about_me" render={() => <AboutMe info={personalInfo} skillsCollection={skillsArr}/>}/>
+          <Route path="/about_me" render={() => <AboutMe 
+                                                      info={personalInfo} 
+                                                      skillsCollection={skillsArr} 
+                                                      educationArr={educationArr}/>}/>
 
           <Route path="/works" render={() => <MyWorks/>}/>
 

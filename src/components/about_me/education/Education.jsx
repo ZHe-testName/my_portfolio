@@ -13,8 +13,6 @@ function Education() {
                 <EducationCard/>
                 <EducationCard/>
                 <EducationCard/>
-                <EducationCard/>
-                <EducationCard/>
             </ul>
         </div>
     );
