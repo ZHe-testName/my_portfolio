@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.8055054f.chunk.css",
-    "main.js": "/my_portfolio/static/js/main.ad3e1a38.chunk.js",
-    "main.js.map": "/my_portfolio/static/js/main.ad3e1a38.chunk.js.map",
+    "main.css": "/my_portfolio/static/css/main.b723c227.chunk.css",
+    "main.js": "/my_portfolio/static/js/main.8ec7336b.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.8ec7336b.chunk.js.map",
     "runtime-main.js": "/my_portfolio/static/js/runtime-main.154640fa.js",
     "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.154640fa.js.map",
-    "static/js/2.f2e1634e.chunk.js": "/my_portfolio/static/js/2.f2e1634e.chunk.js",
-    "static/js/2.f2e1634e.chunk.js.map": "/my_portfolio/static/js/2.f2e1634e.chunk.js.map",
+    "static/js/2.c9a1761b.chunk.js": "/my_portfolio/static/js/2.c9a1761b.chunk.js",
+    "static/js/2.c9a1761b.chunk.js.map": "/my_portfolio/static/js/2.c9a1761b.chunk.js.map",
     "index.html": "/my_portfolio/index.html",
-    "static/css/main.8055054f.chunk.css.map": "/my_portfolio/static/css/main.8055054f.chunk.css.map",
-    "static/js/2.f2e1634e.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.f2e1634e.chunk.js.LICENSE.txt",
+    "static/css/main.b723c227.chunk.css.map": "/my_portfolio/static/css/main.b723c227.chunk.css.map",
+    "static/js/2.c9a1761b.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.c9a1761b.chunk.js.LICENSE.txt",
     "static/media/home.module.css": "/my_portfolio/static/media/iconmonstr-arrow-20.a7f087be.svg",
+    "static/media/my_work_card.module.css": "/my_portfolio/static/media/aviasales.95934e4d.jpeg",
     "static/media/navbar.module.css": "/my_portfolio/static/media/iconmonstr-user-14.860c2f82.svg",
-    "static/media/about_me.module.css": "/my_portfolio/static/media/iconmonstr-download-19.f1b6a2f2.svg"
+    "static/media/about_me.module.css": "/my_portfolio/static/media/iconmonstr-download-19.f1b6a2f2.svg",
+    "static/media/education_card.module.css": "/my_portfolio/static/media/iconmonstr-education-1.b8c59f58.svg",
+    "static/media/contacts.module.css": "/my_portfolio/static/media/iconmonstr-phone-3.b45dd641.svg",
+    "static/media/remote_job.module.css": "/my_portfolio/static/media/iconmonstr-handshake-1.28734d14.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.154640fa.js",
-    "static/js/2.f2e1634e.chunk.js",
-    "static/css/main.8055054f.chunk.css",
-    "static/js/main.ad3e1a38.chunk.js"
+    "static/js/2.c9a1761b.chunk.js",
+    "static/css/main.b723c227.chunk.css",
+    "static/js/main.8ec7336b.chunk.js"
   ]
 }
