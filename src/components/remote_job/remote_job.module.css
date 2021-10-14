@@ -1,20 +1,80 @@
 .remoteJob {
-    background-color: darkgoldenrod;
     padding: var(--main_blocks_wrapper_padding) 0px;
 }
 
     .remoteJobWrap {
         display: flex;
-        height: 100px;
         flex-direction: column;
-        width: var(--main_blocks_wrapper_width);
+        max-width: 1100px;
         margin: 0px auto;
-        border: 1px solid black;
+        align-items: flex-start;
     }
+        .remoteJobWrap > h3{
+            line-height: 1.2;
+            font-size: 26px;
+            text-transform: uppercase;
+            margin: 0px auto;
+            margin-left: 0px;
+        }
 
         .remoteJobWrap > button {
-            margin: auto auto;
+            margin: 0px auto;
             margin-bottom: 0px;
+        }
+
+        .remoteJobWrap .button::before{
+            content: '';
+            width: 40px;
+            position: absolute;
+            top: -40px;
+            left: 78px;
+            height: 2px;
+            background-color: var(--light_line_color);
+            transform: rotateZ(90deg);
+        }
+
+        .remoteJobWrap .button{
+            position: relative;
+            width: 210px;
+            height: 53px;
+            display: flex;
+            border-radius: 50px;
+            justify-content: flex-end;
+            border: 2px solid var(--active_yellow);
+            margin-top: 65px;
+        }
+
+        .remoteJobWrap .button > button{
+            position: absolute;
+            right: -1px;
+            top: -1px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-size: 60% 60%;
+            background-color: var(--active_yellow);
+            background-repeat: no-repeat;
+            background-image: url(../../icons/iconmonstr-handshake-1.svg);
+            background-position: right 11px top 50%;
+        }
+
+        .remoteJobWrap .button:hover > button{
+            transition: all 0.3s;
+            width: 214px;
+        }
+
+        .remoteJobWrap .button h3{
+            position: absolute;
+            color: var(--light);
+            width: 120px;
+            opacity: 1;
+            z-index: 2;
+            top: -2px;
+            right: 80px;
+            font-size: 19px;
+            margin-top: 8px;
         }
 
 @media(max-width: 481px) {

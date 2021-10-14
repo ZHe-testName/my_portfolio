@@ -40,7 +40,7 @@ function AboutMe(props) {
                 <div className={c.expirience}>
                     <div>
                         <h3>1</h3>
-                        <p>ГОДОВ ОПЫТА</p>
+                        <p>ГОДА ОПЫТА</p>
                     </div>
                     <div>
                         <h3>20</h3>

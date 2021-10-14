@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button/Button";
+import RemoteJob from "../remote_job/RemoteJob";
 
 import c from './contacts.module.css';
 
@@ -67,18 +68,26 @@ function Contacts() {
 
                 <form>
                     <div className={c.inputWrap}>
-                        <input type="text" />
+                        <input type="text" placeholder="YOUR NAME"/>
 
-                        <input type="text" />
+                        <input type="text" placeholder="YOUR EMAIL"/>
 
-                        <input type="text" />
+                        <input type="text" placeholder="YOUR SUBJECT"/>
                     </div>
 
-                    <textarea name="textarea" maxLength='210'></textarea>
+                    <textarea name="textarea" maxLength='210' placeholder="YOUR MESSAGE"></textarea>
 
-                    <Button title='Отправить'/>
+                    <div className={c.button}>
+                        <button>
+                            <h3>Отправить</h3>
+                        </button>
+                    </div>
                 </form>
             </div>
+
+            <hr className={c.separator}/>
+
+            <RemoteJob/>
         </section>
     );
 };

@@ -21,6 +21,12 @@ function MyWorks() {
                     <MyWorkCard />
                     <MyWorkCard />
                     <MyWorkCard />
+                    <MyWorkCard />
+                    <MyWorkCard />
+                    <MyWorkCard />
+                    <MyWorkCard />
+                    <MyWorkCard />
+                    <MyWorkCard />
                 </div>
             </div>
         </section>

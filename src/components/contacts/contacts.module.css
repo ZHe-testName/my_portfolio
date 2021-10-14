@@ -1,3 +1,10 @@
+.separator{
+    border: none;
+    border-top: 1px solid var(--line_color);
+    margin: 0px auto 40px;
+    max-width: 40%;
+}
+
 .contacts {
     padding: var(--main_blocks_wrapper_padding) 0px;
 }
@@ -10,10 +17,6 @@
         margin: 0px auto;
         margin-top: 70px;
     }
-
-        .inputWrap{
-            display: flex;
-        }
 
         .header > h1{
             font-size: 54px;
@@ -141,23 +144,81 @@
         .contactsWrap > form {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             margin: 0px auto;
-            width: 190%;
+            width: 160%;
             min-height: 200px;
-            border: 1px solid black;
         }
 
-            .contactsWrap > form > input {
-                font-size: large;
-                padding: 5px;
+            .inputWrap{
+                display: flex;
+                justify-content: space-between;
             }
+
+                .inputWrap > input{
+                    height: 30px;
+                    width: 28%;
+                    border-radius: 25px;
+                    background-color: var(--line_color);
+                    padding: 10px 15px;
+                    border: none;
+                    color: var(--dark_text);
+                    font-size: 16px;
+                }
 
             .contactsWrap > form > textarea {
                 resize: none;
-                height: 80px;
-                font-size: large;
+                height: 150px;
+                font-size: 20px;
                 padding: 5px;
+                border-radius: 25px;
+                margin-top: 50px;
+                background-color: var(--line_color);
+                padding: 10px 15px;
+                color: var(--dark_text);
+                border: none;
+            }
+
+            .button{
+                position: relative;
+                width: 210px;
+                height: 53px;
+                display: flex;
+                border-radius: 50px;
+                justify-content: flex-end;
+                border: 2px solid var(--active_yellow);
+                margin-top: 25px;
+            }
+
+            .button > button{
+                position: absolute;
+                right: -1px;
+                top: -1px;
+                width: 55px;
+                height: 55px;
+                border-radius: 50px;
+                border: none;
+                outline: none;
+                background-color: var(--active_yellow);
+                background-repeat: no-repeat;
+                background-image: url(../../icons/iconmonstr-paper-plane-1.svg);
+                background-position: right 15px top 50%;
+            }
+
+            .button:hover > button{
+                transition: all 0.3s;
+                width: 214px;
+            }
+
+            .button h3{
+                position: absolute;
+                color: var(--light);
+                width: 120px;
+                opacity: 1;
+                z-index: 2;
+                top: 9px;
+                right: 80px;
+                font-size: 19px;
+                margin-top: 8px;
             }
 
 @media(max-width: 426px) {

@@ -41,6 +41,10 @@ ul{
   list-style-type: none;
 }
 
+button{
+  transition: all 0.3s;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
