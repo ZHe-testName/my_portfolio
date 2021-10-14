@@ -55,7 +55,7 @@ function AboutMe(props) {
 
             <hr className={c.separator}/>
 
-            <Education/>
+            <Education educationArr={props.educationArr}/>
 
             <hr className={c.separator}/>
         </section>

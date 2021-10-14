@@ -1,7 +1,9 @@
 import c from './education.module.css';
 import EducationCard from "./education_card/EducationCard";
 
-function Education() {
+function Education(props) {
+    const cardsArr = props.educationArr.map(el => <EducationCard key={el.institution} {...el}/>);
+
     return(
         <div className={c.educationBlock}>
             <h3>
@@ -9,10 +11,7 @@ function Education() {
             </h3>
 
             <ul>
-                <EducationCard/>
-                <EducationCard/>
-                <EducationCard/>
-                <EducationCard/>
+                {cardsArr}
             </ul>
         </div>
     );
