@@ -60,6 +60,43 @@
                 margin: 0px auto;
             }
 
+            .contactsShield > p{
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            .snLinksWrap{
+                display: flex;
+                width: 65%;
+                padding: 0px;
+                justify-content: space-between;
+                margin-top: 25px;
+            }
+
+                .snLinksWrap > li > a{
+                    width: 40px;
+                    height: 40px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 50% 50%;
+                }
+
+                .snLinksWrap > li > a:hover{
+                    background-color: var(--active_yellow);
+                }
+
+                    .fb{
+                        background-image: url(../../icons/iconmonstr-facebook-1.svg);
+                    }
+
+                    .li{
+                        background-image: url(../../icons/iconmonstr-linkedin-1.svg);
+                    }
+
+                    .git{
+                        background-image: url(../../icons/iconmonstr-github-3.svg);
+                    }
+
             .contactCard{
                 display: flex;
                 align-items: center;
@@ -87,7 +124,7 @@
                 }
 
                 .contact > span{
-                    font-size: 18px;    
+                    font-size: 17px;    
                 }
 
                 .email{

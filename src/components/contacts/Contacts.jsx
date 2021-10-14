@@ -44,11 +44,24 @@ function Contacts() {
                         </div>
                     </div>
 
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul className={c.snLinksWrap}>
+                        <li>
+                            <a 
+                                className={c.fb}
+                                href="#"></a>
+                        </li>
+
+                        <li>
+                            <a 
+                                className={c.li}
+                                href="#"></a>
+                        </li>
+
+                        <li>
+                            <a 
+                                className={c.git}
+                                href="#"></a>
+                        </li>
                     </ul>
                 </div>
 
