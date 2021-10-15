@@ -10,6 +10,14 @@
         margin: 0px auto;
     }
 
+    .skillsWrap h3{
+        line-height: 1.2;
+        font-size: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0px auto;
+    }
+
         .skillsWrap > div:last-of-type{
              border-top: none;
         }

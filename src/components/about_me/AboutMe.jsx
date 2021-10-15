@@ -3,6 +3,7 @@ import Skills from "./skills/Skills";
 
 import c from './about_me.module.css';
 import Education from "./education/Education";
+import Button from "../button/Button";
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
@@ -30,10 +31,8 @@ function AboutMe(props) {
                         {personalInfoArr}
                     </ul>
 
-                    <div className={c.buttonwrap}>
-                        <button>
-                            <h3>Загрузить CV</h3>
-                        </button>
+                    <div className={c.buttonWrap}>
+                        <Button title='Загрузить CV'/>
                     </div>
                 </div>
 

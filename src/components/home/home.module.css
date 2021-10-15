@@ -86,7 +86,7 @@
         .buttonwrap{
             position: relative;
             width: 210px;
-            height: 63px;
+            height: 51px;
             display: flex;
             border-radius: 60px;
             margin-left: 15px;
@@ -103,7 +103,7 @@
             position: absolute;
             opacity: 1;
             z-index: 2;
-            top: 20px;
+            top: 15px;
             right: 70px;
             font-size: 20px;
         }
@@ -111,12 +111,13 @@
         .buttonwrap > a{
             position: absolute;
             right: -1px;
-            top: -1px;
-            width: 65px;
-            height: 65px;
+            top: -2px;
+            width: 55px;
+            height: 55px;
             background-color: var(--active_yellow);
             background-image: url(../../icons/iconmonstr-arrow-20.svg);
-            background-position: right 20px top 50%;
+            background-size: 25px 25px;
+            background-position: right 15px top 50%;
         }
 
         .buttonwrap > a:hover{

@@ -5,10 +5,18 @@
     margin-bottom: 60px;
 }
 
+    .educationBlock > h3{
+        line-height: 1.2;
+        font-size: 26px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0px auto;
+    }
+
     .educationBlock > ul{
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin-top: 35px;
+        margin-top: 55px;
     }
