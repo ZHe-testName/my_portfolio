@@ -77,10 +77,8 @@ function Contacts() {
 
                     <textarea name="textarea" maxLength='210' placeholder="YOUR MESSAGE"></textarea>
 
-                    <div className={c.button}>
-                        <button>
-                            <h3>Отправить</h3>
-                        </button>
+                    <div className={c.buttonWrap}>
+                        <Button title="Отправить"/>
                     </div>
                 </form>
             </div>

@@ -11,10 +11,8 @@ function RemoteJob() {
                     Рассматриваю варианты удаленной работы
                 </h3>
 
-                <div className={c.button}>
-                        <button>
-                            <h3>Нанять меня</h3>
-                        </button>
+                <div className={c.buttonWrap}>
+                        <Button title="Нанять меня"/>
                 </div>
             </div>
         </section>

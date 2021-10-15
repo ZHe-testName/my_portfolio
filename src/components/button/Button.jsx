@@ -4,9 +4,11 @@ import c from './button.module.css';
 
 function Button(props) {
     return (
-        <button className={c.button}>
-            {props.title}
-        </button>
+        <div className={c.button}>
+            <button>
+                <h3>{props.title}</h3>
+            </button>
+        </div>
     );
 };
 

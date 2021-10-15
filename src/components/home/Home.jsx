@@ -11,11 +11,13 @@ function Home() {
                 </div>
 
                 <div className={c.homeMeDescription}>
-                    <h1>
-                        Я ХОРУНЖИЙ ЕВГЕНИЙ
-                    </h1>
+                    <div className={c.homeTitle}>
+                        <h1>
+                            Я ХОРУНЖИЙ ЕВГЕНИЙ
+                        </h1>
 
-                    <span>JS РАЗРАБОТЧИК</span>
+                        <span>JS РАЗРАБОТЧИК</span>
+                    </div>
 
                     <p>
                         Я JS(React)-разработчик из Украины, специализирующийся на создании чистого и удобного интерфейса и приложений. 
