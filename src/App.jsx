@@ -38,7 +38,13 @@ function App() {
       textDesc: 'Степень бакалавра в Винницком Политехничном Национальном Университете, Институт Электропривода и Электромеханики',
     },
     {
-      year: 2018,
+      year: 2016,
+      institution: 'siemens',
+      specialize: 'siemens-programer',
+      textDesc: '6 курсов обучения. Siemens Programer Stage 2',
+    },
+    {
+      year: 2019,
       institution: 'itvdn',
       specialize: 'front-end developer',
       textDesc: '6-ти месечный курс Front-End Developer',
@@ -48,6 +54,12 @@ function App() {
       institution: 'glo-academy',
       specialize: 'js-developer',
       textDesc: '4-ёх месечный курс JS-Developer. Первое место по итогам обучения. Третье место на конкурсе проектов',
+    },
+    {
+      year: 2020,
+      institution: 'jm',
+      specialize: 'js-developer',
+      textDesc: '6-ми месечный курс JS-Developer.',
     },
     {
       year: 2020,

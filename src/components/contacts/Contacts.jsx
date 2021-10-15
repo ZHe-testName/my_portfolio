@@ -49,19 +49,22 @@ function Contacts() {
                         <li>
                             <a 
                                 className={c.fb}
-                                href="#"></a>
+                                href="https://www.facebook.com/horunzhy.wgen"
+                                target="_blank"></a>
                         </li>
 
                         <li>
                             <a 
                                 className={c.li}
-                                href="#"></a>
+                                href="#"
+                                target="_blank"></a>
                         </li>
 
                         <li>
                             <a 
                                 className={c.git}
-                                href="#"></a>
+                                href="https://github.com/ZHe-testName" 
+                                target="_blank"></a>
                         </li>
                     </ul>
                 </div>

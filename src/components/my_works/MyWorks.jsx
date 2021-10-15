@@ -28,6 +28,14 @@ function MyWorks() {
                     <MyWorkCard />
                     <MyWorkCard />
                 </div>
+
+                <div className={c.ghLink}>
+                    <a href="https://github.com/ZHe-testName" target="_blank">
+                        <h3>
+                            GitHab
+                        </h3>
+                    </a>
+                </div>
             </div>
         </section>
     );      
