@@ -1,6 +1,6 @@
 import React from "react";
 
-import c from './my_works.module.css';
+import c from './my_works.module.scss';
 import MyWorkCard from "./my_work_card/MyWorkCard";
 
 function MyWorks() {
@@ -12,7 +12,7 @@ function MyWorks() {
                         <span>Работы</span>
                     </h1>
 
-                    <span>
+                    <span className={c.shadow}>
                         Поптфолио
                     </span>
                 </div>

@@ -1,0 +1,81 @@
+.cardWrap{
+    position: relative;
+    display: block;
+    width: 40%;
+    display: block;
+    padding-left: 45px;
+    border-left: 1px solid var(--left_line_ediq_block);
+    margin-bottom: 40px;
+
+    picture{
+        display: block;
+        position: absolute;
+        z-index: 4;
+        left: -19px;
+        background-color: var(--active_yellow);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-image: url(../../../../icons/iconmonstr-education-1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    .description{
+        height: 130px;
+        overflow-y: hidden;
+
+        .year{
+            font-size: 14px;
+            background-color: var(--line_color);
+            padding: 0px 10px;
+            border-radius: 10px;
+            color: var(--dark_text);
+        }
+
+        .header{
+            h5{
+                display: inline-block;
+                font-size: 18px;
+                margin: 7px 0 10px;
+                text-transform: uppercase;
+                margin-right: 30px;
+            }
+
+            span{
+                position: relative;
+                color: var(--dark_background);
+                font-size: 17px;
+                text-transform: uppercase;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    background-color: var(--dark_background);
+                    left: -20px;
+                    top: 9px;
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        p{
+            color: var(--dark_background);
+        }
+    }
+
+}
+    /* .description:hover{
+        /* position: absolute;
+        top: 0px;
+        left: 0px; */
+        /* transition: all 0.5s;
+        height: 200px;
+    } */ 
+
+        
+
+        

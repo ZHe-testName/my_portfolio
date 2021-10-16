@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../button/Button";
 import RemoteJob from "../remote_job/RemoteJob";
 
-import c from './contacts.module.css';
+import c from './contacts.module.scss';
 
 function Contacts() {
     return (
@@ -12,7 +12,7 @@ function Contacts() {
                         <span>Связи</span>
                     </h1>
 
-                    <span>
+                    <span className={c.shadow}>
                         Контакты
                     </span>
             </div>

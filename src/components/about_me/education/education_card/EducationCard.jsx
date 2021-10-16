@@ -1,4 +1,4 @@
-import c from './education_card.module.css';
+import c from './education_card.module.scss';
 
 function EducationCard(props) {
     const {year, institution, specialize, textDesc} = props;

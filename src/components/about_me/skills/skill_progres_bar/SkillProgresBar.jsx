@@ -1,6 +1,6 @@
 import React from "react";
 
-import c from './skill_prores_barr.module.css';
+import c from './skill_prores_barr.module.scss';
 
 function SkillProgrssBar(props) {
     const {progressPercent, description, r} = props;

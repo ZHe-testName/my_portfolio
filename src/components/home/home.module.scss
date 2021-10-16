@@ -1,0 +1,125 @@
+.myHome {
+    padding-top: var(--main_blocks_wrapper_padding);
+    padding-bottom: var(--main_blocks_wrapper_padding);
+
+    .homeMeWrap {
+        position: relative;
+        width: var(--main_blocks_wrapper_width);
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -70px;
+            left: -130px;
+            width: 450px;
+            height: 100vh;
+            background-color: var(--active_yellow);
+            clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+            z-index: 1;
+        }
+
+        .homeMeImage{
+            z-index: 100;
+            height: calc(100vh - 100px);
+            min-width: calc(25vw + 80px);
+            border-radius: 30px;
+            box-shadow: 0 0 7px black;
+            background-image: url(../../imgs/AirBrush_20200203115910_LI.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .homeMeDescription {
+            position: relative;
+            max-width: 650px;
+            margin-right: 100px;
+
+            .homeTitle{
+                padding-left: 75px;
+
+                h1{
+                    font-size: 51px;
+                    line-height: 62px;
+                    margin-bottom: 0px;
+                    color: var(--active_yellow);
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 70px;
+                        left: 20px;
+                        height: 4px;
+                        width: 40px;
+                        border-radius: 10px;
+                        background-color: var(--active_yellow);
+                    }
+                }
+
+                span{
+                    color: var(--light);
+                    display: inline-block;
+                    font-size: 51px;
+                    line-height: 62px;
+                    font-weight: 700;
+                }
+            }
+
+            p{
+                margin-left: 15px;
+                line-height: 25px;
+                font-size: 18px;
+            }
+
+            &:last-of-type{
+                margin-bottom: 45px;
+            }
+
+            .buttonwrap{
+                position: relative;
+                width: 210px;
+                height: 51px;
+                display: flex;
+                border-radius: 60px;
+                margin-left: 15px;
+                justify-content: flex-end;
+                border: 2px solid var(--active_yellow);
+
+                &:hover > a{
+                    transition: all 0.3s;
+                    width: 214px;
+                }
+
+                a{
+                    position: absolute;
+                    right: -1px;
+                    top: -2px;
+                    width: 55px;
+                    height: 55px;
+                    background-color: var(--active_yellow);
+                    background-image: url(../../icons/iconmonstr-arrow-20.svg);
+                    background-size: 25px 25px;
+                    background-position: right 15px top 50%;
+
+                    &:hover{
+                        transition: all 0.3s;
+                        width: 214px;
+                    }
+
+                    h3{
+                        position: absolute;
+                        opacity: 1;
+                        z-index: 2;
+                        top: 15px;
+                        right: 70px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

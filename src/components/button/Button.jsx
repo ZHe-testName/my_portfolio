@@ -1,6 +1,6 @@
 import React from "react";
 
-import c from './button.module.css';
+import c from './button.module.scss';
 
 function Button(props) {
     return (

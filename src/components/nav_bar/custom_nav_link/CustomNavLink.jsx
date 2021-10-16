@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom';
-import c from './navlink.module.css';
+import c from './navlink.module.scss';
 
 function CustomNavLink(props) {
     const {href, description} = props;

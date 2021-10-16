@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
 
-import c from './app.module.css';
+import c from './app.module.scss';
 
 import Home from './components/home/Home';
 import Contacts from './components/contacts/Contacts';

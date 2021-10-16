@@ -1,7 +1,7 @@
 import React from "react";
 import Skills from "./skills/Skills";
 
-import c from './about_me.module.css';
+import c from './about_me.module.scss';
 import Education from "./education/Education";
 import Button from "../button/Button";
 
@@ -16,7 +16,7 @@ function AboutMe(props) {
                     <span>Мне</span>
                 </h1>
 
-                <span>
+                <span className={c.shadow}>
                     Резюме
                 </span>
             </div>

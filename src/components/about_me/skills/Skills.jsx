@@ -1,6 +1,6 @@
 import React from "react";
 
-import c from './skills.module.css';
+import c from './skills.module.scss';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
 function Skills(props) {

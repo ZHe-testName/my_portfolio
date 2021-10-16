@@ -1,7 +1,7 @@
 import React from "react";
 import CustomNavLink from "./custom_nav_link/CustomNavLink";
 
-import c from './navbar.module.css';
+import c from './navbar.module.scss';
 
 function NavBar() {
     return (

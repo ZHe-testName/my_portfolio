@@ -1,4 +1,4 @@
-import c from './education.module.css';
+import c from './education.module.scss';
 import EducationCard from "./education_card/EducationCard";
 
 function Education(props) {

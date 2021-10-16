@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../button/Button";
 
-import c from './my_work_card.module.css';
+import c from './my_work_card.module.scss';
 
 function MyWorkCard() {
     const onMouseEnterHandler = (e) => {
