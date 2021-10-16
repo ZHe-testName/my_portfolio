@@ -123,3 +123,106 @@
         }
     }
 }
+
+@media (max-width: 962px) {
+    .myHome{
+        .homeMeWrap {
+            flex-direction: column;
+    
+            &::before{
+                display: none;
+            }
+    
+            .homeMeImage{
+                min-width: 0px;
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+                box-shadow: 0 0 7px 2px var(--light_line_color);
+            }
+    
+            .homeMeDescription {
+                margin-right: 0px;
+    
+                .homeTitle{
+                    padding-left: 0px;
+    
+                    h1{
+                        font-size: 40px;
+                        line-height: 40px;
+                        margin-top: 35px;
+                        text-align: center;
+    
+                        &::before{
+                            display: none;
+                        }
+                    }
+    
+                    span{
+                        display: block;
+                        font-size: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                }
+    
+                p{
+                    text-align: center;
+                    font-size: 16px;
+
+                    &:last-of-type{
+                        margin-bottom: 45px;
+                    }
+                }
+    
+                .buttonwrap{
+                    margin: 0px auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 562px){
+    .myHome{
+        .homeMeWrap {
+            flex-direction: column;
+    
+    
+            .homeMeImage{
+                display: none;
+            }
+    
+            .homeMeDescription {
+                margin-top: 20%;
+    
+                .homeTitle{
+                    padding-left: 0px;
+    
+                    h1{
+                        text-align: start;
+                    }
+    
+                    span{
+                        text-align: start;
+                    }
+                }
+    
+                p{
+                    text-align: start;
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    font-size: 15px;
+
+                    &:last-of-type{
+                        margin-bottom: 25px;
+                    }
+                }
+    
+                .buttonwrap{
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
