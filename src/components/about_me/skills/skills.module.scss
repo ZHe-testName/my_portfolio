@@ -5,7 +5,7 @@
     .skillsWrap {
         display: flex;
         flex-direction: column;
-        width: var(--main_blocks_wrapper_width);
+        max-width: 1200px;
         margin: 0px auto;
 
         h3{
@@ -43,6 +43,12 @@
             }
         }
     
+    }
+}
+
+@media (max-width: 962px) {
+    .skills{
+        margin: 0px;
     }
 }
 

@@ -9,7 +9,6 @@
     h3{
         line-height: 1.2;
         font-size: 26px;
-        text-transform: uppercase;
         text-align: center;
         margin: 0px auto;
     }
@@ -52,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
+    padding: 0px 40px;
     max-width: 1100px;
 
     .personalInfo{
@@ -74,10 +74,8 @@
 
             li{
                 margin-right: 30px;
-                word-spacing: -7px;
 
                 span:first-of-type{
-                    text-transform: capitalize;
                     color: var(--light_line_color);
                 }
             }
@@ -100,13 +98,13 @@
         flex-direction: column;
         width: 350px;
         margin-top: 25px;
-        align-items: flex-end;
 
         div{
             border: 1px solid var(--line_color);
             height: 150px;
             margin-bottom: 30px;
-            width: 210px;
+            margin-left: 80px;
+            width: 70%;
 
             h3{
                 display: inline-block;
@@ -142,6 +140,90 @@
                     height: 1px;
                     background: var(--light_line_color);
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+ 
+    
+    .info{
+        justify-content: space-around;
+        padding: 0px;
+    
+        .personalInfo{
+            display: flex;
+            flex-direction: column;
+    
+            h3{
+                margin-left: 0px;
+            }
+    
+            ul{
+                display: flex;
+                height: 325px;
+                flex-wrap: wrap;
+                flex-direction: column;
+                list-style-type: none;
+                line-height: 40px;
+                padding: 0px;
+                font-size: 18px;
+    
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 10px;
+                    margin-top: 25px;
+
+                    span:last-child{
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 962px) {
+    .expirience{
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 769px) {
+    .aboutMe{
+        .info{
+            flex-direction: column;
+            padding: 0px 50px;
+    
+            .personalInfo{
+                ul{
+                    height: 265px;
+                    li{
+                        flex-direction: row;
+    
+                        span{
+                            letter-spacing: 0px;
+                        }
+    
+                        span:last-child{
+                            line-height: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+        .expirience{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 55px;
+    
+            div{
+                width: 40%;
+                margin-left: 0px;
             }
         }
     }

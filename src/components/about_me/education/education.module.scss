@@ -18,5 +18,16 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 55px;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .educationBlock{
+        ul{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

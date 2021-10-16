@@ -68,6 +68,27 @@
     }
 
 }
+
+@media (max-width: 1025px) {
+    .cardWrap{
+        width: 50%;
+        font-size: 15px;
+        margin-right: 20px;
+
+        .description{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .cardWrap{
+        width: 70%;
+    }
+}
+
     /* .description:hover{
         /* position: absolute;
         top: 0px;
