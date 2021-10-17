@@ -1,3 +1,7 @@
+.aboutMe{
+    margin-top: 85px;
+}
+
 .separator{
     border: none;
     border-top: 1px solid var(--line_color);
@@ -202,7 +206,6 @@
 
 @media (max-width: 667px) {
     .aboutMe{
-        margin-top: 50px;
 
         .info{
             flex-direction: column;
@@ -249,6 +252,10 @@
 };
 
 @media (max-width: 442px) {
+    .separator{
+        margin: 10px auto;
+    }
+
     .aboutMe{
         .info{
             flex-direction: column;
@@ -259,8 +266,10 @@
                 }
 
                 ul{
+                    height: 225px;
                     li{
                         font-size: 14px;
+                        margin-top: 0px;
 
                         span:last-of-type{
                             word-break: break-all;

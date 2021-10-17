@@ -19,7 +19,7 @@ function App() {
     country: 'Украина',
     phone: '+380638828081',
     email: 'horunzhy.wgen@gmail.com',
-    languages: 'Русский, English',
+    languages: 'RU, EN, UK',
   };
 
   const skillsArr = [
