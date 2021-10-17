@@ -31,7 +31,7 @@ function Skills(props) {
 
             setTimeout(function() {
                 isThrottled = false;
-console.log('in');
+                
                 if(savedAargs){
                     wrapper.apply(savedThis, savedAargs);
 
@@ -50,23 +50,6 @@ console.log('in');
     }
 
     window.addEventListener('resize', throttle(setScaleRadius, 800));
-
-    // window.addEventListener('resize', () => {
-    //     window.removeEventListener('resize', () => {
-    //         window.removeEventListener('resize')
-    //         setTimeout(() => console.log('res'), 500)
-    //     })
-    //     setTimeout(() => {
-    //         window.addEventListener('resize', () => {
-    //             window.removeEventListener('resize')
-    //             setTimeout(() => console.log('res'), 500)
-    //         });
-
-            
-    //     }, 500)
-    // });
-
-    
 
     const skillsList = props.skillsCollection.map((el, i) => {
         const settings = {

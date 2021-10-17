@@ -89,6 +89,30 @@
     }
 }
 
+
+@media (max-width: 562px) {
+    .cardWrap{
+        .description{
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .cardWrap{
+        .description{
+            .header{
+                span{
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
     /* .description:hover{
         /* position: absolute;
         top: 0px;
