@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { cleanup } from "@testing-library/react";
+import React, { useEffect, useState } from "react";
 
 import c from './skills.module.scss';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
@@ -6,11 +7,7 @@ import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 function Skills(props) {
     //radius skill skale values for corect rendering on different screens 
     function compareWidth() {
-        if (document.documentElement.clientWidth <= 562){
-            return '48'; 
-        }
-
-        return '59';
+        return (document.documentElement.clientWidth <= 562) ? '48' : '59';
     };
 
     //function for throttling pause between screen resizing
@@ -52,9 +49,17 @@ function Skills(props) {
 
     const setScaleRadius = () => {
         setR(compareWidth());
-    }
+    };
 
-    window.addEventListener('resize', throttle(setScaleRadius, 800));
+    // window.addEventListener('resize', throttle(setScaleRadius, 800));
+
+    //ander question!!!!!!!
+    useEffect(() => {
+        window.addEventListener('resize', throttle(setScaleRadius, 800));
+        return function cleanup(){
+            window.removeEventListener('resize', throttle(setScaleRadius, 800));
+        }
+    });
 
     const skillsList = props.skillsCollection.map((el, i) => {
         const settings = {

@@ -124,6 +124,10 @@
             &::before{
                 display: none;
             }
+
+            .homeMeImage{
+                z-index: 1;
+            }
     
             .homeMeDescription {
                 margin-right: 0px;

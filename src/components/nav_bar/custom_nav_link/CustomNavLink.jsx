@@ -3,10 +3,11 @@ import c from './navlink.module.scss';
 
 function CustomNavLink(props) {
     const {href, description} = props;
+    const bgc = document.documentElement.clientWidth >= 962 ? '#ffb400' : 'transparent';
 
     return (
         <NavLink to={href} activeStyle={{
-            backgroundColor: '#ffb400',
+            backgroundColor: bgc,
         }}>
             <h3>
                 {description}

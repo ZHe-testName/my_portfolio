@@ -22,10 +22,6 @@ function NavBar() {
                     <li className={c.contacts}>
                         <CustomNavLink href="contacts" description="Контакты"/>
                     </li>
-
-                    {/* <li className={c.remote}>
-                        <CustomNavLink href="remote_job" description="Удалёнка"/>
-                    </li> */}
                 </ul>
         </nav>
     );
