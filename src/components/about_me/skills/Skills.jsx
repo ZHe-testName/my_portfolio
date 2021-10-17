@@ -4,6 +4,7 @@ import c from './skills.module.scss';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
 function Skills(props) {
+    //radius skill skale values for corect rendering on different screens 
     function compareWidth() {
         if (document.documentElement.clientWidth <= 562){
             return '48'; 
@@ -12,6 +13,10 @@ function Skills(props) {
         return '59';
     };
 
+    //function for throttling pause between screen resizing
+    //hendler calls
+    //used for reducing rerender func calls during
+    //to mach screen resizing 
     function throttle(func, ms) {
         let isThrottled = false,
             savedAargs,

@@ -9,15 +9,6 @@ function MyWorks() {
         <section className={c.myWorks}>
             <div className={c.myWorksWrap}>
                 <PageHeader whiteLetters="МОИ" yellowLetters="Работы" shadowWord="Портфолио"/>
-                {/* <div className={c.header}>
-                    <h1>МОИ
-                        <span>Работы</span>
-                    </h1>
-
-                    <span className={c.shadow}>
-                        Поптфолио
-                    </span>
-                </div> */}
 
                 <div className={c.myWorksCollection}>
                     <MyWorkCard />

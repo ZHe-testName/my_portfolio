@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button/Button";
+import PageHeader from "../page_header/PageHeader";
 import RemoteJob from "../remote_job/RemoteJob";
 
 import c from './contacts.module.scss';
@@ -7,15 +8,7 @@ import c from './contacts.module.scss';
 function Contacts() {
     return (
         <section className={c.contacts} id='contacts'>
-            <div className={c.header}>
-                    <h1>НА
-                        <span>Связи</span>
-                    </h1>
-
-                    <span className={c.shadow}>
-                        Контакты
-                    </span>
-            </div>
+            <PageHeader whiteLetters="НА" yellowLetters="Связи" shadowWord="Контакты"/>
 
             <div className={c.contactsWrap}>
                 <div className={c.contactsShield}>
