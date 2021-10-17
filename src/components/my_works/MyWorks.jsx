@@ -1,4 +1,5 @@
 import React from "react";
+import PageHeader from "../page_header/PageHeader";
 
 import c from './my_works.module.scss';
 import MyWorkCard from "./my_work_card/MyWorkCard";
@@ -7,7 +8,8 @@ function MyWorks() {
     return (
         <section className={c.myWorks}>
             <div className={c.myWorksWrap}>
-                <div className={c.header}>
+                <PageHeader whiteLetters="МОИ" yellowLetters="Работы" shadowWord="Портфолио"/>
+                {/* <div className={c.header}>
                     <h1>МОИ
                         <span>Работы</span>
                     </h1>
@@ -15,7 +17,7 @@ function MyWorks() {
                     <span className={c.shadow}>
                         Поптфолио
                     </span>
-                </div>
+                </div> */}
 
                 <div className={c.myWorksCollection}>
                     <MyWorkCard />

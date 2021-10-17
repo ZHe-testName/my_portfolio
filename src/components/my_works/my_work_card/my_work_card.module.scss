@@ -1,5 +1,5 @@
 .myWorkCardWrap{
-    width: 320px;
+    width: 290px;
     margin: 15px;
 
     .imgLink{
@@ -41,12 +41,43 @@
             background-color: chocolate;
         } */
 
-
-@media (max-width: 481px) {
+@media (max-width: 1025px) {
     .myWorkCardWrap{
-        width: 220px;
-        height: 220px;
+        min-width: 280px;
+        height: 160px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
 }
+
+// @media (max-width: 682px) {
+//     .myWorkCardWrap{
+//         width: 240px;
+//     }
+// }
+
+@media (max-width: 682px) {
+    .myWorkCardWrap{
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 324px) {
+    .myWorkCardWrap{
+        width: 280px;
+        height: 130px;
+        .imgLink{
+            height: 140px;
+            width: 95%;
+        }
+    }
+}
+
+// @media (max-width: 481px) {
+//     .myWorkCardWrap{
+//         width: 220px;
+//         height: 220px;
+//         margin-top: 30px;
+//         margin-bottom: 10px;
+//     }
+// }
