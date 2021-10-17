@@ -1,5 +1,7 @@
 import React from "react";
+import AvatarImg from "../avatar_img/AvatarImg";
 import CustomNavLink from "../nav_bar/custom_nav_link/CustomNavLink";
+import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
 
 import c from './home.module.scss';
 
@@ -8,6 +10,7 @@ function Home() {
         <section className={c.myHome}>
             <div className={c.homeMeWrap}>
                 <div className={c.homeMeImage}>
+                    <AvatarImg img={avatar}/>
                 </div>
 
                 <div className={c.homeMeDescription}>

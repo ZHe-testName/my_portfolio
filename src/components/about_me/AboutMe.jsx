@@ -4,6 +4,9 @@ import Skills from "./skills/Skills";
 import c from './about_me.module.scss';
 import Education from "./education/Education";
 import Button from "../button/Button";
+import PageHeader from "../page_header/PageHeader";
+import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
+import AvatarImg from "../avatar_img/AvatarImg";
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
@@ -11,21 +14,17 @@ function AboutMe(props) {
 
     return (
         <section className={c.aboutMe}>
-            <div className={c.aboutMeTitle}>
-                <h1>ОБО
-                    <span>Мне</span>
-                </h1>
-
-                <span className={c.shadow}>
-                    Резюме
-                </span>
-            </div>
+            <PageHeader whiteLetters="ОБО" yellowLetters="Мне" shadowWord="Резюме"/>
 
             <div className={c.info}>
                 <div className={c.personalInfo}>
                     <h3>
                         ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ
                     </h3>
+
+                    <div className={c.aboutImage}>
+                        <AvatarImg img={avatar}/>
+                    </div>
 
                     <ul>
                         {personalInfoArr}
