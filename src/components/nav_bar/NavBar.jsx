@@ -6,7 +6,9 @@ import c from './navbar.module.scss';
 function NavBar(props) {
 
     return (
-        <nav className={`${c.navMain} ${props.navIsVisible && c.visible}`} >
+        <nav 
+            className={`${c.navMain} ${props.navIsVisible && c.visible}`} 
+            onClick={props.hiddeNav}>
                 <ul className={c.menuLinkWrap}>
                     <li className={c.home}>
                         <CustomNavLink href="home" description="Домашняя" />

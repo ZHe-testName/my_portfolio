@@ -63,7 +63,7 @@
 
 @media (max-width: 962px) {
     .navMain {
-        position: absolute;
+        position: fixed;
         background-color: var(--line_color);
         top: -10px;
         left: -100vw;

@@ -4,8 +4,10 @@ function Sandwich(props) {
 
 
     return (
-        <div className={c.sandwich}>
+        <div 
+            className={c.sandwich}>
             <button 
+                    className={props.navIsVisible && c.sandwichClicked}
                     onClick={props.showNav}>
                 <span className={c.top}></span>
 

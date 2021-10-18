@@ -78,9 +78,9 @@ function App() {
 
   return (
     <main className={c.app}>
-        <NavBar navIsVisible={navIsVisible}/>
+        <NavBar navIsVisible={navIsVisible} hiddeNav={showNavHandler}/>
 
-        <Sandwich showNav={showNavHandler}/>
+        <Sandwich navIsVisible={navIsVisible} showNav={showNavHandler}/>
 
         <div className={c.mainContent}>
           <Route path={'/'} exact render={() => <Redirect to="/home"/>}/>
