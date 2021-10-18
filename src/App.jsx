@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Route, Redirect} from 'react-router-dom';
 
 import c from './app.module.scss';
@@ -9,6 +9,7 @@ import MyWorks from './components/my_works/MyWorks';
 import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
 import RemoteJob from './components/remote_job/RemoteJob';
+import Sandwich from './components/sandwich/Sandwich';
 
 function App() {
   const personalInfo = {
@@ -69,9 +70,17 @@ function App() {
     },
   ];
 
+  const [navIsVisible, showNav] = useState(false);
+
+  const showNavHandler = () => {
+    showNav(!navIsVisible);
+  };
+
   return (
     <main className={c.app}>
-        <NavBar />
+        <NavBar navIsVisible={navIsVisible}/>
+
+        <Sandwich showNav={showNavHandler}/>
 
         <div className={c.mainContent}>
           <Route path={'/'} exact render={() => <Redirect to="/home"/>}/>
@@ -86,8 +95,6 @@ function App() {
           <Route path="/works" render={() => <MyWorks/>}/>
 
           <Route path="/contacts" render={() => <Contacts/>}/>
-
-          <Route path="/remote_job" render={() => <RemoteJob/>} />
         </div>
     </main>
   );

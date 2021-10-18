@@ -14,7 +14,7 @@ function AboutMe(props) {
 
     return (
         <section className={c.aboutMe}>
-            <PageHeader whiteLetters="ОБО" yellowLetters="Мне" shadowWord="Резюме"/>
+            <PageHeader className={c.sectionHeader} whiteLetters="ОБО" yellowLetters="Мне" shadowWord="Резюме"/>
             
             <div className={c.info}>
                 <div className={c.personalInfo}>

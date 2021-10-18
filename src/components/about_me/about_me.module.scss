@@ -1,5 +1,11 @@
 .aboutMe{
-    padding-top: 85px;
+    padding-top: 35px;
+
+    div:first-of-type{
+        span{
+            top: 70px;
+        }
+    }
 }
 
 .separator{

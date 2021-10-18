@@ -3,9 +3,10 @@ import CustomNavLink from "./custom_nav_link/CustomNavLink";
 
 import c from './navbar.module.scss';
 
-function NavBar() {
+function NavBar(props) {
+
     return (
-        <nav className={c.navMain} >
+        <nav className={`${c.navMain} ${props.navIsVisible && c.visible}`} >
                 <ul className={c.menuLinkWrap}>
                     <li className={c.home}>
                         <CustomNavLink href="home" description="Домашняя" />
