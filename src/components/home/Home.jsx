@@ -1,5 +1,6 @@
 import React from "react";
 import AvatarImg from "../avatar_img/AvatarImg";
+import {NavLink} from 'react-router-dom';
 import CustomNavLink from "../nav_bar/custom_nav_link/CustomNavLink";
 import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
 
@@ -30,7 +31,16 @@ function Home() {
                     </p>
 
                     <div className={c.buttonwrap}>
-                        <CustomNavLink href="about_me" description="Подробнее..."/>
+                    <NavLink to={'about_me'} 
+                            className={c.navlink}
+                            activeStyle={{
+                                            backgroundColor: '#ffb400;',
+                                        }}>
+                        <h4>
+                            Подробнее...
+                        </h4>
+                    </NavLink>
+                        {/* <CustomNavLink href="about_me" description="Подробнее..."/> */}
                     </div>
                 </div>
             </div>

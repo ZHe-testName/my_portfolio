@@ -81,34 +81,36 @@
                 justify-content: flex-end;
                 border: 2px solid var(--active_yellow);
 
-                &:hover > a{
+                &:hover > .navlink{
                     transition: all 0.3s;
                     width: 214px;
                 }
 
-                a{
+                .navlink{
                     position: absolute;
-                    right: -1px;
-                    top: -2px;
-                    width: 55px;
-                    height: 55px;
+                    right: -2px;
+                    top: -1px;
+                    width: 53px;
+                    height: 53px;
                     background-color: var(--active_yellow);
                     background-image: url(../../icons/iconmonstr-arrow-20.svg);
                     background-size: 25px 25px;
                     background-position: right 15px top 50%;
+                    border-radius: 50px;
 
                     &:hover{
                         transition: all 0.3s;
                         width: 214px;
                     }
 
-                    h3{
+                    h4{
                         position: absolute;
                         opacity: 1;
                         z-index: 2;
                         top: 15px;
                         right: 70px;
                         font-size: 20px;
+                        margin: 0px;
                     }
                 }
             }
