@@ -1,5 +1,6 @@
 import React from "react";
 import CustomNavLink from "./custom_nav_link/CustomNavLink";
+import homeIcon from '../../icons/iconmonstr-home-6.svg';
 
 import c from './navbar.module.scss';
 
@@ -11,7 +12,7 @@ function NavBar(props) {
             onClick={props.hiddeNav}>
                 <ul className={c.menuLinkWrap}>
                     <li className={c.home}>
-                        <CustomNavLink href="home" description="Домашняя" />
+                        <CustomNavLink href="home" description="Домашняя" icon={homeIcon}/>
                     </li>
 
                     <li className={c.about}>

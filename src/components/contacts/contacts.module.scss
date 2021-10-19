@@ -125,6 +125,7 @@
         margin: 0px auto;
         max-width: 65%;
         min-height: 200px;
+        margin-right: 100px;
 
         .inputWrap{
             display: flex;
@@ -139,6 +140,16 @@
                 border: none;
                 color: var(--dark_text);
                 font-size: 16px;
+
+                //Very strange bug with input focus
+                &:focus{
+                    border: none;
+                    box-shadow: 0px 0px 3px 2px var(--active_yellow);
+                }
+
+                &:nth-child(2){
+                    margin: 0px 10px;
+                }
             }
         }
 
@@ -193,6 +204,10 @@
                 input{
                     width: 90%;
                     margin-bottom: 35px;
+
+                    &:nth-child(2){
+                        margin-bottom: 35px;
+                    }
                 }
             }
 
