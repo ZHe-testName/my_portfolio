@@ -1,15 +1,26 @@
-@keyframes to_close {
+@keyframes to_close_top {
     0%{
-        transform: rotateZ(0deg);
+        transform: translateY(-13px);
     }
-    // 30%{
-    //     transform: rotateZ(230deg);
-    // }
-    // 60%{
-    //     transform: rotateZ(540deg);
-    // }
+    30%{
+        transform: translateX(-21px);
+        transform: translateY(13px);
+    }
     100%{
-        transform: rotateZ(1520deg);
+        transform: rotateZ(135deg);
+    }
+}
+
+@keyframes to_close_bottom {
+    0%{
+        transform: translateY(13px);
+    }
+    30%{
+        transform: translateX(21px);
+        transform: translateY(-13px);
+    }
+    100%{
+        transform: rotateZ(45deg);
     }
 }
 
@@ -42,22 +53,25 @@
             position: relative;
 
             span{
-                animation-name: to_close;
-                animation-duration: 0.5s;
-                transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
                 position: absolute;
                 
                 &.top{
-                    transform: rotateZ(45deg);
+                    animation-name: to_close_top;
+                    animation-duration: 1.2s;
+                    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transform: rotateZ(-45deg);
                 }
 
                 &.middle{
-                    display: none;
+                    opacity: 0;
                     margin: 0px;
                 }
 
                 &.bottom{
-                    transform: rotateZ(-45deg);
+                    animation-name: to_close_bottom;
+                    animation-duration: 1.2s;
+                    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transform: rotateZ(45deg);
                 }
             }
         }
@@ -68,6 +82,8 @@
             height: 2px;
             background-color: white;
             border: none;
+            transition: all 0.8s;
+            transition-timing-function: cubic-bezier(1, 0.24, 0.32, 1.27);
 
             &.middle{
                 margin: 6px 0px;

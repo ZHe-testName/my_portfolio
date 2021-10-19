@@ -43,21 +43,24 @@ function Contacts() {
                             <a 
                                 className={c.fb}
                                 href="https://www.facebook.com/horunzhy.wgen"
-                                target="_blank"></a>
+                                target="_blank"
+                                rel="noreferrer"></a>
                         </li>
 
                         <li>
                             <a 
                                 className={c.li}
-                                href="#"
-                                target="_blank"></a>
+                                href="https://www.facebook.com/horunzhy.wgen"
+                                target="_blank"
+                                rel="noreferrer"></a>
                         </li>
 
                         <li>
                             <a 
                                 className={c.git}
                                 href="https://github.com/ZHe-testName" 
-                                target="_blank"></a>
+                                target="_blank"
+                                rel="noreferrer"></a>
                         </li>
                     </ul>
                 </div>

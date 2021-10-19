@@ -1,6 +1,4 @@
-import { cleanup } from "@testing-library/react";
 import React, { useEffect, useState } from "react";
-
 import c from './skills.module.scss';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
@@ -51,8 +49,11 @@ function Skills(props) {
         setR(compareWidth());
     };
 
+    //To ask why useEffect have so strange behavior
+    //and works only disabled input is include(look on top of the file) 
     useEffect(() => {
         window.addEventListener('resize', throttle(setScaleRadius, 800));
+
         return function cleanup(){
             window.removeEventListener('resize', throttle(setScaleRadius, 800));
         }

@@ -8,7 +8,6 @@ import Contacts from './components/contacts/Contacts';
 import MyWorks from './components/my_works/MyWorks';
 import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
-import RemoteJob from './components/remote_job/RemoteJob';
 import Sandwich from './components/sandwich/Sandwich';
 
 function App() {

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../../button/Button";
 
 import c from './my_work_card.module.scss';
 

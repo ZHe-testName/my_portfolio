@@ -23,7 +23,7 @@ function MyWorks() {
                 </div>
 
                 <div className={c.ghLink}>
-                    <a href="https://github.com/ZHe-testName" target="_blank">
+                    <a href="https://github.com/ZHe-testName" target="_blank" rel="noreferrer">
                         <h3>
                             GitHab
                         </h3>

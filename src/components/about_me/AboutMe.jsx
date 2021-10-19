@@ -49,7 +49,7 @@ function AboutMe(props) {
 
             <hr className={c.separator}/>
 
-            <Skills skillsCollection={props.skillsCollection}/>
+            <Skills skillsCollection={props.skillsCollection} />
 
             <hr className={c.separator}/>
 

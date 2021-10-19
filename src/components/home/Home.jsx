@@ -1,7 +1,6 @@
 import React from "react";
 import AvatarImg from "../avatar_img/AvatarImg";
 import {NavLink} from 'react-router-dom';
-import CustomNavLink from "../nav_bar/custom_nav_link/CustomNavLink";
 import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
 
 import c from './home.module.scss';
