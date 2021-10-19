@@ -51,15 +51,12 @@ function Skills(props) {
         setR(compareWidth());
     };
 
-    // window.addEventListener('resize', throttle(setScaleRadius, 800));
-
-    //ander question!!!!!!!
     useEffect(() => {
         window.addEventListener('resize', throttle(setScaleRadius, 800));
         return function cleanup(){
             window.removeEventListener('resize', throttle(setScaleRadius, 800));
         }
-    });
+    }, []);
 
     const skillsList = props.skillsCollection.map((el, i) => {
         const settings = {

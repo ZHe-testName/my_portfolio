@@ -7,7 +7,7 @@ function NavBar(props) {
 
     return (
         <nav 
-            className={`${c.navMain} ${props.navIsVisible && c.visible}`} 
+            className={`${c.navMain} ${props.navIsVisible ? c.visible : undefined}`} 
             onClick={props.hiddeNav}>
                 <ul className={c.menuLinkWrap}>
                     <li className={c.home}>

@@ -31,15 +31,15 @@ function Home() {
                     </p>
 
                     <div className={c.buttonwrap}>
-                    <NavLink to={'about_me'} 
-                            className={c.navlink}
-                            activeStyle={{
-                                            backgroundColor: '#ffb400;',
-                                        }}>
-                        <h4>
-                            Подробнее...
-                        </h4>
-                    </NavLink>
+                        <NavLink to={'about_me'} 
+                                className={c.navlink}
+                                activeStyle={{
+                                                backgroundColor: '#ffb400;',
+                                            }}>
+                            <h4>
+                                Подробнее...
+                            </h4>
+                        </NavLink>
                         {/* <CustomNavLink href="about_me" description="Подробнее..."/> */}
                     </div>
                 </div>

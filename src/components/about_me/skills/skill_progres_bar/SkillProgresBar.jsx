@@ -5,10 +5,10 @@ import c from './skill_prores_barr.module.scss';
 function SkillProgrssBar(props) {
     const {progressPercent, description, r} = props;
 
-    const circumfrence = 2 * Math.PI * r;
+    const circleLength = 2 * Math.PI * r;
 
-    const strokeDasharray = `${circumfrence} ${circumfrence}`,
-        strokeDashOffset = circumfrence - progressPercent / 100 * circumfrence;
+    const strokeDasharray = `${circleLength} ${circleLength}`,
+        strokeDashOffset = circleLength - progressPercent / 100 * circleLength;
 
     
 

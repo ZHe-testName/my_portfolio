@@ -7,7 +7,7 @@ function Sandwich(props) {
         <div 
             className={c.sandwich}>
             <button 
-                    className={props.navIsVisible && c.sandwichClicked}
+                    className={props.navIsVisible ? c.sandwichClicked : undefined}
                     onClick={props.showNav}>
                 <span className={c.top}></span>
 
