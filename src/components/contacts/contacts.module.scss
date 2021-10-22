@@ -68,6 +68,17 @@
                 .contact{
                     margin-left: 25px;
 
+                    .phoneNum{
+                        position: relative;
+                        display: block;
+                        transition: none;
+                        background: none;
+                        color: whitesmoke;
+                        width: auto;
+                        height: auto;
+                        border-radius: 0px;
+                    }
+
                     h6{
                         margin: 0px;
                         text-transform: uppercase;

@@ -34,7 +34,11 @@ function Contacts() {
 
                         <div className={c.contact}>
                             <h6>call me</h6>
-                            <span>+3 8063 882 80 81</span>
+                            <span>
+                                <a 
+                                    className={c.phoneNum}
+                                    href="tel:{+380638828081}">+3 8063 882 80 81</a>
+                            </span>
                         </div>
                     </div>
 

@@ -32,13 +32,13 @@ function App() {
 
   const educationArr = [
     {
-      year: 2014,
+      year: 2017,
       institution: 'внту инээм',
       specialize: 'бакалавр',
       textDesc: 'Степень бакалавра в Винницком Политехничном Национальном Университете, Институт Электропривода и Электромеханики',
     },
     {
-      year: 2016,
+      year: 2018,
       institution: 'siemens',
       specialize: 'siemens-programer',
       textDesc: '6 курсов обучения. Siemens Programer Stage 2',
@@ -62,7 +62,7 @@ function App() {
       textDesc: '6-ми месечный курс JS-Developer.',
     },
     {
-      year: 2020,
+      year: 2021,
       institution: 'it-incubator',
       specialize: 'js(react)-developer',
       textDesc: '8-ми месячный курс JS(React)-Developer',
