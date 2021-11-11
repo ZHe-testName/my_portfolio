@@ -9,6 +9,7 @@ import MyWorks from './components/my_works/MyWorks';
 import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
 import Sandwich from './components/sandwich/Sandwich';
+import { Dal } from './dal';
 
 function App() {
   const personalInfo = {
@@ -93,7 +94,7 @@ function App() {
 
           <Route path="/works" render={() => <MyWorks/>}/>
 
-          <Route path="/contacts" render={() => <Contacts/>}/>
+          <Route path="/contacts" render={() => <Contacts onSubmit={Dal.sendEmailFunc}/>}/>
         </div>
     </main>
   );

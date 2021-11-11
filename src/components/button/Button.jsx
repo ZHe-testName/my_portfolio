@@ -5,7 +5,7 @@ import c from './button.module.scss';
 function Button(props) {
     return (
         <div className={c.button}>
-            <button>
+            <button type={props.type || 'button'}>
                 <h3>{props.title}</h3>
             </button>
         </div>
