@@ -143,30 +143,36 @@
             display: flex;
             justify-content: space-between;
 
-            input{
-                height: 30px;
-                width: 28%;
-                border-radius: 25px;
-                background-color: var(--line_color);
-                padding: 10px 15px;
-                border: none;
-                color: var(--dark_text);
-                font-size: 16px;
+            div{
+                width: 32%;
 
-                //Very strange bug with input focus
-                &:focus{
+                input{
+                    height: 30px;
+                    width: 85%;
+                    border-radius: 25px;
+                    background-color: var(--line_color);
+                    padding: 10px 15px;
                     border: none;
-                    box-shadow: 0px 0px 3px 2px var(--active_yellow);
-                }
-
-                &:nth-child(2){
-                    margin: 0px 10px;
+                    color: var(--dark_text);
+                    font-size: 16px;
+    
+                    //Very strange bug with input focus
+                    &:focus{
+                        border: none;
+                        box-shadow: 0px 0px 3px 2px var(--active_yellow);
+                    }
+    
+                    &:nth-child(2){
+                        margin: 0px 10px;
+                    }
                 }
             }
+
         }
 
         textarea {
             resize: none;
+            width: 95%;
             min-height: 150px;
             font-size: 20px;
             padding: 5px;
@@ -213,20 +219,30 @@
                 flex-direction: column;
                 align-items: center;
 
-                input{
+                div{
                     width: 90%;
                     margin-bottom: 35px;
 
-                    &:nth-child(2){
-                        margin-bottom: 35px;
+                    input{
+                        width: 95%;
+
+                        &:nth-child(2){
+                            margin-bottom: 35px;
+                        }
                     }
+                }
+
+            }
+
+            .textareaWrap{
+                width: 90%;
+                margin: 0px auto;
+
+                textarea{
+                    margin-top: 0px;
                 }
             }
 
-            textarea{
-                width: 90%;
-                margin: 0px auto;
-            }
         }
     }
 }
@@ -239,6 +255,18 @@
                     width: 50%;
                 }
             }
+
+            form{
+                .inputWrap{
+                    div{
+                        width: 100%;
+                    }
+                }
+        
+                .textareaWrap{
+                    width: 100%;
+                }
+            };
         }
     }
 }
@@ -246,8 +274,15 @@
 //To clarify are this code is normal and valid
 @media (max-width: 372px) {
     .contacts{
+        padding-left: 15px;
+
         .contactsWrap{
             .contactsShield{
+                .contactCard{
+                    .contact{
+                        margin-left: 10px;
+                    }
+                }
                 div:nth-child(3){
                     div{
                         span:first-of-type{
