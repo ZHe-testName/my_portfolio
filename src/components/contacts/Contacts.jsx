@@ -5,8 +5,9 @@ import PageHeader from "../page_header/PageHeader";
 import RemoteJob from "../remote_job/RemoteJob";
 
 import c from './contacts.module.scss';
+import SuccessPopup from "./success_popup/SuccessPopup";
 
-function Contacts({ onSubmit }) {
+function Contacts({ onSubmit, sendingStatus }) {
     return (
         <section className={c.contacts} id='contacts'>
             <PageHeader whiteLetters="НА" yellowLetters="Связи" shadowWord="Контакты"/>
@@ -73,7 +74,7 @@ function Contacts({ onSubmit }) {
                 </div>
 
 
-                <SendMailForm onSubmit={onSubmit}/>
+                <SendMailForm onSubmit={onSubmit} sendingStatus={sendingStatus}/>
             </div>
 
             <hr className={c.separator}/>
@@ -111,7 +112,7 @@ const validate = values => {
     return errors;
 };
 
-const SendMailForm = ({onSubmit}) => {
+const SendMailForm = ({onSubmit, sendingStatus}) => {
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -187,6 +188,8 @@ const SendMailForm = ({onSubmit}) => {
 
             <div className={c.buttonWrap}>
                 <Button title="Отправить" type="submit"/>
+
+                <SuccessPopup status={sendingStatus}/>
             </div>
         </form>
     );

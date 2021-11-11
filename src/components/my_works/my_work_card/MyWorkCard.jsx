@@ -9,10 +9,10 @@ function MyWorkCard() {
 
     return (
         <article className={c.myWorkCardWrap}>
-            <div 
+            <a 
                 className={c.imgLink} 
                 href="#"
-                onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
+                onMouseEnter={(e) => onMouseEnterHandler(e)}></a>
         </article>
     );
 };

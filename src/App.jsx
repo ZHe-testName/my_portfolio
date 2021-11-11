@@ -9,7 +9,7 @@ import MyWorks from './components/my_works/MyWorks';
 import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
 import Sandwich from './components/sandwich/Sandwich';
-import { Dal } from './dal';
+import emailjs from 'emailjs-com';
 
 function App() {
   const personalInfo = {
@@ -71,10 +71,32 @@ function App() {
   ];
 
   const [navIsVisible, showNav] = useState(false);
+  const [sendingStatus, setSendStatus] = useState('');
 
   const showNavHandler = () => {
     showNav(!navIsVisible);
   };
+
+  const sendEmailFunc = (values) => {
+    const serviceId = 'my_prtfolio_service';
+    const templateId = 'template_ninja_portfolio';
+    const userId = 'user_PN1UtxxZmvfpNdfJkk6dh';
+
+    emailjs.send(serviceId, templateId, values, userId)
+        .then(res => {
+          if (res.status === 200){
+            setSendStatus('Successfully Sended!');
+
+            setTimeout(() => setSendStatus(''), 3000);
+          }
+        }, err => {
+          if (err){
+            setSendStatus('Sending Error!');
+
+            setTimeout(() => setSendStatus(''), 3000);
+          }
+        });
+    }
 
   return (
     <main className={c.app}>
@@ -94,7 +116,7 @@ function App() {
 
           <Route path="/works" render={() => <MyWorks/>}/>
 
-          <Route path="/contacts" render={() => <Contacts onSubmit={Dal.sendEmailFunc}/>}/>
+          <Route path="/contacts" render={() => <Contacts onSubmit={sendEmailFunc} sendingStatus={sendingStatus}/>}/>
         </div>
     </main>
   );

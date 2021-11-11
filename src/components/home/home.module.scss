@@ -13,10 +13,10 @@
         &::before{
             content: '';
             position: absolute;
-            top: -70px;
+            top: -30px;
             left: -130px;
             width: 450px;
-            height: 120vh;
+            height: 100vh;
             background-color: var(--active_yellow);
             clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
             z-index: 1;

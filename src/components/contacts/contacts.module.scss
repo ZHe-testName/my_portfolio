@@ -205,6 +205,10 @@
         }
 
         .buttonWrap{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
             button{
                 background-image: url(../../icons/iconmonstr-paper-plane-1.svg);
             }
@@ -293,6 +297,13 @@
         
                 .textareaWrap{
                     width: 100%;
+                }
+
+                .buttonWrap{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
                 }
             };
         }
