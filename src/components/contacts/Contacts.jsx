@@ -100,8 +100,8 @@ const validate = values => {
 
     if (!values.subject){
         errors.subject = 'Subject is Required';
-    }else if (values.name.length >= 25){
-        errors.name = 'Must be 25 characters or less';
+    }else if (values.subject.length >= 25){
+        errors.subject = 'Must be 25 characters or less';
     }
 
     if (!values.message){
@@ -141,7 +141,7 @@ const SendMailForm = ({onSubmit}) => {
                         value={formik.values.name}/>
 
                         {formik.errors.name && formik.touched.name 
-                            ? <div>{formik.errors.name}</div> 
+                            ? <div className={c.errorMessage}>{formik.errors.name}</div> 
                             : null}
                 </div>
 
@@ -154,7 +154,7 @@ const SendMailForm = ({onSubmit}) => {
                         value={formik.values.email}/>
 
                         {formik.errors.email && formik.touched.email 
-                            ? <div>{formik.errors.email}</div> 
+                            ? <div className={c.errorMessage}>{formik.errors.email}</div> 
                             : null}
                 </div>
 
@@ -167,7 +167,7 @@ const SendMailForm = ({onSubmit}) => {
                         value={formik.values.subject}/>
 
                         {formik.errors.subject && formik.touched.subject 
-                            ? <div>{formik.errors.subject}</div> 
+                            ? <div className={c.errorMessage}>{formik.errors.subject}</div> 
                             : null}
                 </div>
             </div>
@@ -181,7 +181,7 @@ const SendMailForm = ({onSubmit}) => {
                     value={formik.values.message}></textarea>
 
                     {formik.errors.message && formik.touched.message 
-                        ? <div>{formik.errors.message}</div> 
+                        ? <div className={c.errorMessage}>{formik.errors.message}</div> 
                         : null}
             </div>
 
