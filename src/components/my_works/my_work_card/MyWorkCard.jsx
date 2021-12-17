@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Curtain from "../curtain/Curtain";
 
 import c from './my_work_card.module.scss';
@@ -7,6 +7,11 @@ function MyWorkCard() {
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState({top: '0px', left: '0px'});
     const cardRef = useRef();
+
+           
+    // useEffect(() => {
+    //     setCurtainStartPosition({top: '0px', left: '0px'});
+    // }, [curtainStartPosition]);
 
     const onMouseEnterHandler = (e) => {
         const elemBounding = cardRef.current.getBoundingClientRect();
@@ -30,8 +35,7 @@ function MyWorkCard() {
 		
 			case leftEdgeDist: 
                 console.log("Лево");
-                setCurtainStartPosition({top: '0px', left: '-300px'});
-                setCurtainStartPosition({top: '0px', left: '0px'});
+                // setCurtainStartPosition({top: '0px', left: '-300px'});
                 break ;
 			case rightEdgeDist: 
                 console.log('Право');
@@ -59,14 +63,13 @@ function MyWorkCard() {
     }; 
 
     return (
-        <article className={c.myWorkCardWrap}>
+        <article 
+            className={c.myWorkCardWrap}
+            onMouseLeave={() => setCurtainVisibility(false)}>
             <div 
                 className={c.imgLink} 
-                href="#"
                 ref={cardRef}
-                onMouseEnter={(e) => onMouseEnterHandler(e)}
-                onMouseLeave={() => setCurtainVisibility(false)}
-                ></div>
+                onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
 
             <Curtain 
                 title={'first title'} 
