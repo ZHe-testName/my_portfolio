@@ -5,6 +5,7 @@ import c from './my_work_card.module.scss';
 
 function MyWorkCard() {
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
+    const [curtainStartPosition, setCurtainStartPosition] = useState({top: '0px', left: '0px'});
     const cardRef = useRef();
 
     const onMouseEnterHandler = (e) => {
@@ -24,12 +25,13 @@ function MyWorkCard() {
 		const rightEdgeDist = Math.abs(elementRightEdge - mouseX);
 
         const min = Math.min(topEdgeDist, bottomEdgeDist, leftEdgeDist, rightEdgeDist);
-        console.log(e);
 
 		switch(min) {
 		
 			case leftEdgeDist: 
                 console.log("Лево");
+                setCurtainStartPosition({top: '0px', left: '-300px'});
+                setCurtainStartPosition({top: '0px', left: '0px'});
                 break ;
 			case rightEdgeDist: 
                 console.log('Право');
@@ -62,9 +64,15 @@ function MyWorkCard() {
                 className={c.imgLink} 
                 href="#"
                 ref={cardRef}
-                onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
+                onMouseEnter={(e) => onMouseEnterHandler(e)}
+                onMouseLeave={() => setCurtainVisibility(false)}
+                ></div>
 
-            <Curtain title={'first title'} isVisible={isCurtainVisible} onMouseLeaveHandler={onMouseEnterHandler}/>
+            <Curtain 
+                title={'first title'} 
+                isVisible={isCurtainVisible} 
+                startPosition={curtainStartPosition}
+                onMouseLeaveHandler={onMouseEnterHandler}/>
         </article>
     );
 };

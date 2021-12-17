@@ -17,8 +17,8 @@
 
 .invisibleCurtain{
     transition: all;
-    transition-duration: 1s;
-    top: 0px;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0,.83,0,1);
 }
 
 @media (max-width: 1025px) {
