@@ -1,4 +1,6 @@
 .myWorkCardWrap{
+    position: relative;
+    overflow: hidden;
     width: 290px;
     margin: 15px;
 
@@ -44,7 +46,7 @@
 @media (max-width: 1025px) {
     .myWorkCardWrap{
         min-width: 280px;
-        height: 160px;
+        height: 165px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
@@ -59,7 +61,7 @@
 @media (max-width: 384px) {
     .myWorkCardWrap{
         width: 280px;
-        height: 130px;
+        height: 150px;
         margin: 0px auto;
         margin-bottom: 50px;
         .imgLink{

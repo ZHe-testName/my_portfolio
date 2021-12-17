@@ -1,0 +1,42 @@
+.curtain{
+    position: absolute;
+    width: 290px;
+    background-color: green;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -180px;
+
+    div{
+        font-size: 27px;
+        text-align: center;
+    }
+}
+
+.invisibleCurtain{
+    transition: all;
+    transition-duration: 1s;
+    top: 0px;
+}
+
+@media (max-width: 1025px) {
+    .curtain{
+        min-width: 280px;
+        height: 165px;
+    }
+}
+
+@media (max-width: 682px) {
+    .curtain{
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 384px) {
+    .curtain{
+        width: 260px;
+        height: 150px;
+    }
+}

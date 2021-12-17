@@ -17,6 +17,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                     <h3>
                         не стесняйтесь!
                     </h3>
+
                     <p>
                         Не стесняйтесь связаться со мной. 
                         Я всегда открыт для обсуждения новых проектов, 
@@ -33,6 +34,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                                 href="mailto:horunzhy.wgen@gmail.com">horunzhy.wgen@gmail.com</a>
                         </div>
                     </div>
+
                     <div className={c.contactCard}>
                         <div className={c.phone}></div>
 
@@ -72,7 +74,6 @@ function Contacts({ onSubmit, sendingStatus }) {
                         </li>
                     </ul>
                 </div>
-
 
                 <SendMailForm onSubmit={onSubmit} sendingStatus={sendingStatus}/>
             </div>

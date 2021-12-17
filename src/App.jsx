@@ -99,7 +99,7 @@ function App() {
     }
 
   return (
-    <main className={c.app}>
+      <main className={c.app}>
         <NavBar navIsVisible={navIsVisible} hiddeNav={showNavHandler}/>
 
         <Sandwich navIsVisible={navIsVisible} showNav={showNavHandler}/>
@@ -114,11 +114,11 @@ function App() {
                                                       skillsCollection={skillsArr} 
                                                       educationArr={educationArr}/>}/>
 
-          <Route path="/works" render={() => <MyWorks/>}/>
+          <Route path="/works" render={() => <MyWorks />}/>
 
           <Route path="/contacts" render={() => <Contacts onSubmit={sendEmailFunc} sendingStatus={sendingStatus}/>}/>
         </div>
-    </main>
+      </main>
   );
 }
 
