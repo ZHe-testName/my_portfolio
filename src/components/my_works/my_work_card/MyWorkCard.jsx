@@ -4,6 +4,9 @@ import Curtain from "../curtain/Curtain";
 import c from './my_work_card.module.scss';
 
 function MyWorkCard() {
+    const positionsObj = {
+          
+    };
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState({top: '0px', left: '0px'});
     const cardRef = useRef();
@@ -71,11 +74,9 @@ function MyWorkCard() {
                 ref={cardRef}
                 onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
 
-            <Curtain 
-                title={'first title'} 
-                isVisible={isCurtainVisible} 
-                startPosition={curtainStartPosition}
-                onMouseLeaveHandler={onMouseEnterHandler}/>
+            {isCurtainVisible && <Curtain 
+                                        title={'first title'} 
+                                        startPosition={curtainStartPosition}/>}
         </article>
     );
 };

@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import c from './curtain.module.scss';
 
-const Curtain = ({ title, isVisible, onMouseLeaveHandler, startPosition }) => {
+const Curtain = ({ title, classPosition }) => {
+    const [style, setStyle] = useState({});
+
+    useEffect(() => {
+        setStyle({
+            top: '0px',
+            left: '0px',
+        });
+
+        return () => {
+            console.log('done');
+            setStyle({});
+        }}, []);
+
     return (
         <a 
-            className={ isVisible ? `${c.curtain} ${c.invisibleCurtain}` : c.curtain }
-            style={isVisible ? startPosition : {}}
-            onMouseLeave={(e) => onMouseLeaveHandler(e)}>
+            className={classPosition}
+            style={style}
+            // style={isVisible ? startPosition : {}}
+            // onMouseLeave={(e) => onMouseLeaveHandler(e)}
+            >
             <div>
                 { title }
             </div>

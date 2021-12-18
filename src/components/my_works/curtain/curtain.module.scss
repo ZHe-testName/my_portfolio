@@ -7,7 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -180px;
+    transition: all;
+    transition-duration: 0.5s;
 
     div{
         font-size: 27px;
@@ -15,11 +16,31 @@
     }
 }
 
-.invisibleCurtain{
-    transition: all;
-    transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0,.31,0,1.07);
+.leftStart{
+    top: 0px;
+    left: -210px;
 }
+
+.rightStart{
+    top: 0px;
+    left: 210px;
+}
+
+.topStart{
+    top: -140px;
+    left: 0px;
+}
+
+.bottomStart{
+    top: 140px;
+    left: 0px;
+}
+
+// .invisibleCurtain{
+//     transition: all;
+//     transition-duration: 0.5s;
+//     transition-timing-function: cubic-bezier(0,.31,0,1.07);
+// }
 
 @media (max-width: 1025px) {
     .curtain{
