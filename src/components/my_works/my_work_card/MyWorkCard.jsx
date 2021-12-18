@@ -57,8 +57,10 @@ function MyWorkCard() {
         };
 
         if (e.type === 'mouseleave'){
-            console.log('bye');
-            setCurtainVisibility(false);
+            setTimeout(() => {
+                console.log('bye');
+                setCurtainVisibility(false);
+            }, 700);
         };
 
         
@@ -67,7 +69,7 @@ function MyWorkCard() {
     return (
         <article 
             className={c.myWorkCardWrap}
-            onMouseLeave={() => setCurtainVisibility(false)}>
+            onMouseLeave={(e) => onMouseEnterHandler(e)}>
             <div 
                 className={c.imgLink} 
                 ref={cardRef}
