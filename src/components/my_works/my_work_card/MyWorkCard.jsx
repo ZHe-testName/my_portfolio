@@ -8,7 +8,7 @@ function MyWorkCard() {
           
     };
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
-    const [curtainStartPosition, setCurtainStartPosition] = useState({top: '0px', left: '0px'});
+    const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const cardRef = useRef();
 
            
@@ -37,17 +37,16 @@ function MyWorkCard() {
 		switch(min) {
 		
 			case leftEdgeDist: 
-                console.log("Лево");
-                // setCurtainStartPosition({top: '0px', left: '-300px'});
+                setCurtainStartPosition('leftStart');
                 break ;
 			case rightEdgeDist: 
-                console.log('Право');
+                setCurtainStartPosition('rightStart');
                 break;
 			case topEdgeDist: 
-                console.log('Верх');
+                setCurtainStartPosition('topStart');
                 break;
-			case bottomEdgeDist:
-                console.log('Низ'); 
+			case bottomEdgeDist: 
+                setCurtainStartPosition('bottomStart');
                 break;
 			
 		};
@@ -76,7 +75,7 @@ function MyWorkCard() {
 
             {isCurtainVisible && <Curtain 
                                         title={'first title'} 
-                                        startPosition={curtainStartPosition}/>}
+                                        classPosition={curtainStartPosition}/>}
         </article>
     );
 };

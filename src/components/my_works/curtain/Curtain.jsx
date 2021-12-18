@@ -3,6 +3,7 @@ import c from './curtain.module.scss';
 
 const Curtain = ({ title, classPosition }) => {
     const [style, setStyle] = useState({});
+    console.log(classPosition);
 
     useEffect(() => {
         setStyle({
@@ -17,7 +18,7 @@ const Curtain = ({ title, classPosition }) => {
 
     return (
         <a 
-            className={classPosition}
+            className={`${c.curtain} ${c[classPosition]}`}
             style={style}
             // style={isVisible ? startPosition : {}}
             // onMouseLeave={(e) => onMouseLeaveHandler(e)}
