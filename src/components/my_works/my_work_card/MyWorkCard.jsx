@@ -4,17 +4,9 @@ import Curtain from "../curtain/Curtain";
 import c from './my_work_card.module.scss';
 
 function MyWorkCard() {
-    const positionsObj = {
-          
-    };
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const cardRef = useRef();
-
-           
-    // useEffect(() => {
-    //     setCurtainStartPosition({top: '0px', left: '0px'});
-    // }, [curtainStartPosition]);
 
     const onMouseEnterHandler = (e) => {
         const elemBounding = cardRef.current.getBoundingClientRect();
@@ -60,7 +52,9 @@ function MyWorkCard() {
             setTimeout(() => {
                 console.log('bye');
                 setCurtainVisibility(false);
-            }, 700);
+            }, 600)
+            // console.log('bye');
+            // setCurtainVisibility(false);
         };
 
         
@@ -69,7 +63,8 @@ function MyWorkCard() {
     return (
         <article 
             className={c.myWorkCardWrap}
-            onMouseLeave={(e) => onMouseEnterHandler(e)}>
+            onMouseLeave={(e) => onMouseEnterHandler(e)}
+            >
             <div 
                 className={c.imgLink} 
                 ref={cardRef}

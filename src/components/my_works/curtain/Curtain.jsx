@@ -12,7 +12,7 @@ const Curtain = ({ title, classPosition }) => {
         });
     }, []);
 
-    const onMouseLeave = () => {
+    const onMouseLeaveHandler = () => {
         setStyle({});
     };
 
@@ -21,7 +21,7 @@ const Curtain = ({ title, classPosition }) => {
             className={`${c.curtain} ${c[classPosition]}`}
             style={style}
             // style={isVisible ? startPosition : {}}
-            onMouseLeave={() => {onMouseLeave()}}
+            onMouseLeave={() => {onMouseLeaveHandler()}}
             >
             <div>
                 { title }
