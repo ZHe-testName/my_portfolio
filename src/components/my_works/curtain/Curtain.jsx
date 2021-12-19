@@ -3,10 +3,8 @@ import c from './curtain.module.scss';
 
 const Curtain = ({ title, classPosition, isOn, link }) => {
     const [style, setStyle] = useState({});
-    console.log(classPosition, isOn);
 
     useEffect(() => {
-        console.log('ef');
         isOn
             ?
             setStyle({

@@ -11,6 +11,7 @@ import NavBar from './components/nav_bar/NavBar';
 import Sandwich from './components/sandwich/Sandwich';
 import emailjs from 'emailjs-com';
 
+
 function App() {
   const personalInfo = {
     name: 'Евгений',
@@ -74,37 +75,37 @@ function App() {
     {
       curtainTitle: 'Aviasales',
       link: 'https://zhe-testname.github.io/AviaSales/',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://st2.depositphotos.com/1028911/7561/i/950/depositphotos_75617037-stock-photo-air-tickets-with-sunset-and.jpg',
     },
     {
       curtainTitle: 'Social Network',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://t-laboratory.ru/wp-content/uploads/2018/07/1200-630-kopirovat-425-1024x538.jpg',
     },
     {
       curtainTitle: 'ToDo List',
-      link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      link: 'https://zhe-testname.github.io/TS_ToDoList/',
+      image: 'https://ancona.unicusano.it/wp-content/uploads/2018/06/to-do-list.jpg',
     },
     {
       curtainTitle: 'Tasks Calendar',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMfVmr8UTjxXf_HX-pu60b20V2iSyjSoFvMeHRd60n8DIjkd9IZpq5LH4HUTfeBTYsXw&usqp=CAU',
     },
     {
       curtainTitle: 'Aviator Game',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://fifaxa-game.com/wp-content/uploads/2021/04/aviator-games.jpg',
     },
     {
       curtainTitle: 'Race Zero Game',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://autopeople.ru/article/wp-content/uploads/2020/01/222-1024x640.jpg',
     },
     {
       curtainTitle: 'Skinali Page',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'https://idealkuhnya.ru/wp-content/uploads/2015/12/fint_043-3.jpg',
     },
     {
       curtainTitle: 'Furniture Store',

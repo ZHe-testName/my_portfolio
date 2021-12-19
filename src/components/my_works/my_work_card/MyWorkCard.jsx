@@ -4,12 +4,11 @@ import Curtain from "../curtain/Curtain";
 import c from './my_work_card.module.scss';
 
 function MyWorkCard({curtainTitle, link, image}) {
-    // const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const [isOn, switchIsOn] = useState(false);
     const cardRef = useRef();
 
-    const onMouseEnterHandler = (e) => {
+    const onMouseHandler = (e) => {
         const elemBounding = cardRef.current.getBoundingClientRect();
 		
 		const elementTopEdge = elemBounding.top;
@@ -58,17 +57,17 @@ function MyWorkCard({curtainTitle, link, image}) {
 
         
     }; 
-    console.log('card');
+    
     return (
         <article 
             className={c.myWorkCardWrap}
-            onMouseLeave={(e) => onMouseEnterHandler(e)}
+            onMouseLeave={(e) => onMouseHandler(e)}
             >
             <div 
                 className={c.imgLink} 
                 style={{backgroundImage: `url(${image}})`}}
                 ref={cardRef}
-                onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
+                onMouseEnter={(e) => onMouseHandler(e)}></div>
 
             <Curtain 
                     title={curtainTitle} 
