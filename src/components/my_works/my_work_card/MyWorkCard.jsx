@@ -6,6 +6,7 @@ import c from './my_work_card.module.scss';
 function MyWorkCard() {
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
+    const [isOn, switchIsOn] = useState(false);
     const cardRef = useRef();
 
     const onMouseEnterHandler = (e) => {
@@ -46,9 +47,11 @@ function MyWorkCard() {
         if (e.type === 'mouseenter'){
             console.log('hi');
             setCurtainVisibility(true);
+            switchIsOn(true);
         };
 
         if (e.type === 'mouseleave'){
+            switchIsOn(false);
             setTimeout(() => {
                 console.log('bye');
                 setCurtainVisibility(false);
@@ -72,7 +75,8 @@ function MyWorkCard() {
 
             {isCurtainVisible && <Curtain 
                                         title={'first title'} 
-                                        classPosition={curtainStartPosition}/>}
+                                        classPosition={curtainStartPosition}
+                                        isOn={isOn}/>}
         </article>
     );
 };

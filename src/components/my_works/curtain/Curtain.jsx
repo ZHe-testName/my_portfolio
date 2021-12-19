@@ -1,27 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import c from './curtain.module.scss';
 
-const Curtain = ({ title, classPosition }) => {
+const Curtain = ({ title, classPosition, isOn }) => {
     const [style, setStyle] = useState({});
-    console.log(classPosition);
+    console.log(classPosition, isOn);
 
     useEffect(() => {
-        setStyle({
-            top: '0px',
-            left: '0px',
-        });
-    }, []);
+        console.log('ef');
+        isOn
+            ?
+            setStyle({
+                top: '0px',
+                left: '0px',
+            })
+            :
+            setStyle({});
+        
+    }, [isOn]);
 
-    const onMouseLeaveHandler = () => {
-        setStyle({});
-    };
+    // const onMouseLeaveHandler = () => {
+    //     setStyle({});
+    // };
 
     return (
         <a 
             className={`${c.curtain} ${c[classPosition]}`}
             style={style}
             // style={isVisible ? startPosition : {}}
-            onMouseLeave={() => {onMouseLeaveHandler()}}
+            // onMouseLeave={() => {onMouseLeaveHandler()}}
             >
             <div>
                 { title }
