@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.5c30c550.chunk.css",
-    "main.js": "/my_portfolio/static/js/main.e2fbace3.chunk.js",
-    "main.js.map": "/my_portfolio/static/js/main.e2fbace3.chunk.js.map",
+    "main.css": "/my_portfolio/static/css/main.56fabbbd.chunk.css",
+    "main.js": "/my_portfolio/static/js/main.48e516cf.chunk.js",
+    "main.js.map": "/my_portfolio/static/js/main.48e516cf.chunk.js.map",
     "runtime-main.js": "/my_portfolio/static/js/runtime-main.154640fa.js",
     "runtime-main.js.map": "/my_portfolio/static/js/runtime-main.154640fa.js.map",
-    "static/js/2.f0f36dea.chunk.js": "/my_portfolio/static/js/2.f0f36dea.chunk.js",
-    "static/js/2.f0f36dea.chunk.js.map": "/my_portfolio/static/js/2.f0f36dea.chunk.js.map",
+    "static/js/2.bed4fff3.chunk.js": "/my_portfolio/static/js/2.bed4fff3.chunk.js",
+    "static/js/2.bed4fff3.chunk.js.map": "/my_portfolio/static/js/2.bed4fff3.chunk.js.map",
     "index.html": "/my_portfolio/index.html",
-    "static/css/main.5c30c550.chunk.css.map": "/my_portfolio/static/css/main.5c30c550.chunk.css.map",
-    "static/js/2.f0f36dea.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.f0f36dea.chunk.js.LICENSE.txt",
+    "static/css/main.56fabbbd.chunk.css.map": "/my_portfolio/static/css/main.56fabbbd.chunk.css.map",
+    "static/js/2.bed4fff3.chunk.js.LICENSE.txt": "/my_portfolio/static/js/2.bed4fff3.chunk.js.LICENSE.txt",
+    "static/media/my_work_card.module.scss": "/my_portfolio/static/media/unnamed.09f4afdd.jpg",
     "static/media/AirBrush_20200203115910_LI.c7ea21cb.jpg": "/my_portfolio/static/media/AirBrush_20200203115910_LI.c7ea21cb.jpg",
-    "static/media/my_work_card.module.scss": "/my_portfolio/static/media/aviasales.95934e4d.jpeg",
     "static/media/home.module.scss": "/my_portfolio/static/media/iconmonstr-arrow-20.a7f087be.svg",
     "static/media/navbar.module.scss": "/my_portfolio/static/media/iconmonstr-user-14.860c2f82.svg",
     "static/media/about_me.module.scss": "/my_portfolio/static/media/iconmonstr-download-19.f1b6a2f2.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.154640fa.js",
-    "static/js/2.f0f36dea.chunk.js",
-    "static/css/main.5c30c550.chunk.css",
-    "static/js/main.e2fbace3.chunk.js"
+    "static/js/2.bed4fff3.chunk.js",
+    "static/css/main.56fabbbd.chunk.css",
+    "static/js/main.48e516cf.chunk.js"
   ]
 }
