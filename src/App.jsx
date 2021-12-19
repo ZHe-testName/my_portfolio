@@ -75,52 +75,52 @@ function App() {
     {
       curtainTitle: 'Aviasales',
       link: 'https://zhe-testname.github.io/AviaSales/',
-      image: 'https://st2.depositphotos.com/1028911/7561/i/950/depositphotos_75617037-stock-photo-air-tickets-with-sunset-and.jpg',
+      image: 'aviasales',
     },
     {
       curtainTitle: 'Social Network',
       link: '',
-      image: 'https://t-laboratory.ru/wp-content/uploads/2018/07/1200-630-kopirovat-425-1024x538.jpg',
+      image: 'social',
     },
     {
       curtainTitle: 'ToDo List',
       link: 'https://zhe-testname.github.io/TS_ToDoList/',
-      image: 'https://ancona.unicusano.it/wp-content/uploads/2018/06/to-do-list.jpg',
+      image: 'todo',
     },
     {
       curtainTitle: 'Tasks Calendar',
       link: '',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMfVmr8UTjxXf_HX-pu60b20V2iSyjSoFvMeHRd60n8DIjkd9IZpq5LH4HUTfeBTYsXw&usqp=CAU',
+      image: 'calendar',
     },
     {
       curtainTitle: 'Aviator Game',
       link: '',
-      image: 'https://fifaxa-game.com/wp-content/uploads/2021/04/aviator-games.jpg',
+      image: 'aviator',
     },
     {
       curtainTitle: 'Race Zero Game',
       link: '',
-      image: 'https://autopeople.ru/article/wp-content/uploads/2020/01/222-1024x640.jpg',
+      image: 'race',
     },
     {
       curtainTitle: 'Skinali Page',
       link: '',
-      image: 'https://idealkuhnya.ru/wp-content/uploads/2015/12/fint_043-3.jpg',
+      image: 'skinali',
     },
     {
       curtainTitle: 'Furniture Store',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'furniture',
     },
     {
       curtainTitle: 'Cost Calculator',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'calc',
     },
     {
       curtainTitle: 'Dialogs App',
       link: '',
-      image: '../../../imgs/aviasales.jpeg',
+      image: 'dialog',
     }
   ];
 

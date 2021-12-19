@@ -52,7 +52,7 @@ function MyWorkCard({curtainTitle, link, image}) {
             
             setTimeout(() => {
                 setCurtainStartPosition('');
-            }, 500);
+            }, 300);
         };
 
         
@@ -64,8 +64,7 @@ function MyWorkCard({curtainTitle, link, image}) {
             onMouseLeave={(e) => onMouseHandler(e)}
             >
             <div 
-                className={c.imgLink} 
-                style={{backgroundImage: `url(${image}})`}}
+                className={c.imgLink + ' ' + c[image]} 
                 ref={cardRef}
                 onMouseEnter={(e) => onMouseHandler(e)}></div>
 
