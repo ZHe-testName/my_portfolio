@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import c from './curtain.module.scss';
 
-const Curtain = ({ title, classPosition, isOn }) => {
+const Curtain = ({ title, classPosition, isOn, link }) => {
     const [style, setStyle] = useState({});
     console.log(classPosition, isOn);
 
@@ -24,8 +24,10 @@ const Curtain = ({ title, classPosition, isOn }) => {
 
     return (
         <a 
+            href={link}
             className={`${c.curtain} ${c[classPosition]}`}
             style={style}
+            target='_blank'
             // style={isVisible ? startPosition : {}}
             // onMouseLeave={() => {onMouseLeaveHandler()}}
             >

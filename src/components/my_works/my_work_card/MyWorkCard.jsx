@@ -3,7 +3,7 @@ import Curtain from "../curtain/Curtain";
 
 import c from './my_work_card.module.scss';
 
-function MyWorkCard() {
+function MyWorkCard({curtainTitle, link, image}) {
     const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const [isOn, switchIsOn] = useState(false);
@@ -52,16 +52,18 @@ function MyWorkCard() {
 
         if (e.type === 'mouseleave'){
             switchIsOn(false);
+            
             setTimeout(() => {
                 console.log('bye');
                 setCurtainVisibility(false);
-            }, 600)
+            }, 500)
             // console.log('bye');
             // setCurtainVisibility(false);
         };
 
         
     }; 
+    console.log(image);
 
     return (
         <article 
@@ -70,13 +72,15 @@ function MyWorkCard() {
             >
             <div 
                 className={c.imgLink} 
+                style={{backgroundImage: `url(${image}})`}}
                 ref={cardRef}
                 onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
 
             {isCurtainVisible && <Curtain 
-                                        title={'first title'} 
+                                        title={curtainTitle} 
                                         classPosition={curtainStartPosition}
-                                        isOn={isOn}/>}
+                                        isOn={isOn}
+                                        link={link}/>}
         </article>
     );
 };

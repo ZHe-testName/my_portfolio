@@ -70,6 +70,59 @@ function App() {
     },
   ];
 
+  const myWorksData = [
+    {
+      curtainTitle: 'Aviasales',
+      link: 'https://zhe-testname.github.io/AviaSales/',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Social Network',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'ToDo List',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Tasks Calendar',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Aviator Game',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Race Zero Game',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Skinali Page',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Furniture Store',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Cost Calculator',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    },
+    {
+      curtainTitle: 'Dialogs App',
+      link: '',
+      image: '../../../imgs/aviasales.jpeg',
+    }
+  ];
+
   const [navIsVisible, showNav] = useState(false);
   const [sendingStatus, setSendStatus] = useState('');
 
@@ -114,7 +167,7 @@ function App() {
                                                       skillsCollection={skillsArr} 
                                                       educationArr={educationArr}/>}/>
 
-          <Route path="/works" render={() => <MyWorks />}/>
+          <Route path="/works" render={() => <MyWorks myWorksData={myWorksData}/>}/>
 
           <Route path="/contacts" render={() => <Contacts onSubmit={sendEmailFunc} sendingStatus={sendingStatus}/>}/>
         </div>

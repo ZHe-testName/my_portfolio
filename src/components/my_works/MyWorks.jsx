@@ -4,22 +4,17 @@ import PageHeader from "../page_header/PageHeader";
 import c from './my_works.module.scss';
 import MyWorkCard from "./my_work_card/MyWorkCard";
 
-function MyWorks() {
+function MyWorks(props) {
+    console.log(props.myWorksData);
     return (
         <section className={c.myWorks}>
             <div className={c.myWorksWrap}>
                 <PageHeader whiteLetters="МОИ" yellowLetters="Работы" shadowWord="Портфолио"/>
 
                 <div className={c.myWorksCollection}>
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
-                    <MyWorkCard />
+                    {
+                        props.myWorksData.map(item => <MyWorkCard key={item.curtainTitle} {...item}/>)
+                    }
                 </div>
 
                 <div className={c.ghLink}>
