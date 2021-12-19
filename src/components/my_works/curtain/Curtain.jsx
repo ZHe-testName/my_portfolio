@@ -18,18 +18,12 @@ const Curtain = ({ title, classPosition, isOn, link }) => {
         
     }, [isOn]);
 
-    // const onMouseLeaveHandler = () => {
-    //     setStyle({});
-    // };
-
     return (
         <a 
             href={link}
             className={`${c.curtain} ${c[classPosition]}`}
             style={style}
             target='_blank'
-            // style={isVisible ? startPosition : {}}
-            // onMouseLeave={() => {onMouseLeaveHandler()}}
             >
             <div>
                 { title }

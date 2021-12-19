@@ -5,7 +5,6 @@ import c from './my_works.module.scss';
 import MyWorkCard from "./my_work_card/MyWorkCard";
 
 function MyWorks(props) {
-    console.log(props.myWorksData);
     return (
         <section className={c.myWorks}>
             <div className={c.myWorksWrap}>

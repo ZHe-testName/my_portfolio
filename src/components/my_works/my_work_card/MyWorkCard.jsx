@@ -4,7 +4,7 @@ import Curtain from "../curtain/Curtain";
 import c from './my_work_card.module.scss';
 
 function MyWorkCard({curtainTitle, link, image}) {
-    const [isCurtainVisible, setCurtainVisibility] = useState(false);
+    // const [isCurtainVisible, setCurtainVisibility] = useState(false);
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const [isOn, switchIsOn] = useState(false);
     const cardRef = useRef();
@@ -45,8 +45,6 @@ function MyWorkCard({curtainTitle, link, image}) {
 		};
 
         if (e.type === 'mouseenter'){
-            console.log('hi');
-            setCurtainVisibility(true);
             switchIsOn(true);
         };
 
@@ -54,17 +52,13 @@ function MyWorkCard({curtainTitle, link, image}) {
             switchIsOn(false);
             
             setTimeout(() => {
-                console.log('bye');
-                setCurtainVisibility(false);
-            }, 500)
-            // console.log('bye');
-            // setCurtainVisibility(false);
+                setCurtainStartPosition('');
+            }, 500);
         };
 
         
     }; 
-    console.log(image);
-
+    console.log('card');
     return (
         <article 
             className={c.myWorkCardWrap}
@@ -76,11 +70,11 @@ function MyWorkCard({curtainTitle, link, image}) {
                 ref={cardRef}
                 onMouseEnter={(e) => onMouseEnterHandler(e)}></div>
 
-            {isCurtainVisible && <Curtain 
-                                        title={curtainTitle} 
-                                        classPosition={curtainStartPosition}
-                                        isOn={isOn}
-                                        link={link}/>}
+            <Curtain 
+                    title={curtainTitle} 
+                    classPosition={curtainStartPosition}
+                    isOn={isOn}
+                    link={link}/>
         </article>
     );
 };
