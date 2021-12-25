@@ -51,6 +51,8 @@ function AboutMe(props) {
 
             <Skills skillsCollection={props.skillsCollection} />
 
+            <p className={c.smallPar}>* Процентные соотношения показаны исключительно для красоты.</p>
+
             <hr className={c.separator}/>
 
             <Education educationArr={props.educationArr}/>
