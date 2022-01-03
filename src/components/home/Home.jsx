@@ -1,7 +1,7 @@
 import React from "react";
 import AvatarImg from "../avatar_img/AvatarImg";
 import {NavLink} from 'react-router-dom';
-import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
+import avatar from '../../imgs/avatar_photo.jpg';
 
 import c from './home.module.scss';
 
@@ -23,10 +23,10 @@ function Home() {
                     </div>
 
                     <p>
-                        Я JS(React)-разработчик из Украины, специализирующийся на создании чистого и удобного интерфейса и приложений. 
+                        Я начинающий JS(React)-разработчик из Украины, специализирующийся на создании веб-интерфейса и приложений. 
                     </p>
                     <p>
-                        Увлечен созданием отличного программного обеспечения, которое улучшит жизнь окружающих меня людей.
+                        Увлечен созданием программного обеспечения, которое улучшит жизнь окружающих меня людей.
                     </p>
 
                     <div className={c.buttonwrap}>

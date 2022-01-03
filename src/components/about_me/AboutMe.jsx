@@ -5,7 +5,7 @@ import c from './about_me.module.scss';
 import Education from "./education/Education";
 import Button from "../button/Button";
 import PageHeader from "../page_header/PageHeader";
-import avatar from '../../imgs/AirBrush_20200203115910_LI.jpg';
+import avatar from '../../imgs/avatar_photo.jpg';
 import AvatarImg from "../avatar_img/AvatarImg";
 
 function AboutMe(props) {
@@ -41,8 +41,8 @@ function AboutMe(props) {
                         <p>ГОДА ОПЫТА</p>
                     </div>
                     <div>
-                        <h3>20</h3>
-                        <p>ГОТОВЫХ ПРОЕКТОВ</p>
+                        <h3>15</h3>
+                        <p>PET PROJECTS</p>
                     </div>
                 </div>
             </div>
