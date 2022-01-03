@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Curtain from "../curtain/Curtain";
 
 import c from './my_work_card.module.scss';
 
-function MyWorkCard({curtainTitle, link, image}) {
+function MyWorkCard({curtainTitle, link, image, tec}) {
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const [isOn, switchIsOn] = useState(false);
     const cardRef = useRef();
@@ -69,6 +69,7 @@ function MyWorkCard({curtainTitle, link, image}) {
                 onMouseEnter={(e) => onMouseHandler(e)}></div>
 
             <Curtain 
+                    tec={tec}
                     title={curtainTitle} 
                     classPosition={curtainStartPosition}
                     isOn={isOn}

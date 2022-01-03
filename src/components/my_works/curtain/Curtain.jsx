@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import c from './curtain.module.scss';
 
-const Curtain = ({ title, classPosition, isOn, link }) => {
+const Curtain = ({ title, classPosition, isOn, link, tec }) => {
     const [style, setStyle] = useState({});
 
     useEffect(() => {
@@ -26,6 +26,10 @@ const Curtain = ({ title, classPosition, isOn, link }) => {
             <div>
                 { title }
             </div>
+
+            <ul>
+                {tec.map(el => <li>{el}</li>)}
+            </ul>
         </a>
     );
 };

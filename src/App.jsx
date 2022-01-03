@@ -76,52 +76,61 @@ function App() {
       curtainTitle: 'Aviasales',
       link: 'https://zhe-testname.github.io/AviaSales/',
       image: 'aviasales',
+      tec: ['JS', 'HTML', 'CSS'],
     },
     {
       curtainTitle: 'Social Network',
       link: '',
       image: 'social',
+      tec: ['TS', 'REACT', 'REDUX'],
     },
     {
       curtainTitle: 'ToDo List',
       link: 'https://zhe-testname.github.io/TS_ToDoList/',
       image: 'todo',
+      tec: ['TS', 'REACT', 'REDUX'],
     },
     {
       curtainTitle: 'Tasks Calendar',
       link: '',
       image: 'calendar',
+      tec: ['TS', 'REACT', 'REDUX'],
     },
     {
       curtainTitle: 'Aviator Game',
       link: '',
       image: 'aviator',
+      tec: ['ThreeJS'],
     },
     {
       curtainTitle: 'Race Zero Game',
       link: '',
       image: 'race',
+      tec: ['JS', 'HTML', 'CSS'],
     },
     {
       curtainTitle: 'Skinali Page',
       link: '',
       image: 'skinali',
+      tec: ['JS', 'HTML', 'CSS'],
     },
     {
       curtainTitle: 'Furniture Store',
       link: '',
       image: 'furniture',
+      tec: ['JS', 'HTML', 'CSS'],
     },
     {
       curtainTitle: 'Cost Calculator',
       link: '',
       image: 'calc',
+      tec: ['JS', 'HTML', 'CSS'],
     },
-    {
-      curtainTitle: 'Dialogs App',
-      link: '',
-      image: 'dialog',
-    }
+    // {
+    //   curtainTitle: 'Dialogs App',
+    //   link: '',
+    //   image: 'dialog',
+    // }
   ];
 
   const [navIsVisible, showNav] = useState(false);

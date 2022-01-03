@@ -1,18 +1,40 @@
 .curtain{
     position: absolute;
-    width: 290px;
-    background-color: var(--active_yellow);
+    width: 275px;
+    background-color: #ffb300f5;
     height: 100%;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     transition: all;
     transition-duration: 0.5s;
+    padding-left: 15px;
 
     div{
         font-size: 27px;
         text-align: center;
+    }
+
+    ul{
+        padding-left: 12px;
+        color: var(--line_color);
+
+        li{
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: -8px;
+                background-color: var(--line_color);
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+            }
+        }
     }
 }
 
@@ -39,6 +61,11 @@
 .centralPosition{
     top: 0px;
     left: 0px;
+}
+
+.noMouseStartposition{
+    top: 0px;
+    left: 290px;
 }
 
 // .invisibleCurtain{
