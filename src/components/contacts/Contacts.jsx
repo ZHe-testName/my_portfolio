@@ -81,7 +81,7 @@ function Contacts({ onSubmit, sendingStatus }) {
 
             <hr className={c.separator}/>
 
-            <RemoteJob/>
+            {/* <RemoteJob/> */}
         </section>
     );
 };

@@ -28,7 +28,7 @@ const Curtain = ({ title, classPosition, isOn, link, tec }) => {
             </div>
 
             <ul>
-                {tec.map(el => <li>{el}</li>)}
+                {tec.map(el => <li key={el}>{el}</li>)}
             </ul>
         </a>
     );
