@@ -8,6 +8,10 @@ function Button(props) {
         <div className={c.button}>
             <button {...props}>
                 <h3>{props.title}</h3>
+
+                {
+                    props.children || null
+                }
             </button>
         </div>
     );

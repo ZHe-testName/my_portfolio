@@ -40,6 +40,8 @@ function MyWorkCard({curtainTitle, link, image, tec}) {
 			case bottomEdgeDist: 
                 setCurtainStartPosition('bottomStart');
                 break;
+            default:
+                break;
 			
 		};
 

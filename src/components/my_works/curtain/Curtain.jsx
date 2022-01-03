@@ -22,6 +22,7 @@ const Curtain = ({ title, classPosition, isOn, link, tec }) => {
             className={`${c.curtain} ${c[classPosition]}`}
             style={style}
             target='_blank'
+            rel="noreferrer"
             >
             <div>
                 { title }

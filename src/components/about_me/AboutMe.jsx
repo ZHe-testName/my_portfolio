@@ -7,10 +7,17 @@ import Button from "../button/Button";
 import PageHeader from "../page_header/PageHeader";
 import avatar from '../../imgs/avatar_photo.jpg';
 import AvatarImg from "../avatar_img/AvatarImg";
+import file from '../../cv/my_file.docx';
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
                                 .map((item, i) => <li key={i}><span>{item[0]}: </span><span>{item[1]}</span></li>);
+
+    const onSubmitHandle = (e) => {
+        e.preventDefault();
+
+        console.log('submit');
+    };
 
     return (
         <section className={c.aboutMe}>
@@ -29,9 +36,16 @@ function AboutMe(props) {
                     <ul>
                         {personalInfoArr}
                     </ul>
+                    <button>
+                    <a href={file} download={true}>Download</a>
+                    </button>
 
-                    <div className={c.buttonWrap}>
-                        <Button title='Загрузить CV'/>
+                    <div 
+                        className={c.buttonWrap}>
+                        <Button 
+                            title='Загрузить CV'>
+                                <a href={file} download={true}>dioooooo</a>
+                            </Button>
                     </div>
                 </div>
 

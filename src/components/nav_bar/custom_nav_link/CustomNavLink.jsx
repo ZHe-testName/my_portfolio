@@ -3,7 +3,7 @@ import './navlink.module.scss';
 // import homeIcon from '../../../icons/iconmonstr-home-6.svg';
 
 function CustomNavLink(props) {
-    const {href, description, icon} = props;
+    const {href, description} = props;
     const bgc = document.documentElement.clientWidth >= 962 ? '#ffb400' : 'transparent';
 
     return (

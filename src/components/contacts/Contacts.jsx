@@ -1,12 +1,9 @@
-import { useFormik } from "formik";
 import React from "react";
-import Button from "../button/Button";
 import PageHeader from "../page_header/PageHeader";
-import RemoteJob from "../remote_job/RemoteJob";
+// import RemoteJob from "../remote_job/RemoteJob";
 import SendMailForm from "./send_mail_form/SendMailForm";
 
 import c from './contacts.module.scss';
-import SuccessPopup from "./success_popup/SuccessPopup";
 
 function Contacts({ onSubmit, sendingStatus }) {
     return (
