@@ -3,7 +3,7 @@ import c from './skills.module.scss';
 import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
 
 function Skills(props) {
-    //radius skill skale values for corect rendering on different screens 
+    //radius skill scale values for corect rendering on different screens 
     function compareWidth() {
         return (document.documentElement.clientWidth <= 562) ? '48' : '59';
     };

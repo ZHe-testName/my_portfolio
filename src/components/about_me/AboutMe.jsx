@@ -13,12 +13,6 @@ function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)
                                 .map((item, i) => <li key={i}><span>{item[0]}: </span><span>{item[1]}</span></li>);
 
-    const onSubmitHandle = (e) => {
-        e.preventDefault();
-
-        console.log('submit');
-    };
-
     return (
         <section className={c.aboutMe}>
             <PageHeader className={c.sectionHeader} whiteLetters="ОБО" yellowLetters="Мне" shadowWord="Резюме"/>
