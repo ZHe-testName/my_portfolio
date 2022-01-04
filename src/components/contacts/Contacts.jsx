@@ -52,7 +52,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                                 className={c.fb}
                                 href="https://www.facebook.com/horunzhy.wgen"
                                 target="_blank"
-                                rel="noreferrer"></a>
+                                rel="noreferrer">facebook link</a>
                         </li>
 
                         <li>
@@ -60,7 +60,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                                 className={c.li}
                                 href="https://www.facebook.com/horunzhy.wgen"
                                 target="_blank"
-                                rel="noreferrer"></a>
+                                rel="noreferrer">linkedin link</a>
                         </li>
 
                         <li>
@@ -68,7 +68,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                                 className={c.git}
                                 href="https://github.com/ZHe-testName" 
                                 target="_blank"
-                                rel="noreferrer"></a>
+                                rel="noreferrer">github link</a>
                         </li>
                     </ul>
                 </div>

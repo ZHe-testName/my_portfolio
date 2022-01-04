@@ -11,6 +11,10 @@
     &:hover > button{
         transition: all 0.3s;
         width: 214px;
+
+        a{
+            width: 214px;
+        }
     }
 
     button{
@@ -36,6 +40,15 @@
             right: 80px;
             font-size: 19px;
             margin-top: 8px;
+        }
+
+        a{
+            background-color: transparent;
+            left: -5px;
+            color: transparent;
+            width: 55px;
+            z-index: 5;
+            border-radius: 50px;
         }
     }
 }

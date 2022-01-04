@@ -36,15 +36,12 @@ function AboutMe(props) {
                     <ul>
                         {personalInfoArr}
                     </ul>
-                    <button>
-                    <a href={file} download={true}>Download</a>
-                    </button>
 
                     <div 
                         className={c.buttonWrap}>
                         <Button 
                             title='Загрузить CV'>
-                                <a href={file} download={true}>dioooooo</a>
+                                <a href={file} download={true}>download cv</a>
                             </Button>
                     </div>
                 </div>

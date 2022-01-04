@@ -16,7 +16,7 @@ function NavBar(props) {
                     </li>
 
                     <li className={c.about}>
-                        <CustomNavLink href="about_me" description="Про Mеня" />
+                        <CustomNavLink href="about_me" description="Обо Мне" />
                     </li>
 
                     <li className={c.works}>
