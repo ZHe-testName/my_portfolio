@@ -1,6 +1,5 @@
 import React from "react";
 import PageHeader from "../page_header/PageHeader";
-// import RemoteJob from "../remote_job/RemoteJob";
 import SendMailForm from "./send_mail_form/SendMailForm";
 
 import c from './contacts.module.scss';

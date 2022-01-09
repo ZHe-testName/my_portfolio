@@ -116,7 +116,7 @@ function App() {
     },
     {
       curtainTitle: 'Skinali Page',
-      link: '',
+      link: 'https://zhe-testname.github.io/skinali/',
       image: 'skinali',
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: true,
@@ -126,7 +126,7 @@ function App() {
       link: '',
       image: 'furniture',
       tec: ['JS', 'HTML', 'CSS'],
-      isAdaptive: true,
+      isAdaptive: false,
     },
     {
       curtainTitle: 'Cost Calculator',
