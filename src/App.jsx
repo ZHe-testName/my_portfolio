@@ -129,9 +129,9 @@ function App() {
       isAdaptive: false,
     },
     {
-      curtainTitle: 'Cost Calculator',
-      link: '',
-      image: 'calc',
+      curtainTitle: 'My Competitive Project',
+      link: 'https://my-competitive-proj.vercel.app/',
+      image: 'marvel',
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: false,
     },
