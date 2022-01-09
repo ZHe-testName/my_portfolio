@@ -109,7 +109,7 @@ function App() {
     },
     {
       curtainTitle: 'Race Zero Game',
-      link: '',
+      link: 'https://nfs-0.vercel.app/',
       image: 'race',
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: false,
@@ -123,7 +123,7 @@ function App() {
     },
     {
       curtainTitle: 'Furniture Store',
-      link: '',
+      link: 'https://diploma-proj-gloka-cademy-js-vol12.vercel.app/',
       image: 'furniture',
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: false,
