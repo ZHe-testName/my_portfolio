@@ -3,7 +3,7 @@ import Curtain from "../curtain/Curtain";
 
 import c from './my_work_card.module.scss';
 
-function MyWorkCard({curtainTitle, link, image, tec}) {
+function MyWorkCard({curtainTitle, link, image, tec, isDesktop, isAdaptive}) {
     const [curtainStartPosition, setCurtainStartPosition] = useState('');
     const [isOn, switchIsOn] = useState(false);
     const cardRef = useRef();
@@ -75,7 +75,9 @@ function MyWorkCard({curtainTitle, link, image, tec}) {
                     title={curtainTitle} 
                     classPosition={curtainStartPosition}
                     isOn={isOn}
-                    link={link}/>
+                    link={link}
+                    isDesktop={isDesktop}
+                    isAdaptive={isAdaptive}/>
         </article>
     );
 };

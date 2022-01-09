@@ -58,7 +58,7 @@ function Contacts({ onSubmit, sendingStatus }) {
                         <li>
                             <a 
                                 className={c.li}
-                                href="https://www.facebook.com/horunzhy.wgen"
+                                href="https://linkedin.com/in/евгений-хорунжий-10556b223"
                                 target="_blank"
                                 rel="noreferrer">linkedin link</a>
                         </li>

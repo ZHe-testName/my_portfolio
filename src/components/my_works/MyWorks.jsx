@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageHeader from "../page_header/PageHeader";
 
 import c from './my_works.module.scss';
 import MyWorkCard from "./my_work_card/MyWorkCard";
 
 function MyWorks(props) {
+    const [isDesktop, switchIsDesktop] = useState(true);
+
+    useEffect(() => {
+        if (document.documentElement.clientWidth <= 1025){
+            switchIsDesktop(false)
+        };
+    }, []);
+
     return (
         <section className={c.myWorks}>
             <div className={c.myWorksWrap}>
@@ -12,7 +20,7 @@ function MyWorks(props) {
 
                 <div className={c.myWorksCollection}>
                     {
-                        props.myWorksData.map(item => <MyWorkCard key={item.curtainTitle} {...item}/>)
+                        props.myWorksData.map(item => <MyWorkCard key={item.curtainTitle} {...item} isDesktop={isDesktop}/>)
                     }
                 </div>
 
