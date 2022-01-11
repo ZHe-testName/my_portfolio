@@ -26,10 +26,10 @@ function App() {
 
   const skillsArr = [
     [65, 'javascript'],
-    [35, 'typescript'],
-    [55, 'css'],
+    [55, 'typescript'],
+    [50, 'css'],
     [40, 'html'],
-    [45, 'react'],
+    [60, 'react'],
   ];
 
   const educationArr = [
