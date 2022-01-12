@@ -74,7 +74,7 @@ function App() {
   const myWorksData = [
     {
       curtainTitle: 'Aviasales',
-      link: 'https://zhe-testname.github.io/AviaSales/',
+      link: 'https://avia-sales-pefreshed.vercel.app/',
       image: 'aviasales',
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: true,
@@ -95,14 +95,14 @@ function App() {
     },
     {
       curtainTitle: 'Tasks Calendar',
-      link: '',
+      link: 'https://zhe-testname.github.io/test_react_calendar/',
       image: 'calendar',
       tec: ['TS', 'REACT', 'REDUX'],
       isAdaptive: false,
     },
     {
       curtainTitle: 'Aviator Game',
-      link: '',
+      link: 'https://three-js-two.vercel.app/',
       image: 'aviator',
       tec: ['ThreeJS'],
       isAdaptive: false,
