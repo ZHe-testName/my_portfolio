@@ -81,7 +81,7 @@ function App() {
     },
     {
       curtainTitle: 'Social Network',
-      link: '',
+      link: 'https://ZHe-testName.github.io/social_network_ts/',
       image: 'social',
       tec: ['TS', 'REACT', 'REDUX'],
       isAdaptive: false,
