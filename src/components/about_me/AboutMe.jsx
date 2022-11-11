@@ -7,7 +7,7 @@ import Button from "../button/Button";
 import PageHeader from "../page_header/PageHeader";
 import avatar from '../../imgs/avatar_photo.jpg';
 import AvatarImg from "../avatar_img/AvatarImg";
-import file from '../../cv/cv.pdf';
+import file from '../../cv/new_cv.pdf';
 
 function AboutMe(props) {
     const personalInfoArr = Object.entries(props.info)

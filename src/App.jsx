@@ -16,7 +16,7 @@ function App() {
   const personalInfo = {
     name: 'Евгений',
     surname: 'Хорунжий',
-    age: '31',
+    age: '32',
     nationality: 'Украинец',
     country: 'Украина',
     phone: '+380638828081',
@@ -25,11 +25,12 @@ function App() {
   };
 
   const skillsArr = [
-    [65, 'javascript'],
+    [70, 'javascript'],
     [55, 'typescript'],
     [50, 'css'],
     [40, 'html'],
     [60, 'react'],
+    [60, 'vue'],
   ];
 
   const educationArr = [
@@ -73,10 +74,10 @@ function App() {
 
   const myWorksData = [
     {
-      curtainTitle: 'Aviasales',
-      link: 'https://avia-sales-pefreshed.vercel.app/',
-      image: 'aviasales',
-      tec: ['JS', 'HTML', 'CSS'],
+      curtainTitle: 'Medium Clone',
+      link: 'https://vue-udemy-course-2ejue1gd9-zhe-testname.vercel.app',
+      image: 'medium',
+      tec: ['VUE2', 'VUEX'],
       isAdaptive: true,
     },
     {
@@ -115,10 +116,10 @@ function App() {
       isAdaptive: false,
     },
     {
-      curtainTitle: 'Skinali Page',
-      link: 'https://zhe-testname.github.io/skinali/',
-      image: 'skinali',
-      tec: ['JS', 'HTML', 'CSS'],
+      curtainTitle: 'Vue3 Blog',
+      link: 'https://vue-blog-4ciy3p0jv-zhe-testname.vercel.app',
+      image: 'vueblog',
+      tec: ['VUE2', 'VUEX'],
       isAdaptive: true,
     },
     {
