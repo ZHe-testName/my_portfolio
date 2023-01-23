@@ -1,58 +1,60 @@
 @keyframes flash {
-    0%{
-        background-color: rgb(192, 192, 192);
-    }
-    100%{
-        background-color: rgb(49, 49, 49);
-    }
-    
+  0% {
+    background-color: rgb(192, 192, 192);
+  }
+
+  100% {
+    background-color: rgb(49, 49, 49);
+  }
+
 }
 
-.shadowWrap{
-    // position: absolute;
-    // width: calc(100vw + 30px);
-    // height: calc(100vh + 200px);
-    // background-color: rgba(119, 119, 119, 0.863);
-    // top: 0px;
-    // left: -25px;
+.shadowWrap {
+  // position: absolute;
+  // width: calc(100vw + 30px);
+  // height: calc(100vh + 200px);
+  // background-color: rgba(119, 119, 119, 0.863);
+  // top: 0px;
+  // left: -25px;
 
-    .popUpWrap{
-        max-width: 280px;
-    
-        h3{
-            display: block;
-            word-break: keep-all;
-            margin-bottom: 40px;
-        }
-        .links{
-            display: flex;
-            justify-content: space-between;
-    
-            a{
-                width: 40px;
-                height: 40px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 50% 50%;
-                position: relative;
-    
-                &::before{
-                    content: '';
-                    height: 25px;
-                    width: 2px;
-                    background-color: var(--light_line_color);
-                    position: absolute;
-                    left: 19px;
-                    top: -35px;
-                    // animation-name: flash;
-                    // animation-duration: 2s;
-                    // animation-iteration-count: infinite;
-                }
-            
-                &:hover{
-                    background-color: var(--active_yellow);
-                }
-            }
-        }
+  .popUpWrap {
+    max-width: 280px;
+
+    h3 {
+      display: block;
+      word-break: keep-all;
+      margin-bottom: 40px;
     }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50% 50%;
+        position: relative;
+
+        &::before {
+          content: '';
+          height: 25px;
+          width: 2px;
+          background-color: var(--light_line_color);
+          position: absolute;
+          left: 19px;
+          top: -35px;
+          // animation-name: flash;
+          // animation-duration: 2s;
+          // animation-iteration-count: infinite;
+        }
+
+        &:hover {
+          background-color: var(--active_yellow);
+        }
+      }
+    }
+  }
 }

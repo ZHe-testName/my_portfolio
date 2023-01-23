@@ -1,61 +1,62 @@
 .pageHeader {
-    margin-bottom: 45px;
-    margin-top: 35px;
-    h1{
-        font-size: 54px;
-        text-align: center;
-        color: var(--dark_text);
-        text-transform: uppercase;
-        margin: 0 auto;
-        font-family: 'Rubik Mono One', sans-serif;
+  margin-bottom: 45px;
+  margin-top: 35px;
 
-        span{
-            color: var(--active_yellow);
-            margin-left: 10px;
-        }
-    }
+  h1 {
+    font-size: 54px;
+    text-align: center;
+    color: var(--dark_text);
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Rubik Mono One', sans-serif;
 
-    .shadow{
-        display: block;
-        font-family: 'Rubik Mono One', sans-serif;
-        text-align: center;
-        font-size: 100px;
-        left: 0;
-        line-height: 0.7;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.07);
+    span {
+      color: var(--active_yellow);
+      margin-left: 10px;
     }
+  }
+
+  .shadow {
+    display: block;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    left: 0;
+    line-height: 0.7;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.07);
+  }
 }
 
 @media (max-width: 748px) {
-    .pageHeader {
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-        top: 0px;
-        left: -10px;
-        background-color: var(--line_color);
-        border-bottom: 1px solid var(--left_line_ediq_block);
-        margin: 0px;
-        padding-left: 30px;
+  .pageHeader {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: -10px;
+    background-color: var(--line_color);
+    border-bottom: 1px solid var(--left_line_ediq_block);
+    margin: 0px;
+    padding-left: 30px;
 
 
-        h1{
-            font-size: 26px;
-            text-align: start;
-            line-height: 65px;
-            margin-top: 3px;
+    h1 {
+      font-size: 26px;
+      text-align: start;
+      line-height: 65px;
+      margin-top: 3px;
 
-            span{
-                margin-left: 10px;
-            }
-        }
-    
-        .shadow{
-            display: none;
-        }
+      span {
+        margin-left: 10px;
+      }
     }
+
+    .shadow {
+      display: none;
+    }
+  }
 }

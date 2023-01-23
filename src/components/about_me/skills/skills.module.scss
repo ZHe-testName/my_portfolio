@@ -1,64 +1,58 @@
 .skills {
-    padding: var(--main_blocks_wrapper_padding) 0px;
-    margin: 0px 70px;
+  padding: var(--main_blocks_wrapper_padding) 0px;
+  margin: 0px 70px;
 
-    .skillsWrap {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        margin: 0px auto;
+  .skillsWrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0px auto;
 
-        h3{
-            line-height: 1.2;
-            font-size: 26px;
-            text-transform: uppercase;
-            text-align: center;
-            margin: 0px auto;
-        }
-
-        div:last-of-type{
-            border-top: none;
-        }
-
-        h5 {
-            line-height: 1.2;
-            font-size: 22px;
-            margin-top: 5px;
-            margin-bottom: 0px;
-            text-transform: uppercase;
-        }
-
-        .skillsCollection {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 100%;
-            margin: 0px auto;
-            list-style-type: none;
-            padding: 0px;
-
-            // li:last-of-type{
-            //     margin: 0px auto;
-            //     margin-top: 35px;
-            // }
-        }
-    
+    h3 {
+      line-height: 1.2;
+      font-size: 26px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0px auto;
     }
+
+    div:last-of-type {
+      border-top: none;
+    }
+
+    h5 {
+      line-height: 1.2;
+      font-size: 22px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+    }
+
+    .skillsCollection {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0px auto;
+      list-style-type: none;
+      padding: 0px;
+    }
+  }
 }
 
 @media (max-width: 962px) {
-    .skills{
-        margin: 0px;
-    }
+  .skills {
+    margin: 0px;
+  }
 }
 
 @media (max-width: 562px) {
-    .skills{
-        .skillsWrap{
-            h5{
-                font-size: 19px;
-            }
-        }
+  .skills {
+    .skillsWrap {
+      h5 {
+        font-size: 19px;
+      }
     }
+  }
 }

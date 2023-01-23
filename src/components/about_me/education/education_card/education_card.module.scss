@@ -1,127 +1,123 @@
-.cardWrap{
-    position: relative;
-    display: block;
-    width: 40%;
-    display: block;
-    padding-left: 45px;
-    border-left: 1px solid var(--left_line_ediq_block);
-    margin-bottom: 40px;
+.cardWrap {
+  position: relative;
+  display: block;
+  width: 40%;
+  display: block;
+  padding-left: 45px;
+  border-left: 1px solid var(--left_line_ediq_block);
+  margin-bottom: 40px;
 
-    picture{
-        display: block;
-        position: absolute;
-        z-index: 4;
-        left: -19px;
-        background-color: var(--active_yellow);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        background-image: url(../../../../icons/iconmonstr-education-1.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 20px 20px;
+  picture {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    left: -19px;
+    background-color: var(--active_yellow);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../../../icons/iconmonstr-education-1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  .description {
+    height: 130px;
+    overflow-y: hidden;
+
+    .year {
+      font-size: 14px;
+      background-color: var(--line_color);
+      padding: 0px 10px;
+      border-radius: 10px;
+      color: var(--dark_text);
     }
 
-    .description{
-        height: 130px;
-        overflow-y: hidden;
+    .header {
+      h5 {
+        display: inline-block;
+        font-size: 18px;
+        margin: 7px 0 10px;
+        text-transform: uppercase;
+        margin-right: 30px;
+      }
 
-        .year{
-            font-size: 14px;
-            background-color: var(--line_color);
-            padding: 0px 10px;
-            border-radius: 10px;
-            color: var(--dark_text);
+      span {
+        position: relative;
+        color: var(--dark_background);
+        font-size: 17px;
+        text-transform: uppercase;
+        top: 0px;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 10px;
+          height: 2px;
+          background-color: var(--dark_background);
+          left: -20px;
+          top: 9px;
+          opacity: 0.8;
         }
-
-        .header{
-            h5{
-                display: inline-block;
-                font-size: 18px;
-                margin: 7px 0 10px;
-                text-transform: uppercase;
-                margin-right: 30px;
-            }
-
-            span{
-                position: relative;
-                color: var(--dark_background);
-                font-size: 17px;
-                text-transform: uppercase;
-                top: 0px;
-
-                &::before{
-                    position: absolute;
-                    content: '';
-                    width: 10px;
-                    height: 2px;
-                    background-color: var(--dark_background);
-                    left: -20px;
-                    top: 9px;
-                    opacity: 0.8;
-                }
-            }
-        }
-
-        p{
-            color: var(--dark_background);
-        }
+      }
     }
+
+    p {
+      color: var(--dark_background);
+    }
+  }
 
 }
 
 @media (max-width: 1025px) {
-    .cardWrap{
-        width: 50%;
-        font-size: 15px;
-        margin-right: 20px;
+  .cardWrap {
+    width: 50%;
+    font-size: 15px;
+    margin-right: 20px;
 
-        .description{
-            p{
-                font-size: 16px;
-            }
-        }
+    .description {
+      p {
+        font-size: 16px;
+      }
     }
+  }
 }
 
 @media (max-width: 769px) {
-    .cardWrap{
-        width: 70%;
-    }
+  .cardWrap {
+    width: 70%;
+  }
 }
 
 
 @media (max-width: 562px) {
-    .cardWrap{
-        .description{
-            height: auto;
-        }
+  .cardWrap {
+    .description {
+      height: auto;
     }
+  }
 }
 
 @media (max-width: 426px) {
-    .cardWrap{
-        .description{
-            .header{
-                span{
-                    &::before{
-                        display: none;
-                    }
-                }
-            }
+  .cardWrap {
+    .description {
+      .header {
+        span {
+          &::before {
+            display: none;
+          }
         }
+      }
     }
+  }
 }
 
 
-    /* .description:hover{
+/* .description:hover{
         /* position: absolute;
         top: 0px;
         left: 0px; */
-        /* transition: all 0.5s;
+/* transition: all 0.5s;
         height: 200px;
-    } */ 
-
-        
-
-        
+    } */

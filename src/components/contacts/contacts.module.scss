@@ -1,195 +1,197 @@
-.separator{
-    border: none;
-    border-top: 1px solid var(--line_color);
-    margin: 40px auto;
-    max-width: 40%;
+.separator {
+  border: none;
+  border-top: 1px solid var(--line_color);
+  margin: 40px auto;
+  max-width: 40%;
 }
 
 .contacts {
-    padding: var(--main_blocks_wrapper_padding) 0px;
-        div:first-of-type{
-            span{
-                top: 65px;
-            }
+  padding: var(--main_blocks_wrapper_padding) 0px;
+
+  div:first-of-type {
+    span {
+      top: 65px;
+    }
+  }
+
+  .contactsWrap {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0px auto;
+    margin-top: 70px;
+
+    .contactsShield {
+      width: 30%;
+      margin-right: 40px;
+
+      div:nth-child(4) {
+        div:first-of-type {
+          background-size: 80% 80%;
+          border-radius: 7px;
+          background-color: var(--active_yellow);
+          background-image: url(../../icons/iconmonstr-phone-3.svg);
+        }
+      }
+
+      h3 {
+        line-height: 1.2;
+        font-size: 26px;
+        text-transform: uppercase;
+        margin: 0px auto;
+        margin-top: 0px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      .contactCard {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        margin-left: 0px;
+
+        div:first-of-type {
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 35px;
+          height: 35px;
         }
 
-    .contactsWrap {
-        min-height: 400px;
+        .email {
+          background-image: url(../../icons/iconmonstr-email-1.svg);
+        }
+
+        .contact {
+          margin-left: 25px;
+
+          .phoneNum {
+            position: relative;
+            display: block;
+            transition: none;
+            background: none;
+            color: whitesmoke;
+            text-decoration: none;
+            width: auto;
+            height: auto;
+            border-radius: 0px;
+          }
+
+          h6 {
+            margin: 0px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            font-size: 22px;
+          }
+
+          span {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .snLinksWrap {
         display: flex;
+        width: 65%;
+        padding: 0px;
         justify-content: space-between;
-        max-width: 1100px;
-        margin: 0px auto;
-        margin-top: 70px;
+        margin-top: 25px;
 
-        .contactsShield{
-            width: 30%;
-            margin-right: 40px;
+        li {
+          a {
+            width: 40px;
+            height: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50% 50%;
+            color: transparent;
 
-            div:nth-child(4){
-                div:first-of-type{
-                    background-size: 80% 80%;
-                    border-radius: 7px;
-                    background-color: var(--active_yellow);
-                    background-image: url(../../icons/iconmonstr-phone-3.svg);
-                }
+            &:hover {
+              background-color: var(--active_yellow);
             }
+          }
 
-            h3{
-                line-height: 1.2;
-                font-size: 26px;
-                text-transform: uppercase;
-                margin: 0px auto;
-                margin-top: 0px;
-            }
+          .fb {
+            background-image: url(../../icons/iconmonstr-facebook-1.svg);
+            border-radius: 50%;
+          }
 
-            p{
-                font-size: 16px;
-                line-height: 18px;
-            }
+          .li {
+            background-image: url(../../icons/iconmonstr-linkedin-1.svg);
+            border-radius: 50%;
+          }
 
-            .contactCard{
-                display: flex;
-                align-items: center;
-                margin: 15px;
-                margin-left: 0px;
-
-                div:first-of-type{
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    width: 35px;
-                    height: 35px;
-                }
-
-                .email{
-                    background-image: url(../../icons/iconmonstr-email-1.svg);
-                }
-
-                .contact{
-                    margin-left: 25px;
-
-                    .phoneNum{
-                        position: relative;
-                        display: block;
-                        transition: none;
-                        background: none;
-                        color: whitesmoke;
-                        text-decoration: none;
-                        width: auto;
-                        height: auto;
-                        border-radius: 0px;
-                    }
-
-                    h6{
-                        margin: 0px;
-                        text-transform: uppercase;
-                        opacity: 0.8;
-                        font-size: 22px;
-                    }
-
-                    span{
-                        font-size: 17px;    
-                    }
-                }
-            }
-
-            .snLinksWrap{
-                display: flex;
-                width: 65%;
-                padding: 0px;
-                justify-content: space-between;
-                margin-top: 25px;
-
-                li{
-                    a{
-                        width: 40px;
-                        height: 40px;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: 50% 50%;
-                        color: transparent;
-
-                        &:hover{
-                            background-color: var(--active_yellow);
-                        }
-                    }
-
-                    .fb{
-                        background-image: url(../../icons/iconmonstr-facebook-1.svg);
-                        border-radius: 50%;
-                    }
-
-                    .li{
-                        background-image: url(../../icons/iconmonstr-linkedin-1.svg);
-                        border-radius: 50%;
-                    }
-
-                    .git{
-                        background-image: url(../../icons/iconmonstr-github-3.svg);
-                        border-radius: 50%;
-                    }
-                }
-            }
+          .git {
+            background-image: url(../../icons/iconmonstr-github-3.svg);
+            border-radius: 50%;
+          }
+        }
+      }
     }
-}
+  }
 }
 
 @media (max-width: 962px) {
-    .contacts{
-        padding-left: 30px;
-        padding-right: 30px;
+  .contacts {
+    padding-left: 30px;
+    padding-right: 30px;
 
-        .contactsWrap{
-            flex-direction: column;
+    .contactsWrap {
+      flex-direction: column;
 
-            .contactsShield{
-                width: 100%;
+      .contactsShield {
+        width: 100%;
 
-                .snLinksWrap{
-                    width: 30%;
-                    margin-bottom: 40px;
-                }
-            }
+        .snLinksWrap {
+          width: 30%;
+          margin-bottom: 40px;
         }
+      }
     }
+  }
 }
 
 @media (max-width: 562px) {
-    .contacts{
-        .contactsWrap{
-            .contactsShield{
-                .snLinksWrap{
-                    width: 50%;
-                }
-            }
+  .contacts {
+    .contactsWrap {
+      .contactsShield {
+        .snLinksWrap {
+          width: 50%;
         }
+      }
     }
+  }
 }
 
 //To clarify are this code is normal and valid
 @media (max-width: 372px) {
-    .contacts{
-        padding-left: 15px;
+  .contacts {
+    padding-left: 15px;
 
-        .contactsWrap{
-            .contactsShield{
-                .contactCard{
-                    .contact{
-                        margin-left: 10px;
-                    }
-                }
-                div:nth-child(3){
-                    div{
-                        span:first-of-type{
-                            font-size: 13px;
-                        }
-                    }
-                }
-
-                .snLinksWrap{
-                    width: 70%;
-                }
-            }
+    .contactsWrap {
+      .contactsShield {
+        .contactCard {
+          .contact {
+            margin-left: 10px;
+          }
         }
+
+        div:nth-child(3) {
+          div {
+            span:first-of-type {
+              font-size: 13px;
+            }
+          }
+        }
+
+        .snLinksWrap {
+          width: 70%;
+        }
+      }
     }
+  }
 }

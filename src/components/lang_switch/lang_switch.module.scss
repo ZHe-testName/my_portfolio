@@ -1,0 +1,93 @@
+.toggle_wrapper {
+	* {
+		box-sizing: border-box;
+	}
+
+	input {
+		height: 0px;
+		left: 0;
+		opacity: 0;
+		top: 0;
+		width: 0px;
+	}
+}
+
+.toggle_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	z-index: 10;
+}
+
+label.toggle_item {
+	width: 7em;
+	background: var(--main_black);
+	border: 2px solid var(--active_yellow);
+	height: 3em;
+	display: inline-block;
+	border-radius: 50px;
+	position: relative;
+	transition: all .3s ease;
+	transform-origin: 20% center;
+	cursor: pointer;
+	&:before {
+		display: block;
+		transition: all .2s ease;
+		width: 2.3em;
+    height: 2.3em;
+		top: .25em;
+		left: .25em;
+    border-radius: 2em;
+		transition: .3s ease;
+	}
+}
+
+.checkcross {
+  position: relative;
+	display: inline-block;
+
+	label:before {
+		content: none;
+	}
+	.check {
+		border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    position: absolute;
+    background: var(--active_yellow);
+    transition: .4s ease;
+    top: 3px;
+    left: 3px;
+		&::before {
+			content: 'EN';
+			position: absolute;
+			font-size: 20px;
+			top: 8px;
+			left: 8px;
+			width: 27px;
+		}
+	}
+}
+
+div.checkcross {
+	input:checked + label {
+		.check {
+			left: 66px;
+			transform: rotate(360deg);
+
+			&::before {
+				content: 'UA';
+				left: 9px;
+				width: 27px,
+			}
+		}
+	}
+}
+
+@media (max-width: 962px) {
+	
+}

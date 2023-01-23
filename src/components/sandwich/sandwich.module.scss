@@ -1,109 +1,113 @@
 @keyframes to_close_top {
-    0%{
-        transform: translateY(-13px);
-    }
-    30%{
-        transform: translateX(-21px);
-        transform: translateY(13px);
-    }
-    100%{
-        transform: rotateZ(135deg);
-    }
+  0% {
+    transform: translateY(-13px);
+  }
+
+  30% {
+    transform: translateX(-21px);
+    transform: translateY(13px);
+  }
+
+  100% {
+    transform: rotateZ(135deg);
+  }
 }
 
 @keyframes to_close_bottom {
-    0%{
-        transform: translateY(13px);
-    }
-    30%{
-        transform: translateX(21px);
-        transform: translateY(-13px);
-    }
-    100%{
-        transform: rotateZ(45deg);
-    }
+  0% {
+    transform: translateY(13px);
+  }
+
+  30% {
+    transform: translateX(21px);
+    transform: translateY(-13px);
+  }
+
+  100% {
+    transform: rotateZ(45deg);
+  }
 }
 
-.sandwich{
-    position: fixed;
-    display: none;
-    width: 70px;
-    height: 50px;
-    background-color: blue;
-    z-index: 200;
-    top: 15px;
-    right: 20px;
-    background-color: var(--line_color);
-    border-radius: 6px;
-    border: 1px solid var(--light_line_color);
+.sandwich {
+  position: fixed;
+  display: none;
+  width: 70px;
+  height: 50px;
+  background-color: blue;
+  z-index: 200;
+  top: 15px;
+  right: 20px;
+  background-color: var(--line_color);
+  border-radius: 6px;
+  border: 1px solid var(--light_line_color);
 
-    button{
-        display: flex;
-        outline: none;
-        border: none;
-        // border: 1px solid white;
-        background: transparent;
-        width: 35px;
-        height: 35px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  button {
+    display: flex;
+    outline: none;
+    border: none;
+    // border: 1px solid white;
+    background: transparent;
+    width: 35px;
+    height: 35px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        &.sandwichClicked{
-            position: relative;
+    &.sandwichClicked {
+      position: relative;
 
-            span{
-                position: absolute;
-                
-                &.top{
-                    animation-name: to_close_top;
-                    animation-duration: 1.2s;
-                    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-                    transform: rotateZ(-45deg);
-                }
+      span {
+        position: absolute;
 
-                &.middle{
-                    opacity: 0;
-                    margin: 0px;
-                }
-
-                &.bottom{
-                    animation-name: to_close_bottom;
-                    animation-duration: 1.2s;
-                    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-                    transform: rotateZ(45deg);
-                }
-            }
+        &.top {
+          animation-name: to_close_top;
+          animation-duration: 1.2s;
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transform: rotateZ(-45deg);
         }
 
-        span{
-            display: block;
-            width: 22px;
-            height: 2px;
-            background-color: white;
-            border: none;
-            transition: all 0.8s;
-            transition-timing-function: cubic-bezier(1, 0.24, 0.32, 1.27);
-
-            &.middle{
-                margin: 6px 0px;
-            }
+        &.middle {
+          opacity: 0;
+          margin: 0px;
         }
+
+        &.bottom {
+          animation-name: to_close_bottom;
+          animation-duration: 1.2s;
+          transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          transform: rotateZ(45deg);
+        }
+      }
     }
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: white;
+      border: none;
+      transition: all 0.8s;
+      transition-timing-function: cubic-bezier(1, 0.24, 0.32, 1.27);
+
+      &.middle {
+        margin: 6px 0px;
+      }
+    }
+  }
 }
 
 @media (max-width: 962px) {
-    .sandwich{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .sandwich {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 748px) {
-    .sandwich{
-        top: 9px;
-        right: 15px;
-        border: none;
-    }
+  .sandwich {
+    top: 9px;
+    right: 15px;
+    border: none;
+  }
 }

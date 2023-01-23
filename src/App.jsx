@@ -35,12 +35,12 @@ function App() {
   };
 
   const skillsArr = [
-    [70, 'javascript'],
+    [75, 'javascript'],
     [55, 'typescript'],
-    [50, 'css'],
-    [40, 'html'],
-    [60, 'react'],
-    [60, 'vue'],
+    [60, 'css'],
+    [45, 'html'],
+    [70, 'react'],
+    [70, 'vue'],
   ];
 
   const educationArr = [
@@ -177,7 +177,6 @@ function App() {
     }
 
   return (
-      // TODO: Add loader
       <LocaleContext.Provider value={{locale, setLocale}}>
         <Suspense fallback={<h2>Loading...</h2>}>
           <main className={c.app}>

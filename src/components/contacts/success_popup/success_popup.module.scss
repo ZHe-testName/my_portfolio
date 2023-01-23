@@ -1,78 +1,84 @@
 @keyframes run {
-    0%{
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
 
-    40%{
-        transform: translateX(1000%);
-    }
-    50%{
-        clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
-    }
-    53%{
-        clip-path: polygon(100% 0, 100% 64%, 31% 60%, 100% 88%, 100% 100%, 0 100%, 0 0);
-    }
-    57%{
-        clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
-    }
-    65%{
-        clip-path: polygon(100% 0, 100% 39%, 31% 60%, 100% 100%, 100% 100%, 0 100%, 0 0);
-    }
-    75%{
-        transform: translateX(1000%) rotateZ(0deg);
-    }
-    100%{
-        transform: translateX(0%) rotateZ(-540deg);
-    }
+  40% {
+    transform: translateX(1000%);
+  }
+
+  50% {
+    clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
+  }
+
+  53% {
+    clip-path: polygon(100% 0, 100% 64%, 31% 60%, 100% 88%, 100% 100%, 0 100%, 0 0);
+  }
+
+  57% {
+    clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
+  }
+
+  65% {
+    clip-path: polygon(100% 0, 100% 39%, 31% 60%, 100% 100%, 100% 100%, 0 100%, 0 0);
+  }
+
+  75% {
+    transform: translateX(1000%) rotateZ(0deg);
+  }
+
+  100% {
+    transform: translateX(0%) rotateZ(-540deg);
+  }
 }
 
-.success{
+.success {
+  margin-top: 10px;
+
+
+  .pacmanPath {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 40px;
+
+    .pacman {
+      animation-name: run;
+      animation-duration: 4s;
+      position: absolute;
+      top: 0px;
+      left: -10%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: white;
+      clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 25px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+      }
+    }
+  }
+
+  .resultScream {
+    font-size: 21px;
+    margin-left: 30px;
     margin-top: 10px;
-
-
-    .pacmanPath{
-        position: relative;
-        overflow: hidden;
-        width: 70%;
-        height: 40px;
-
-        .pacman{
-            animation-name: run;
-            animation-duration: 4s;
-            position: absolute;
-            top: 0px;
-            left: -10%;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: white;
-            clip-path: polygon(100% 0, 100% 74%, 31% 60%, 98% 78%, 100% 100%, 0 100%, 0 0);
-
-            &::before{
-                content: '';
-                position: absolute;
-                top: 8px;
-                left: 25px;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background-color: black;
-            }
-        }
-    }
-
-    .resultScream{
-        font-size: 21px;
-        margin-left: 30px;
-        margin-top: 10px;
-    }
+  }
 }
 
 @media (max-width: 562px) {
-    .success{
-        .resultScream{
-            font-size: 20px;
-            margin-left: 5px;
-        }
+  .success {
+    .resultScream {
+      font-size: 20px;
+      margin-left: 5px;
     }
+  }
 }

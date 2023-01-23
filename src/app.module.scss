@@ -1,12 +1,12 @@
 .app {
-    position: relative;
-    /* max-width: 1440px; */
-    background-color: var(--main_black);
-    height: 100vh;
+  position: relative;
+  /* max-width: 1440px; */
+  background-color: var(--main_black);
+  height: 100vh;
+  margin: 0px auto;
+  .mainContent{
+    width: 95vw;
+    height: calc(100vh - 40px);
     margin: 0px auto;
-    .mainContent{
-        width: 95vw;
-        height: calc(100vh - 40px);
-        margin: 0px auto;
-     }
+  }
 }
