@@ -1,7 +1,7 @@
 import React from "react";
 import AvatarImg from "../avatar_img/AvatarImg";
 import {NavLink} from 'react-router-dom';
-import LanguageSwitch from "../lang_switch/LanguageSwitch";
+// import LanguageSwitch from "../lang_switch/LanguageSwitch";
 import avatar from '../../imgs/avatar_photo.jpg';
 
 import c from './home.module.scss';
@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <section className={c.myHome}>
-      <LanguageSwitch />
+      {/* <LanguageSwitch /> */}
 
       <div className={c.homeMeWrap}>
           <div className={c.homeMeImage}>

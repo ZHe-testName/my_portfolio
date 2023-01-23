@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import useWindowResize from "../../../hooks/useWindowResize";
 import c from './skills.module.scss';
 import SkillProgressBar from "./skill_progress_bar/SkillProgressBar"
 
@@ -11,56 +12,13 @@ function Skills(props) {
       return (document.documentElement.clientWidth <= 562) ? '48' : '59';
   };
 
-  //function for throttling pause between screen resizing
-  //handler calls
-  //used for reducing rerender func calls during
-  //to mach screen resizing 
-  function throttle(func, ms) {
-    let isThrottled = false,
-      savedArgs,
-      savedThis;
-
-    function wrapper(){
-      if(isThrottled){
-        savedArgs = arguments;
-          savedThis = this;
-
-          return;
-      };
-
-      func.apply(this, arguments);
-
-      isThrottled = true;
-
-      setTimeout(function() {
-        isThrottled = false;
-        
-        if(savedArgs){
-          wrapper.apply(savedThis, savedArgs);
-
-          savedArgs = savedThis = null;
-        }
-      }, ms);
-    };
-
-    return wrapper;
-  };
-
   let [r, setR] = useState(compareWidth());
 
   const setScaleRadius = () => {
     setR(compareWidth());
   };
 
-  //To ask why useEffect have so strange behavior
-  //and works only disabled input is include(look on top of the file) 
-  useEffect(() => {
-    window.addEventListener('resize', throttle(setScaleRadius, 800));
-
-    return function cleanup(){
-      window.removeEventListener('resize', throttle(setScaleRadius, 800));
-    }
-  }, []);
+  useWindowResize(setScaleRadius, 800);
 
   const skillsList = props.skillsCollection.map((el, i) => {
     const settings = {

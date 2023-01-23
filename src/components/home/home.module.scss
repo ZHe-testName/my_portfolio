@@ -1,5 +1,4 @@
 .myHome {
-    position: relative;
     padding-top: var(--main_blocks_wrapper_padding);
     padding-bottom: var(--main_blocks_wrapper_padding);
 
@@ -34,6 +33,7 @@
 
             .homeTitle{
                 padding-left: 75px;
+                max-width: 455px;
 
                 h1{
                     font-size: 51px;
@@ -137,6 +137,7 @@
     
                 .homeTitle{
                     padding-left: 0px;
+                    max-width: unset;
     
                     h1{
                         font-size: 40px;

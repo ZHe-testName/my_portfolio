@@ -19,7 +19,7 @@
 	overflow: hidden;
 	position: absolute;
 	top: 30px;
-	right: 0px;
+	right: 30px;
 	z-index: 10;
 }
 
@@ -34,7 +34,12 @@ label.toggle_item {
 	transition: all .3s ease;
 	transform-origin: 20% center;
 	cursor: pointer;
-	&:before {
+
+	&:hover {
+		box-shadow: inset 0px 0px 4px 1px var(--active_yellow);
+	}
+
+	&::before {
 		display: block;
 		transition: all .2s ease;
 		width: 2.3em;
@@ -89,5 +94,47 @@ div.checkcross {
 }
 
 @media (max-width: 962px) {
+	.toggle_wrapper {
+		bottom: -85px;
+		right: unset;
+
+		.checkcross {
+			label.toggle_item {
+				width: 6em;
+				height: 2.5em;
+				background-color: var(--noactive-dark);
+				border: 2px solid var(--light);
+
+				&:hover {
+					box-shadow: none;
+				}
 	
+				.check {
+					background-color: var(--active_yellow);
+					width: 2em;
+					height: 2em;
+					top: 2px;
+
+					&::before {
+						font-size: 18px;
+						top: 5px;
+						left: 6px;
+					}
+				}
+			}
+		}
+
+		div.checkcross {
+			input:checked + label {
+				.check {
+					left: 58px;
+					transform: rotate(360deg);
+		
+					&::before {
+						left: 6px;
+					}
+				}
+			}
+		}
+	}
 }
