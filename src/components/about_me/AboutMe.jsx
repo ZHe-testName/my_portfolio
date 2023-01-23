@@ -8,63 +8,71 @@ import PageHeader from "../page_header/PageHeader";
 import avatar from '../../imgs/avatar_photo.jpg';
 import AvatarImg from "../avatar_img/AvatarImg";
 import file from '../../cv/new_cv.pdf';
+import { useTranslation } from "react-i18next";
 
 function AboutMe(props) {
-    const personalInfoArr = Object.entries(props.info)
-                                .map((item, i) => <li key={i}><span>{item[0]}: </span><span>{item[1]}</span></li>);
+  const {t} = useTranslation();
+
+  const personalInfoArr = Object
+    .entries(props.info)
+    .map((item, i) => <li key={i}><span>{item[0]}: </span><span>{item[1]}</span></li>);
 
     return (
-        <section className={c.aboutMe}>
-            <PageHeader className={c.sectionHeader} whiteLetters="ОБО" yellowLetters="Мне" shadowWord="Резюме"/>
-            
-            <div className={c.info}>
-                <div className={c.personalInfo}>
-                    <h3>
-                        ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ
-                    </h3>
+      <section className={c.aboutMe}>
+        <PageHeader 
+          className={c.sectionHeader} 
+          whiteLetters={t('about.about')} 
+          yellowLetters={t('about.me')} 
+          shadowWord={t('about.resume')}/>
+        
+        <div className={c.info}>
+          <div className={c.personalInfo}>
+            <h3>
+              {t('about.personal')}
+            </h3>
 
-                    <div className={c.aboutImage}>
-                        <AvatarImg img={avatar}/>
-                    </div>
-
-                    <ul>
-                        {personalInfoArr}
-                    </ul>
-
-                    <div 
-                        className={c.buttonWrap}>
-                        <Button 
-                            title='Загрузить CV'>
-                                <a href={file} download={true}>download cv</a>
-                            </Button>
-                    </div>
-                </div>
-
-                <div className={c.expirience}>
-                    <div>
-                        <h3>1</h3>
-                        <p>ГОДА ОПЫТА</p>
-                    </div>
-                    <div>
-                        <h3>15</h3>
-                        <p>PET PROJECTS</p>
-                    </div>
-                </div>
+            <div className={c.aboutImage}>
+              <AvatarImg img={avatar}/>
             </div>
 
-            <hr className={c.separator}/>
+            <ul>
+              {personalInfoArr}
+            </ul>
 
-            <Skills skillsCollection={props.skillsCollection} />
+            <div 
+              className={c.buttonWrap}>
+              <Button 
+                title={t('about.download')}>
+                <a href={file} download={true}>download cv</a>
+              </Button>
+            </div>
+          </div>
 
-            <p className={c.smallPar}>* Процентные соотношения показаны исключительно для красоты.</p>
+          <div className={c.experience}>
+            <div>
+              <h3>1</h3>
+              <p>{t('about.experience')}</p>
+            </div>
+            <div>
+              <h3>3</h3>
+              <p>{t('about.projects')}</p>
+            </div>
+          </div>
+        </div>
 
-            <hr className={c.separator}/>
+        <hr className={c.separator}/>
 
-            <Education educationArr={props.educationArr}/>
+        <Skills skillsCollection={props.skillsCollection} />
 
-            <hr className={c.separator}/>
-        </section>
-    );
+        <p className={c.smallPar}>* {t('about.percentage')}.</p>
+
+        <hr className={c.separator}/>
+
+        <Education educationArr={props.educationArr}/>
+
+        <hr className={c.separator}/>
+      </section>
+  );
 };
 
 export default AboutMe;

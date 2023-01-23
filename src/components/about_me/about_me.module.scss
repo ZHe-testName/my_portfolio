@@ -79,7 +79,7 @@
         }
     }
 
-    .expirience{
+    .experience{
         display: flex;
         flex-direction: column;
         width: 350px;
@@ -112,7 +112,7 @@
             p{
                 position: relative;
                 padding-left: 70px;
-                width: 50px;
+                width: 80px;
                 font-size: 20px;
                 line-height: 1.5;
                 margin-top: 0px;
@@ -172,7 +172,7 @@
 }
 
 @media (max-width: 962px) {
-    .expirience{
+    .experience{
         align-items: flex-end;
     }
 }
@@ -201,7 +201,7 @@
             }
         }
 
-        .expirience{
+        .experience{
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
@@ -252,7 +252,7 @@
             }
         }
 
-        .expirience{
+        .experience{
             justify-content: center;
     
             div:last-of-type{
@@ -290,7 +290,7 @@
             }
         }
 
-        .expirience{
+        .experience{
             div{
                 height: auto;
                 h3{

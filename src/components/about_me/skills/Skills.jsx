@@ -1,91 +1,94 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import c from './skills.module.scss';
-import SkillProgrssBar from "./skill_progres_bar/SkillProgresBar"
+import SkillProgressBar from "./skill_progress_bar/SkillProgressBar"
 
 function Skills(props) {
-    //radius skill scale values for corect rendering on different screens 
-    function compareWidth() {
-        return (document.documentElement.clientWidth <= 562) ? '48' : '59';
-    };
+  const {t} = useTranslation();
 
-    //function for throttling pause between screen resizing
-    //hendler calls
-    //used for reducing rerender func calls during
-    //to mach screen resizing 
-    function throttle(func, ms) {
-        let isThrottled = false,
-            savedAargs,
-            savedThis;
+  //radius skill scale values for correct rendering on different screens 
+  function compareWidth() {
+      return (document.documentElement.clientWidth <= 562) ? '48' : '59';
+  };
 
-        function wrapper(){
-            if(isThrottled){
-                savedAargs = arguments;
-                savedThis = this;
+  //function for throttling pause between screen resizing
+  //handler calls
+  //used for reducing rerender func calls during
+  //to mach screen resizing 
+  function throttle(func, ms) {
+    let isThrottled = false,
+      savedArgs,
+      savedThis;
 
-                return;
-            };
+    function wrapper(){
+      if(isThrottled){
+        savedArgs = arguments;
+          savedThis = this;
 
-            func.apply(this, arguments);
+          return;
+      };
 
-            isThrottled = true;
+      func.apply(this, arguments);
 
-            setTimeout(function() {
-                isThrottled = false;
-                
-                if(savedAargs){
-                    wrapper.apply(savedThis, savedAargs);
+      isThrottled = true;
 
-                    savedAargs = savedThis = null;
-                }
-            }, ms);
-        };
+      setTimeout(function() {
+        isThrottled = false;
+        
+        if(savedArgs){
+          wrapper.apply(savedThis, savedArgs);
 
-        return wrapper;
-    };
-
-    let [r, setR] = useState(compareWidth());
-
-    const setScaleRadius = () => {
-        setR(compareWidth());
-    };
-
-    //To ask why useEffect have so strange behavior
-    //and works only disabled input is include(look on top of the file) 
-    useEffect(() => {
-        window.addEventListener('resize', throttle(setScaleRadius, 800));
-
-        return function cleanup(){
-            window.removeEventListener('resize', throttle(setScaleRadius, 800));
+          savedArgs = savedThis = null;
         }
-    }, []);
+      }, ms);
+    };
 
-    const skillsList = props.skillsCollection.map((el, i) => {
-        const settings = {
-            progressPercent: el[0], 
-            description: el[1],
-            r: r,
-        };
+    return wrapper;
+  };
 
-        return (
-            <SkillProgrssBar key={props.skillsCollection[i][1]} {...settings}/>
-        );
-    });
+  let [r, setR] = useState(compareWidth());
+
+  const setScaleRadius = () => {
+    setR(compareWidth());
+  };
+
+  //To ask why useEffect have so strange behavior
+  //and works only disabled input is include(look on top of the file) 
+  useEffect(() => {
+    window.addEventListener('resize', throttle(setScaleRadius, 800));
+
+    return function cleanup(){
+      window.removeEventListener('resize', throttle(setScaleRadius, 800));
+    }
+  }, []);
+
+  const skillsList = props.skillsCollection.map((el, i) => {
+    const settings = {
+      progressPercent: el[0], 
+      description: el[1],
+      r: r,
+    };
 
     return (
-        <section className={c.skills} id='skills'>
-            <div className={c.skillsWrap}>
-                <div>
-                    <h3>
-                        Мои скиллы
-                    </h3>
-                </div>
-
-                <ul className={c.skillsCollection}>
-                    {skillsList}
-                </ul>
-            </div>
-        </section>
+      <SkillProgressBar key={props.skillsCollection[i][1]} {...settings}/>
     );
+  });
+
+  return (
+    <section className={c.skills} id='skills'>
+      <div className={c.skillsWrap}>
+        <div>
+          <h3>
+            {t('skill.my')}
+          </h3>
+        </div>
+
+        <ul className={c.skillsCollection}>
+          {skillsList}
+        </ul>
+      </div>
+    </section>
+  );
 };
 
 export default Skills;

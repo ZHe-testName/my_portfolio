@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import {Route, Redirect} from 'react-router-dom';
 
 import c from './app.module.scss';
+
+import i18n from './i18n';
 
 import Home from './components/home/Home';
 import Contacts from './components/contacts/Contacts';
@@ -10,15 +12,23 @@ import AboutMe from './components/about_me/AboutMe';
 import NavBar from './components/nav_bar/NavBar';
 import Sandwich from './components/sandwich/Sandwich';
 import emailjs from 'emailjs-com';
+import LocaleContext from './LocaleContext';
+import { useTranslation } from 'react-i18next';
 
 
 function App() {
+  const [locale, setLocale] = useState(i18n.language);
+
+  i18n.on('languageChanged', (lng) => setLocale(i18n.language));
+
+  const {t} = useTranslation();
+
   const personalInfo = {
-    name: 'Евгений',
-    surname: 'Хорунжий',
+    name: t('personal.name'),
+    surname: t('personal.surname'),
     age: '32',
-    nationality: 'Украинец',
-    country: 'Украина',
+    nationality: t('personal.nationality'),
+    country: t('personal.country'),
     phone: '+380638828081',
     email: 'horunzhy.wgen@gmail.com',
     languages: 'RU, EN, UK',
@@ -36,39 +46,39 @@ function App() {
   const educationArr = [
     {
       year: 2017,
-      institution: 'внту инээм',
-      specialize: 'бакалавр',
-      textDesc: 'Степень бакалавра в Винницком Политехничном Национальном Университете, Институт Электропривода и Электромеханики',
+      institution: t('education.vpnu.institution'),
+      specialize: t('education.vpnu.specialization'),
+      textDesc: t('education.vpnu.description'),
     },
     {
       year: 2018,
-      institution: 'siemens',
-      specialize: 'siemens-programer',
-      textDesc: '6 курсов обучения. Siemens Programer Stage 2',
+      institution: t('education.siemens.institution'),
+      specialize: t('education.siemens.specialization'),
+      textDesc: t('education.siemens.description'),
     },
     {
       year: 2019,
-      institution: 'itvdn',
-      specialize: 'front-end developer',
-      textDesc: '6-ти месечный курс Front-End Developer',
+      institution: t('education.itvdn.institution'),
+      specialize: t('education.itvdn.specialization'),
+      textDesc: t('education.itvdn.description'),
     },
     {
       year: 2019,
-      institution: 'glo-academy',
-      specialize: 'js-developer',
-      textDesc: '4-ёх месечный курс JS-Developer. Первое место по итогам обучения. Третье место на конкурсе проектов',
+      institution: t('education.glo.institution'),
+      specialize: t('education.glo.specialization'),
+      textDesc: t('education.glo.description'),
     },
     {
       year: 2020,
-      institution: 'jm',
-      specialize: 'js-developer',
-      textDesc: '6-ми месечный курс JS-Developer.',
+      institution: t('education.jm.institution'),
+      specialize: t('education.jm.specialization'),
+      textDesc: t('education.jm.description'),
     },
     {
       year: 2021,
-      institution: 'it-incubator',
-      specialize: 'js(react)-developer',
-      textDesc: '8-ми месячный курс JS(React)-Developer',
+      institution: t('education.incubator.institution'),
+      specialize: t('education.incubator.specialization'),
+      textDesc: t('education.incubator.description'),
     },
   ];
 
@@ -136,11 +146,6 @@ function App() {
       tec: ['JS', 'HTML', 'CSS'],
       isAdaptive: false,
     },
-    // {
-    //   curtainTitle: 'Dialogs App',
-    //   link: '',
-    //   image: 'dialog',
-    // }
   ];
 
   const [navIsVisible, showNav] = useState(false);
@@ -172,26 +177,31 @@ function App() {
     }
 
   return (
-      <main className={c.app}>
-        <NavBar navIsVisible={navIsVisible} hiddeNav={showNavHandler}/>
+      // TODO: Add loader
+      <LocaleContext.Provider value={{locale, setLocale}}>
+        <Suspense fallback={<h2>Loading...</h2>}>
+          <main className={c.app}>
+            <NavBar navIsVisible={navIsVisible} hiddeNav={showNavHandler}/>
 
-        <Sandwich navIsVisible={navIsVisible} showNav={showNavHandler}/>
+            <Sandwich navIsVisible={navIsVisible} showNav={showNavHandler}/>
 
-        <div className={c.mainContent}>
-          <Route path={'/'} exact render={() => <Redirect to="/home"/>}/>
+            <div className={c.mainContent}>
+              <Route path={'/'} exact render={() => <Redirect to="/home"/>}/>
 
-          <Route path="/home" render={() => <Home/>}/>
+              <Route path="/home" render={() => <Home/>}/>
 
-          <Route path="/about_me" render={() => <AboutMe 
-                                                      info={personalInfo} 
-                                                      skillsCollection={skillsArr} 
-                                                      educationArr={educationArr}/>}/>
+              <Route path="/about_me" render={() => <AboutMe 
+                                                          info={personalInfo} 
+                                                          skillsCollection={skillsArr} 
+                                                          educationArr={educationArr}/>}/>
 
-          <Route path="/works" render={() => <MyWorks myWorksData={myWorksData}/>}/>
+              <Route path="/works" render={() => <MyWorks myWorksData={myWorksData}/>}/>
 
-          <Route path="/contacts" render={() => <Contacts onSubmit={sendEmailFunc} sendingStatus={sendingStatus}/>}/>
-        </div>
-      </main>
+              <Route path="/contacts" render={() => <Contacts onSubmit={sendEmailFunc} sendingStatus={sendingStatus}/>}/>
+            </div>
+          </main>
+        </Suspense>
+      </LocaleContext.Provider>
   );
 }
 

@@ -1,0 +1,100 @@
+{
+  "home": {
+    "me": "Eugene Horunzhyi",
+    "job": "JS Developer",
+    "details": "I am Junior JS(React, Vue) developer from Ukraine, specializing in creating web interfaces and applications.",
+    "extra": "I am passionate about creating software that will improve the lives of people around me."
+  },
+  "personal": {
+    "name": "Eugene",
+    "surname": "Horunzhyi",
+    "country": "Ukraine",
+    "nationality": "Ukrainian"
+  },
+  "navlinks": {
+    "more": "More",
+    "home": "Home",
+    "about": "About Me",
+    "works": "My Works",
+    "contacts": "Contacts"
+  },
+  "works": {
+    "my": "MY",
+    "works": "Works",
+    "portfolio": "Portfolio"
+  },
+  "curtain": {
+    "full_screen": "ONLY THE FULL SCREEN VERSION IS AVAILABLE"
+  },
+  "about": {
+    "about": "ABOUT",
+    "me": "Me",
+    "resume": "Resume",
+    "personal": "PERSONAL INFORMATION",
+    "download": "Download CV",  
+    "experience": "YEAR OF EXPERIENCE",
+    "projects": "COMMERCIAL PROJECTS",
+    "percentage": "The percentages are shown for beauty purposes only"
+  },
+  "education": {
+    "education": "education",
+    "vpnu": {
+      "institution": "vpnu iede",
+      "specialization": "bachelor",
+      "description": "Bachelor's degree from Vinnitsa Polytechnic National University, Institute of Electric Drive and Electromechanics."
+    },
+    "siemens": {
+      "institution": "siemens",
+      "specialization": "siemens-programmer",
+      "description": "6 courses of study. Siemens Programer Stage 2."
+    },
+    "itvdn": {
+      "institution": "itvdn",
+      "specialization": "front-end developer",
+      "description": "6-month Front-End Developer course."
+    },
+    "glo": {
+      "institution": "glo-academy",
+      "specialization": "js-developer",
+      "description": "4-month JS-Developer course. First place by the results of the training. Third place in the project competition."
+    },
+    "jm": {
+      "institution": "jm",
+      "specialization": "js-developer",
+      "description": "6-month JS-Developer course."
+    },
+    "incubator": {
+      "institution": "it-incubator",
+      "specialization": "js(react)-developer",
+      "description": "8-month JS(React)-Developer course."
+    }
+  },
+  "skill": {
+    "my": "My skill"
+  },
+  "contacts": {
+    "in": "IN",
+    "touch": "Touch",
+    "contacts": "Contacts",
+    "feel_free": "Feel free",
+    "feel_free_extra": "Feel free to contact me. I am always open to discuss new projects, creative ideas or opportunity become a part of your vision.",
+    "mail_me": "mail_me",
+    "call_me": "call me"
+  },
+  "mail_form": {
+    "your_name": "YOUR NAME",
+    "your_email": "YOUR EMAIL",
+    "your_subject": "YOUR SUBJECT",
+    "your_message": "YOUR MESSAGE",
+    "send": "Send"
+  },
+  "validation": {
+    "name": "Name is Required",
+    "name_length": "Must be 15 characters or less",
+    "email": "Email is Required",
+    "incorrect": "Incorrect e-mail address",
+    "subject": "Subject is Required",
+    "subject_length": "Must be 25 characters or less",
+    "message": "Message is Required"
+  }
+}

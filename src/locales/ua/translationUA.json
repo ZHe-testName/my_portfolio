@@ -1,0 +1,100 @@
+{
+  "home": {
+    "me": "Я Хорунжий Євген",
+    "job": "JS Розробник",
+    "details": "Я Junior JS(React, Vue)-розробник з України, спеціалізуюсь на створенні веб-інтерфейсів та додатків.",
+    "extra": "Захоплююсь створенням програмного забеспечення, яке покращить життя оточуючих мене людей."
+  },
+  "personal": {
+    "name": "Євген",
+    "surname": "Хорунжий",
+    "country": "Україна",
+    "nationality": "Українець"
+  },
+  "navlinks": {
+    "more": "Детальніше",
+    "home": "Домашня",
+    "about": "Про Мене",
+    "works": "МоЇ роботи",
+    "contacts": "Контакти"
+  },
+  "works": {
+    "my": "МОЇ",
+    "works": "Роботи",
+    "portfolio": "Портфоліо"
+  },
+  "curtain": {
+    "full_screen": "ДОСТУПНА ТІЛЬКИ ПОВНОЕКРАННА ВЕРСІЯ"
+  },
+  "about": {
+    "about": "ПРО",
+    "me": "Мене",
+    "resume": "Резюме",
+    "personal": "ПЕРСОНАЛЬНА ІНФОРМАЦІЯ",
+    "download": "Завантажити CV",
+    "experience": "РІК ДОСВІДУ",
+    "projects": "КОМЕРЦІЙНИХ ПРОЕКТА",
+    "percentage": "Відсоткові співвідношення вказані виключно для краси"
+  },
+  "education": {
+    "education": "освіта",
+    "vpnu": {
+      "institution": "внту інеем",
+      "specialization": "бакалавр",
+      "description": "Бакалаврська ступінь у Вінницькому Національному Політехнічному Університеті. Інститут Електро-привода та Електро-механіки."
+    },
+    "siemens": {
+      "institution": "siemens",
+      "specialization": "siemens-programmer",
+      "description": "6 курсів навчання. Siemens Programer Stage 2."
+    },
+    "itvdn": {
+      "institution": "itvdn",
+      "specialization": "front-end developer",
+      "description": "6-ти місячеий курс Front-End Developer."
+    },
+    "glo": {
+      "institution": "glo-academy",
+      "specialization": "js-developer",
+      "description": "4-ох місячний курс JS-Developer. Перше місце за підсумками навчання. Третє місце на конкурсі проектів."
+    },
+    "jm": {
+      "institution": "jm",
+      "specialization": "js-developer",
+      "description": "6-ти місячний курс JS-Developer."
+    },
+    "incubator": {
+      "institution": "it-incubator",
+      "specialization": "js(react)-developer",
+      "description": "8-ми місячний курс JS(React)-Developer."
+    }
+  },
+  "skill": {
+    "my": "Мої навички"
+  },
+  "contacts": {
+    "in": "НА",
+    "touch": "ЗВ'ЯЗКУ",
+    "contacts": "Контакти",
+    "feel_free": "Не соромтесь",
+    "feel_free_extra": "Не соромтесь зі мною зв'язатись. Я завжди відкритий для обговорення нових проектів, крефтивних ідей чи можливості стати частиною Вашого бачення.",
+    "call_me": "подзвонити мені",
+    "mail_me": "написати мені"
+  },
+  "mail_form": {
+    "your_name": "ВАШЕ ІМ'Я",
+    "your_email": "ВАША ПОШТА",
+    "your_subject": "ВАША ТЕМА",
+    "your_message": "ВАШЕ ПОВІДОМЛЕННЯ",
+    "send": "Відправити"
+  },
+  "validation": {
+    "name": "Ім'я обов'язкове",
+    "name_length": "Не повинен перевищувати 15 символів",
+    "email": "Пошта обов'язкова",
+    "incorrect": "Не корректний поштова адресса",
+    "subject": "Тема обов'язкова",
+    "subject_length": "Не повинен перевищувати 25 символів",
+    "message": "Повідомлення обов'язкове"
+  }
+}
