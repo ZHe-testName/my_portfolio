@@ -2,7 +2,7 @@
   "home": {
     "me": "My name is Eugene Horunzhyi",
     "job": "JS Developer",
-    "details": "I am Junior+ JS(React, Vue) developer from Ukraine, specializing in creating web interfaces and applications.",
+    "details": "I am JS(React, Vue) developer from Ukraine, specializing in creating web interfaces and applications.",
     "extra": "I am passionate about creating software that will improve the lives of people around me."
   },
   "personal": {
@@ -32,7 +32,7 @@
     "resume": "Resume",
     "personal": "PERSONAL INFORMATION",
     "download": "Download CV",  
-    "experience": "YEAR OF EXPERIENCE",
+    "experience": "YEARS OF EXPERIENCE",
     "projects": "COMMERCIAL PROJECTS",
     "percentage": "The percentages are shown for beauty purposes only"
   },

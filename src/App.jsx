@@ -26,7 +26,7 @@ function App() {
   const personalInfo = {
     name: t('personal.name'),
     surname: t('personal.surname'),
-    age: '32',
+    age: '33',
     nationality: t('personal.nationality'),
     country: t('personal.country'),
     phone: '+380638828081',
@@ -35,12 +35,14 @@ function App() {
   };
 
   const skillsArr = [
-    [75, 'javascript'],
-    [55, 'typescript'],
-    [60, 'css'],
-    [45, 'html'],
+    [85, 'javascript'],
+    [60, 'typescript'],
+    [70, 'css'],
+    [65, 'html'],
     [70, 'react'],
-    [70, 'vue'],
+    [75, 'nuxt'],
+    [55, 'three.js'],
+    [75, 'vue'],
   ];
 
   const educationArr = [
@@ -91,10 +93,10 @@ function App() {
       isAdaptive: true,
     },
     {
-      curtainTitle: 'Social Network',
-      link: 'https://ZHe-testName.github.io/social_network_ts/',
-      image: 'social',
-      tec: ['TS', 'REACT', 'REDUX'],
+      curtainTitle: 'Haunted House',
+      link: 'https://three-js-jorney.vercel.app/',
+      image: 'house',
+      tec: ['Three.JS'],
       isAdaptive: false,
     },
     {
@@ -126,11 +128,11 @@ function App() {
       isAdaptive: false,
     },
     {
-      curtainTitle: 'Vue3 Blog',
-      link: 'https://vue-blog-4ciy3p0jv-zhe-testname.vercel.app',
-      image: 'vueblog',
-      tec: ['VUE2', 'VUEX'],
-      isAdaptive: true,
+      curtainTitle: 'Shader Flowers',
+      link: 'https://shader-flowers.vercel.app/',
+      image: 'flower',
+      tec: ['Three.JS', 'Shaders'],
+      isAdaptive: false,
     },
     {
       curtainTitle: 'Furniture Store',
@@ -140,10 +142,10 @@ function App() {
       isAdaptive: false,
     },
     {
-      curtainTitle: 'My Competitive Project',
-      link: 'https://my-competitive-proj.vercel.app/',
-      image: 'marvel',
-      tec: ['JS', 'HTML', 'CSS'],
+      curtainTitle: 'Weather Forecast',
+      link: 'https://forecust.vercel.app/',
+      image: 'forecast',
+      tec: ['Nuxt 3'],
       isAdaptive: false,
     },
   ];
