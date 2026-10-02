@@ -26,7 +26,7 @@ function App() {
   const personalInfo = {
     name: t('personal.name'),
     surname: t('personal.surname'),
-    age: '33',
+    age: '36',
     nationality: t('personal.nationality'),
     country: t('personal.country'),
     phone: '+380638828081',
@@ -36,13 +36,13 @@ function App() {
 
   const skillsArr = [
     [85, 'javascript'],
-    [60, 'typescript'],
-    [70, 'css'],
-    [65, 'html'],
+    [75, 'typescript'],
+    [80, 'css'],
+    [70, 'html'],
     [70, 'react'],
     [75, 'nuxt'],
-    [55, 'three.js'],
-    [75, 'vue'],
+    [70, 'three.js'],
+    [80, 'vue'],
   ];
 
   const educationArr = [
@@ -85,13 +85,13 @@ function App() {
   ];
 
   const myWorksData = [
-    {
-      curtainTitle: 'Medium Clone',
-      link: 'https://vue-udemy-course-2ejue1gd9-zhe-testname.vercel.app',
-      image: 'medium',
-      tec: ['VUE2', 'VUEX'],
-      isAdaptive: true,
-    },
+    // {
+    //   curtainTitle: 'Medium Clone',
+    //   link: 'https://vue-udemy-course-2ejue1gd9-zhe-testname.vercel.app',
+    //   image: 'medium',
+    //   tec: ['VUE2', 'VUEX'],
+    //   isAdaptive: true,
+    // },
     {
       curtainTitle: 'Haunted House',
       link: 'https://three-js-jorney.vercel.app/',
@@ -99,20 +99,20 @@ function App() {
       tec: ['Three.JS'],
       isAdaptive: false,
     },
-    {
-      curtainTitle: 'ToDo List',
-      link: 'https://zhe-testname.github.io/TS_ToDoList/',
-      image: 'todo',
-      tec: ['TS', 'REACT', 'REDUX'],
-      isAdaptive: true,
-    },
-    {
-      curtainTitle: 'Tasks Calendar',
-      link: 'https://zhe-testname.github.io/test_react_calendar/',
-      image: 'calendar',
-      tec: ['TS', 'REACT', 'REDUX'],
-      isAdaptive: false,
-    },
+    // {
+    //   curtainTitle: 'ToDo List',
+    //   link: 'https://zhe-testname.github.io/TS_ToDoList/',
+    //   image: 'todo',
+    //   tec: ['TS', 'REACT', 'REDUX'],
+    //   isAdaptive: true,
+    // },
+    // {
+    //   curtainTitle: 'Tasks Calendar',
+    //   link: 'https://zhe-testname.github.io/test_react_calendar/',
+    //   image: 'calendar',
+    //   tec: ['TS', 'REACT', 'REDUX'],
+    //   isAdaptive: false,
+    // },
     {
       curtainTitle: 'Aviator Game',
       link: 'https://three-js-two.vercel.app/',

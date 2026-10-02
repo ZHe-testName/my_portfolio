@@ -50,11 +50,11 @@ function AboutMe(props) {
 
           <div className={c.experience}>
             <div>
-              <h3>2</h3>
+              <h3>4</h3>
               <p>{t('about.experience')}</p>
             </div>
             <div>
-              <h3>5</h3>
+              <h3>11</h3>
               <p>{t('about.projects')}</p>
             </div>
           </div>
