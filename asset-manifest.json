@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.c8eb0247.css",
-    "main.js": "/my_portfolio/static/js/main.4cbaefa9.js",
+    "main.css": "/my_portfolio/static/css/main.07afb9f1.css",
+    "main.js": "/my_portfolio/static/js/main.28e47063.js",
     "static/media/vue3.png": "/my_portfolio/static/media/vue3.9e652bf4d28d26a7380f.png",
     "static/media/Olympia.jpg": "/my_portfolio/static/media/Olympia.96e8035e4b2d3313da52.jpg",
     "static/media/0_ZRVxe3SsWW851UoZ.png": "/my_portfolio/static/media/0_ZRVxe3SsWW851UoZ.f93ed1f4c8cba5507597.png",
+    "static/media/cv.pdf": "/my_portfolio/static/media/cv.6541e278a7e53ffe83b3.pdf",
     "static/media/to-do-list.jpg": "/my_portfolio/static/media/to-do-list.9810fe020b68d1921994.jpg",
     "static/media/depositphotos_75617037-stock-photo-air-tickets-with-sunset-and.jpg": "/my_portfolio/static/media/depositphotos_75617037-stock-photo-air-tickets-with-sunset-and.a16749e525820d731e09.jpg",
     "static/media/222-1024x640.jpg": "/my_portfolio/static/media/222-1024x640.4e1f37ebc650396ccef0.jpg",
     "static/media/avatar_photo.jpg": "/my_portfolio/static/media/avatar_photo.86a18ecf9986583ee4c2.jpg",
     "static/media/forecast.jpg": "/my_portfolio/static/media/forecast.38b436de0a22f1c2b8ff.jpg",
-    "static/media/cv.pdf": "/my_portfolio/static/media/cv.08fc5ea23ac8be870f52.pdf",
     "static/media/house.jpg": "/my_portfolio/static/media/house.72eba807d38a3dabe80f.jpg",
     "static/media/flower.jpg": "/my_portfolio/static/media/flower.325e62700a8e82ea09ca.jpg",
     "static/media/aviator-games.jpg": "/my_portfolio/static/media/aviator-games.a647e1806c0573257e9c.jpg",
@@ -29,11 +29,11 @@
     "static/media/iconmonstr-arrow-20.svg": "/my_portfolio/static/media/iconmonstr-arrow-20.a7f087be917ff6c577fc.svg",
     "static/media/iconmonstr-home-6.svg": "/my_portfolio/static/media/iconmonstr-home-6.d4bc652e8375aa3668634257c4638567.svg",
     "static/media/iconmonstr-download-19.svg": "/my_portfolio/static/media/iconmonstr-download-19.f1b6a2f2c355bc6de8f7.svg",
-    "main.c8eb0247.css.map": "/my_portfolio/static/css/main.c8eb0247.css.map",
-    "main.4cbaefa9.js.map": "/my_portfolio/static/js/main.4cbaefa9.js.map"
+    "main.07afb9f1.css.map": "/my_portfolio/static/css/main.07afb9f1.css.map",
+    "main.28e47063.js.map": "/my_portfolio/static/js/main.28e47063.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8eb0247.css",
-    "static/js/main.4cbaefa9.js"
+    "static/css/main.07afb9f1.css",
+    "static/js/main.28e47063.js"
   ]
 }
